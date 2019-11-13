@@ -27,12 +27,12 @@ A lot of examples show the usage of the library. They could be use as startup fo
 
 
 This library is described in detail here:\
-> https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sid=e3b7f6122766c330d04cecf18b7b4878 \
+  https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sid=e3b7f6122766c330d04cecf18b7b4878 \
 Several videos which demonstrate the library are available in the following pages in the forum.
 
 
 All forum pages are also available as PDF document:\
-> http://www.thkas-moba.de/mobaled/MoBaLED_Stummi_Komplette_Seiten.pdf \
+  http://www.thkas-moba.de/mobaled/MoBaLED_Stummi_Komplette_Seiten.pdf \
 (The most recent pages may not be included)
 
 You could also search for MobaLedLib in the internet.
