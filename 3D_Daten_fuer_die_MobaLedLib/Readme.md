@@ -15,3 +15,4 @@ Links zu anderen 3D Dateien:
 - Ronny: https://github.com/Worldworms/MobaLedLib_3D_Prints
 - Lorenz: https://github.com/LorenzSteinke/Lichtsignal_H0 und
   https://www.thingiverse.com/LorenzS/designs
+- Lichtbox (Etwas versteckt): https://www.thingiverse.com/thing:2728451
