@@ -1,0 +1,1 @@
+In diesem Verzeichnis werden zusätzliche Programme für die MobaLedLib abgelegt welche nicht in der Arduino Bibliothek gespeichert werden sollen/können.
