@@ -19,3 +19,8 @@ https://pypi.org/project/auto-py-to-exe/
 
 - Konfiguration für auto-py-to-exe ist in der Datei: Auto_Py_to_Exe_Configuration.json
   Gespeichert. Hier ist aber noch der Pfad "C:\Temp\CheckColors" drinnen.
+
+
+Zum starten wird auto-py-to-exe.exe in der Commandozeile eingegeben.
+Dann läd man die Datei "C:\Dat\Märklin\Arduino\LEDs_Eisenbahn\Doc\von anderen\Harold\Auto_Py_to_Exe_Configuration.json"
+unter "Import Config from" json file ganz unten.
