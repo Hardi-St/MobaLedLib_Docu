@@ -73,10 +73,11 @@
 // The standard pin configuration.
 #ifndef ARDUINO_HOODLOADER2
 
-#define RESET     5 // TinyUniProg     10 // Use pin 10 to reset the target rather than SS
-#define LED_HB    6 //  "              9
-#define LED_ERR   8
-#define LED_PMODE 7
+#define RESET     5  // TinyUniProg     10 // Use pin 10 to reset the target rather than SS
+#define LED_HB    6  //  "              9
+#define LED_ERR   A2 //  "              8  Normal Green and Orange        // 06.02.20:  Using TinyUniProg LED pins
+#define LED_PMODE A4 //  "              7  Prog.  Green and Blue          //            to show something, but it's
+#define LED_UNIP3 A3                                                      //            not the correct colors
 
 // Uncomment following line to use the old Uno style wiring
 // (using pin 11, 12 and 13 instead of the SPI header) on Leonardo, Due...
@@ -221,6 +222,9 @@ static BitBangedSPI SPI;
 
 void setup() {
   SERIAL.begin(BAUDRATE);
+
+  pinMode(LED_UNIP3, OUTPUT);  // 06.02.20:  Tiny_UniProg
+  digitalWrite(LED_UNIP3, 1);  //   "
 
   pinMode(LED_PMODE, OUTPUT);
   pulse(LED_PMODE, 2);
@@ -437,7 +441,9 @@ void end_pmode() {
   pinMode(PIN_MOSI, INPUT);
   pinMode(PIN_SCK, INPUT);
   reset_target(false);
-  pinMode(RESET, INPUT);
+  #ifndef RESET_INV   // NPN Transistor used to pull down the RESET Pin                                       // 07.02.20:  Prior it was always active => Transistor may float
+    pinMode(RESET, INPUT);
+  #endif
   pmode = 0;
 }
 
