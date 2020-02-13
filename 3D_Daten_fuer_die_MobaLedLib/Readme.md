@@ -9,6 +9,7 @@ und andere auf die MobaLedLib bezogene Dateien abgelegt.
 
 Beschreibungen:
 - Lichtmaschine-02 ist ein Halbgehäuse für die Zentrale. Ich habe es für die Zentrale benötigt, mit der ich die Konfiguration für die Servoplatine mache.
+- Trennwänder für Häuser enthält wie der Name schon sagt Trennwände für Häuser. Eine genaue Auflistung welche Trennwand für welches Haus ist, findet Ihr in der readme.md im Ordner Trennwände
 
 
 Links zu anderen 3D Dateien:
