@@ -35,6 +35,8 @@ All forum pages are also available as PDF document:\
   http://www.thkas-moba.de/mobaled/MoBaLED_Stummi_Komplette_Seiten.pdf \
 (The most recent pages may not be included)
 
+Our wiki with all information can be found here: https://wiki.mobaledlib.de
+
 You could also search for MobaLedLib in the internet.
 \
 \
