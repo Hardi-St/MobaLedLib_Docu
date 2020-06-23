@@ -18,12 +18,12 @@
 #### Massstab H0 (1:87)
 | Name | Artikelnummer | Author | Erstupload | Link | Forumposting |
 | ---- |----|----|----|----|----|
-| Bahnhof "St. Maggior" | 9361 | Jueff | 23.06.2020 | [Druckdaten](https://github.com/Hardi-St/MobaLedLib_Docu/tree/master/3D_Daten_fuer_die_MobaLedLib/Trennwände%20für%20Häuser/Kibri/K9361_Bahnhof_St.Maggiore)| [Beitrag #2515](https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sd=a&start=2514) | 
+| Bahnhof "St. Maggiore" | 9361 | Jueff | 23.06.2020 | [Druckdaten](https://github.com/Hardi-St/MobaLedLib_Docu/tree/master/3D_Daten_fuer_die_MobaLedLib/Trennwände%20für%20Häuser/Kibri/K9361_Bahnhof_St.Maggiore)| [Beitrag #2515](https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sd=a&start=2514) | 
 -------------------------------------------------------------------------------------------------------------------------
 ## Changelog
 ### 202-02-27
 #### Added
-+ Bahnhof "St. Maggior" (H0)
++ Bahnhof "St. Maggiore" (H0)
 
 ### 202-02-27
 #### Added
