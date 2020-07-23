@@ -12,7 +12,7 @@
 | Name | Artikelnummer | Author | Erstupload | Link | Forumposting |
 | ---- |----|----|----|----|----|
 | Fachwerkhaus mit Garage | 20232215 | Hardi-St | 11.11.2019 | [Druckdaten](https://github.com/Hardi-St/MobaLedLib_Docu/tree/master/3D_Daten_fuer_die_MobaLedLib/Trennwände%20für%20Häuser/Faller%20232215)| [Beitrag #685 ](https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sd=a&start=684)|
-| Feuerwehrgerätehaus | 222209 | MobaNick | 27.02.2020 | [Druckdaten](https://github.com/Hardi-St/MobaLedLib_Docu/tree/master/3D_Daten_fuer_die_MobaLedLib/Trennwände%20für%20Häuser/Faller/130162_Feuerwehrgeratehaus)| [Beitrag #1266](https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sd=a&start=1265) | 
+| Feuerwehrgerätehaus | 222209 | MobaNick | 27.02.2020 | [Druckdaten](https://github.com/Hardi-St/MobaLedLib_Docu/tree/master/3D_Daten_fuer_die_MobaLedLib/Trennwände%20für%20Häuser/Faller/222209_Feuerwehrgeratehaus)| [Beitrag #1266](https://www.stummiforum.de/viewtopic.php?f=7&t=165060&sd=a&start=1265) | 
 
 ### Kibri
 #### Massstab H0 (1:87)
