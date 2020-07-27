@@ -3461,9 +3461,9 @@ W = angled&lt;p&gt;
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" diameter="1.524" shape="square" rot="R90"/>
+<pad name="1" x="-3.81" y="0" drill="1.2" shape="square" rot="R90"/>
 <pad name="2" x="-1.27" y="0" drill="1.016" diameter="1.524" shape="octagon" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" diameter="1.524" shape="octagon" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.2" shape="octagon" rot="R90"/>
 <text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
 <text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
@@ -8494,7 +8494,8 @@ IC1 und RN1 entfallen. Dafür werden die
 Jumper JP1 - JP4 verbunden.</text>
 <text x="82.55" y="16.51" size="1.778" layer="97">Revision History:
 08.05.20: Richtiger Footprint des WS2811 in SMD Version (R&lt;-&gt;G)
-26.07.20: Footprint welcher zum WS2812 passt verwendet (G=1, R=2)</text>
+26.07.20: Footprint welcher zum WS2812 passt verwendet (G=1, R=2)
+27.07.20: Größere löcher für SV6</text>
 </plain>
 <instances>
 <instance part="U2R" gate="G$1" x="109.22" y="104.14" smashed="yes" rot="MR180">
