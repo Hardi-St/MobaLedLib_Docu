@@ -1,0 +1,17 @@
+display none;
+group;
+Layer 116 outlines;LAYER 125 _tnames;LAYER 126 _bnames;display none;display 125 126;group all;delete (c > 0 0);display all;set confirm yes;run panelize;grid mm;
+Group all;
+Cut;
+display none;display 125 126;group all;delete (c > 0 0);display all;EDIT _X9.brd;
+grid mm;
+paste  (40.875000 40.875000)
+paste  (40.875000 74.308670)
+paste  (40.875000 107.742340)
+paste  (74.308512 40.875000)
+paste  (74.308512 74.308670)
+paste  (74.308512 107.742340)
+paste  (107.742024 40.875000)
+paste  (107.742024 74.308670)
+paste  (107.742024 107.742340)
+set confirm off;grid on dots 50.000000;
