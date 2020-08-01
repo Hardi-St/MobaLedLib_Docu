@@ -12358,7 +12358,7 @@ mit 22K bestückt werden.
 Analog Taster
 verwendet
 </text>
-<text x="163.83" y="207.01" size="1.524" layer="97" align="top-left">Der CAN Stecker SV1 kann alternativ auch als
+<text x="163.83" y="209.55" size="1.524" layer="97" align="top-left">Der CAN Stecker SV1 kann alternativ auch als
 zusätzlicher LED Bus verwendet werden.
 Dazu werden die LED_BUS2x Jötjumper
 verbunden.

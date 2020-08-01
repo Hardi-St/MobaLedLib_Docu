@@ -9,17 +9,17 @@
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="12.5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -33,9 +33,9 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
@@ -45,7 +45,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -161,7 +161,7 @@
 <text x="69.85" y="60.96" size="1.6764" layer="16" font="vector" ratio="10" rot="MR0">Bot</text>
 <text x="65.0875" y="60.325" size="1.778" layer="1" font="vector" ratio="10">Top</text>
 <text x="47.3075" y="6.985" size="1.524" layer="16" font="vector" ratio="10" rot="MR180">MobaLedLib</text>
-<text x="14.605" y="1.905" size="1.524" layer="16" font="vector" ratio="10" rot="MR180">27.07.19</text>
+<text x="14.605" y="1.905" size="1.524" layer="16" font="vector" ratio="10" rot="MR180">01.08.20</text>
 <text x="7.62" y="1.5875" size="1.27" layer="25" rot="R180">by Hardi</text>
 <text x="11.1125" y="37.1475" size="1.27" layer="25" rot="R90">LED Nano</text>
 <text x="47.3075" y="42.2275" size="1.27" layer="25" rot="R180">DCC Nano</text>
@@ -169,7 +169,7 @@
 <text x="72.7075" y="18.0975" size="1.27" layer="25" rot="R270">by Hardi</text>
 <text x="26.3525" y="38.1" size="1.4224" layer="25" rot="R90">LEDs Main
    Module</text>
-<text x="65.7225" y="22.86" size="1.27" layer="25" rot="R270">31.07.20</text>
+<text x="65.7225" y="22.86" size="1.27" layer="25" rot="R270">01.08.20</text>
 <text x="14.2875" y="1.42875" size="1.524" layer="25">LED
 Test</text>
 <text x="27.305" y="1.42875" size="1.524" layer="25">Sim
@@ -266,6 +266,11 @@ Test</text>
 <wire x1="65.7225" y1="70.1675" x2="68.2625" y2="70.1675" width="0" layer="20" curve="-180"/>
 <text x="6.35" y="11.43" size="1.778" layer="1" font="vector" ratio="10" rot="R180">+5V</text>
 <text x="3.175" y="13.0175" size="1.6764" layer="16" font="vector" ratio="10" rot="MR270">GND</text>
+<text x="8.5725" y="69.215" size="1.016" layer="25" rot="R180">5050</text>
+<text x="23.8125" y="69.215" size="1.016" layer="25" rot="R180">5050</text>
+<text x="39.0525" y="69.215" size="1.016" layer="25" rot="R180">5050</text>
+<text x="77.47" y="69.85" size="1.016" layer="25" rot="R270">3535</text>
+<text x="62.23" y="69.85" size="1.016" layer="25" rot="R270">3535</text>
 </plain>
 <libraries>
 <library name="SparkFun-Retired">
