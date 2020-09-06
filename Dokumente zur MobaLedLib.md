@@ -1,84 +1,83 @@
 # Dokumente zur MobaLedLib
 
-Dieses Dokument enthält Links zu allen wichtigen Dokumenten der MobaLedLib. Mit einem Klick auf die unterstrichenen Überschriften kommt man direkt zu dem entsprechenden Dokument. Dort kann man es lesen oder herunter laden.
+Dieses Dokument enthÃ¤lt Links zu allen wichtigen Dokumenten der MobaLedLib. Mit einem Klick auf die unterstrichenen Ãœberschriften kommt man direkt zu dem entsprechenden Dokument. Dort kann man es lesen oder herunter laden.
 
-Das Hauptverzeichnis aller Dokumente erreicht man über diesen Link: [MobaLedLib_Docu](https://github.com/Hardi-St/MobaLedLib_Docu)
+Das Hauptverzeichnis aller Dokumente erreicht man Ã¼ber diesen Link: [MobaLedLib_Docu](https://github.com/Hardi-St/MobaLedLib_Docu)
 
-Meldet euch bitte bei fehlerhaften Links, wenn Ihr Verbesserungsvorschläge habt, wenn Ihr an der Dokumentation mitarbeiten wollt, wenn es Probleme gibt, ….
+Meldet euch bitte bei fehlerhaften Links, wenn Ihr VerbesserungsvorschlÃ¤ge habt, wenn Ihr an der Dokumentation mitarbeiten wollt, wenn es Probleme gibt, â€¦.
 
 bei:  [MobaLedLib@gmx.de](mailto:MobaLedLib@gmx.de)
 
 # Software Dokumentation
 
-[MobaLedLib: Ein kurzer Überblick](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/MobaLedLib%20Ein%20kurzer%20Ueberblick.pdf)
+[MobaLedLib: Ein kurzer Ãœberblick](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/MobaLedLib%20Ein%20kurzer%20Ueberblick.pdf)
 
-Dieses Dokument gibt einen kurzen Überblick der Arduino Bibliothek. Es beschreibt die einzelnen Funktionen der Bibliothek im Detail.
+Dieses Dokument gibt einen kurzen Ãœberblick der Arduino Bibliothek. Es beschreibt die einzelnen Funktionen der Bibliothek im Detail.
 
 [MobaLedLib Short Overview](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/MobaLedLib%20Short%20Overview.pdf)
 
-This is the English version of the Documentation. Unfortunately it’s not always updated when to the changes in the German version. You are welcome to help to keep the document up-to-date.
+This is the English version of the Documentation. Unfortunately itâ€™s not always updated when to the changes in the German version. You are welcome to help to keep the document up-to-date.
 
 [MobaLedLib Adresszuordnung und Rocrail Aktionen Ausgang](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bedienungsanleitungen/MobaLedLib_Adresszuordnung_und_Rocrail_Aktionen_Ausgang.pdf)
 
 Hier wird beschrieben wie man Aktionen der MobaLedLib mit RocRail steuert.
 
-# Bestückungsanleitungen
+# BestÃ¼ckungsanleitungen
 
-Für die MobaLedLib existieren einige Platinen. Hier wird beschrieben wie die Platinen bestückt werden und welche Bestückungsvarianten es gibt. Außerdem findet man hier Bauteillisten und Bezugsquellen.
+FÃ¼r die MobaLedLib existieren einige Platinen. Hier wird beschrieben wie die Platinen bestÃ¼ckt werden und welche BestÃ¼ckungsvarianten es gibt. AuÃŸerdem findet man hier Bauteillisten und Bezugsquellen.
 
-[100-DE Arduino für LEDs Master Bestückungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/100-DE_Arduino_fuer_LEDs_Master_Bestueckungsanleitung_20190721_V01-00_komprimiert.pdf)
+[100-DE Arduino fÃ¼r LEDs Master BestÃ¼ckungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/100-DE_Arduino_fuer_LEDs_Master_Bestueckungsanleitung.pdf)
 
-Bestückungsanleitung der Hauptplatine. Sie steuert alle LEDs und stellt die Verbindung zu DCC, Selectrix oder dem CAN Bus her.
+BestÃ¼ckungsanleitung der Hauptplatine. Sie steuert alle LEDs und stellt die Verbindung zu DCC, Selectrix oder dem CAN Bus her.
 
-[200-DE Verteilerplatine Universal Bestückungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/200-DE_Verteilerplatine_Universal_LoetJumper_Bestueckungsanleitung.pdf)
+[200-DE Verteilerplatine Universal BestÃ¼ckungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/200-DE_Verteilerplatine_Universal_LoetJumper_Bestueckungsanleitung_20200322_V00-09.pdf)
 
-Die Häuser, Straßenlaternen, Sound und Servo Module und alle anderen von der MobaLedLib angesteuerten Objekte werden einfach über Verteilerplatinen ähnlich einer Vielfachsteckdose angeschlossen. In diesem Dokument wird der Aufbau dieser Platine beschreiben.
+Die HÃ¤user, StraÃŸenlaternen, Sound und Servo Module und alle anderen von der MobaLedLib angesteuerten Objekte werden einfach Ã¼ber Verteilerplatinen Ã¤hnlich einer Vielfachsteckdose angeschlossen. In diesem Dokument wird der Aufbau dieser Platine beschreiben.
 
 [500-DE_Sound-Module_JQ6500_Bestueckungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/500-DE_Sound-Module_JQ6500_Bestueckungsanleitung.pdf)
 
-Bestückungsanleitung des JQ6500 Sound Moduls welches 5 verschiedene Geräusche im direkten Zugriff abspielen kann und zusätzlich zwei Ausgänge für LEDs hat.
+BestÃ¼ckungsanleitung des JQ6500 Sound Moduls welches 5 verschiedene GerÃ¤usche im direkten Zugriff abspielen kann und zusÃ¤tzlich zwei AusgÃ¤nge fÃ¼r LEDs hat.
 
 # Hardware Dokumentation
 
-In diesem Abschnitt findet man die Schaltpläne, Layouts und Fertigungsunterlagen der Platinen.
+In diesem Abschnitt findet man die SchaltplÃ¤ne, Layouts und Fertigungsunterlagen der Platinen.
 
-[Arduino für LEDs Mainboard](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/Arduino_fuer_LEDs_Mainboard.zip)
+[Arduino fÃ¼r LEDs Mainboard](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/100-Arduino_fuer_LEDs_Mainboard/Arduino_fuer_LEDs_Mainboard_Old_Ver_1.0.zip)
 
 Hauptplatine der MobaLedLib. Sie steuert alle LEDs und stellt die Verbindung zu DCC, Selectrix oder dem CAN Bus her.
 
 [RGB_LED_Verteiler](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/RGB_LED_Verteiler.zip)
 
-Hier sind die Daten der Verteilerplatine als Zip Datei verfügbar.
+Hier sind die Daten der Verteilerplatine als Zip Datei verfÃ¼gbar.
 
-[Sound_JQ6500](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/Sound_JQ6500.zip)
+[Sound_JQ6500](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/500-Sound_JQ6500/Sound_JQ6500_X9_2020-07-27.zip)
 
-Sound Modul basierend auf dem JQ6500 Modul. Damit können bis zu 5 Sounds gezielt abgerufen werden. Beliebige weitere Sounds können sequenziell abgespielt werden. Die Sounds sind in einem internen Speicher abgelegt.
+Sound Modul basierend auf dem JQ6500 Modul. Damit kÃ¶nnen bis zu 5 Sounds gezielt abgerufen werden. Beliebige weitere Sounds kÃ¶nnen sequenziell abgespielt werden. Die Sounds sind in einem internen Speicher abgelegt.
 
-[MP3-TF-16F Sound Modul und WS2811](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/MP3-TF-16F%20Sound%20Modul%20und%20WS2811.pdf)
+[MP3-TF-16F Sound Modul und WS2811](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/501-Sound_MP3-TF-16P/Sound_MP3-TF-16P_Old_Ver%201.0.zip)
 
-Einfacher Schaltplan mit dem MP3-TF-16F Sound Modul und einem WS2811 Chip. Damit können 14 Sounds gezielt abgerufen werden. Beliebige weitere Sounds können sequenziell abgespielt werden Sounds. Die Sounds werden auf einer Micro SD Karte gespeichert.
+Einfacher Schaltplan mit dem MP3-TF-16F Sound Modul und einem WS2811 Chip. Damit kÃ¶nnen 14 Sounds gezielt abgerufen werden. Beliebige weitere Sounds kÃ¶nnen sequenziell abgespielt werden Sounds. Die Sounds werden auf einer Micro SD Karte gespeichert.
 
 [S3PO Modul WS2811](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/S3PO_Modul_WS2811.zip)
 
-Universal Modul welches Sound, Servos, Signale und Power Outputs enthält.
+Universal Modul welches Sound, Servos, Signale und Power Outputs enthÃ¤lt.
 
-[Servo_LED](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/Servo_LED.zip)
+[Servo_LED](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/510-Servo_LED/Servo_LED.zip)
 
-Diese winzige Platine kann 3 Servos, ein Multiplex Signal oder Schrittmotoren ansteuern. Sie wird genauso wie die RGB Leds angesprochen und wird ist nur über eine 4-polige Leitung mit der Verteilerplatine verbunden.
+Diese winzige Platine kann 3 Servos, ein Multiplex Signal oder Schrittmotoren ansteuern. Sie wird genauso wie die RGB Leds angesprochen und wird ist nur Ã¼ber eine 4-polige Leitung mit der Verteilerplatine verbunden.
 
 [Tiny_UniProg](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/Tiny_UniProg.zip)
 
-Auf der Servo LED Platine wird der kleine, 8-polige Arduino Bruder ATTiny85 verwendet. Zur Programmierung dieses Prozessors benötigt man diese Schaltung. Die Servo Module müssen „eigentlich“ nur einmal Programmiert werden solange es keine Verbesserungen der Software gibt.
+Auf der Servo LED Platine wird der kleine, 8-polige Arduino Bruder ATTiny85 verwendet. Zur Programmierung dieses Prozessors benÃ¶tigt man diese Schaltung. Die Servo Module mÃ¼ssen â€žeigentlichâ€œ nur einmal Programmiert werden solange es keine Verbesserungen der Software gibt.
 
-[PushButtonAction_4017](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/PushButtonAction_4017.zip)
+[PushButtonAction_4017](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Platinen/300-PushButtonAction_4017/PushButtonAction_4017_Alt_V1.1.zip)
 
-Mit dieser Schaltung können bis zu 80 Schalter eingelesen werden. Das kann noch erweitert werden indem die Platinen kaskadiert werden. Sie kann außerdem zum einlesen von „Knopfdruck Aktionen“ an Anlagenrand eingesetzt werden. Dazu enthält sie WS2811 Chips mit denen die LEDs in den Tastern angesteuert werden. Das tolle daran ist, dass fast beliebig viele Taster über eine 8-polige Leitung mit dem Arduino verbunden werden können.
+Mit dieser Schaltung kÃ¶nnen bis zu 80 Schalter eingelesen werden. Das kann noch erweitert werden indem die Platinen kaskadiert werden. Sie kann auÃŸerdem zum einlesen von â€žKnopfdruck Aktionenâ€œ an Anlagenrand eingesetzt werden. Dazu enthÃ¤lt sie WS2811 Chips mit denen die LEDs in den Tastern angesteuert werden. Das tolle daran ist, dass fast beliebig viele Taster Ã¼ber eine 8-polige Leitung mit dem Arduino verbunden werden kÃ¶nnen.
 
 # Anwendungsbeispiele
 
-[Straßenlaternen](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Anwendungsbeispiele/Strassenlaternen.pdf)
+[StraÃŸenlaternen](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Anwendungsbeispiele/Strassenlaternen.pdf)
 
-Hier beschreibt Armin den Anschluss von Straßenlaternen über WS2811 und was man dabei beachten muss. Er zeigt auch anhand von Bildern wie das aussehen kann.
+Hier beschreibt Armin den Anschluss von StraÃŸenlaternen Ã¼ber WS2811 und was man dabei beachten muss. Er zeigt auch anhand von Bildern wie das aussehen kann.
 
-> Written with [StackEdit](https://stackedit.io/).
-
+UPDATED: 2020-09-06 15:51 Dominik
