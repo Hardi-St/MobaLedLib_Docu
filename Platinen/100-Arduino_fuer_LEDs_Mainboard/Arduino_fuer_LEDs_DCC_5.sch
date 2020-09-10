@@ -12568,7 +12568,8 @@ https://www.mikrocontroller.net/topic/441586?goto=5267064#5267064</text>
                - CAN connector could be used as LED Bus
 31.07.20: =&gt; Ver.: 1.5
 31.08.20: - Corrected the LED modules
-               =&gt; Ver. 1.6</text>
+               =&gt; Ver. 1.6
+10.09.20: - Changed LM293 comment</text>
 <text x="-91.44" y="31.75" size="1.778" layer="91">O2</text>
 <text x="-91.44" y="16.51" size="1.778" layer="91">O1</text>
 <text x="-91.44" y="24.13" size="1.778" layer="91">O1a</text>
@@ -12640,8 +12641,9 @@ Das geht aber nur bei wenigen LEDs.</text>
 <text x="-68.58" y="83.82" size="1.524" layer="97" align="top-left">Wenn die Platine aus dem DCC Signal versorgt wird (IC1... bestückt), 
 dann kann OK1 entfallen. Stattdessen wird eine Diode Pin3 nach Pin2
 verwendet und NO_OPTO verbunden.</text>
-<text x="104.14" y="38.1" size="1.778" layer="97">LM293N kann auch
-benutzt werden</text>
+<text x="100.33" y="36.83" size="1.778" layer="97">Achtung: der LM293N
+kann NICHT benutzt
+werden!</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="76.2" y="203.2" smashed="yes" rot="R270"/>
