@@ -26,7 +26,7 @@ Hier wird beschrieben wie man Aktionen der MobaLedLib mit RocRail steuert.
 
 Für die MobaLedLib existieren einige Platinen. Hier wird beschrieben wie die Platinen bestückt werden und welche Bestückungsvarianten es gibt. Außerdem findet man hier Bauteillisten und Bezugsquellen.
 
-[100-DE Arduino für LEDs Master Bestückungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/100-DE_Arduino_fuer_LEDs_Master_Bestueckungsanleitung.pdf)
+[100-DE Arduino für LEDs Master Bestückungsanleitung](https://github.com/Hardi-St/MobaLedLib_Docu/blob/master/Bestueckungsanleitungen/Anleitungsarchiv/100-DE_Arduino_fuer_LEDs_Master_Bestueckungsanleitung.pdf)
 
 Bestückungsanleitung der Hauptplatine. Sie steuert alle LEDs und stellt die Verbindung zu DCC, Selectrix oder dem CAN Bus her.
 
