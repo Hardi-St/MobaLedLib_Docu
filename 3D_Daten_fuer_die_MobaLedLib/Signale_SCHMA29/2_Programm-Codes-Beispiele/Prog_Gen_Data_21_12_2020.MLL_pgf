@@ -1,0 +1,17 @@
+Head:	Program_Generator configuration file	V1.0
+Sheet:	DCC	DCC
+Line:	Act			Start					RGB_Heartbeat2(#LED, 2, 5)	0	1	0	0	0			
+Line:	-																
+Line:	-																
+Line:	Act		300	Rot		_Dep_Signal4_RGB (pc) Gleissperrsignal			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 2){NewLine}XPatternT1(#LED,4,SI_LocalVar,12,0,4,0,0,600 ms,0,0,0,192,0,12,0,0,0,63,240,3  ,0,63,128,63)	1	4	2	0	0			
+Line:	Act		301	Rot		_Dep_Signal4_RGB (pc) Gleissperrsignal			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 2){NewLine}XPatternT1(#LED,4,SI_LocalVar,12,0,4,0,0,600 ms,0,0,0,192,0,12,0,0,0,63,240,3  ,0,63,128,63)	5	4	2	0	0			
+Line:	-																
+Line:	Act		302	Rot		_Dep_Signal4_RGB (pc) HP 2-2			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 2){NewLine}XPatternT1(#LED,12,SI_LocalVar,12,0,16,0,0,500 ms,0,0,0,0,0,0,0,128,0,8,0,0,0,0,0,0,0,0,128,0,0,0,0,8  ,0,63,128,63)	9	4	2	0	0			
+Line:	Act		303 - 304	Rot		_Dep_Signal4_RGB (pc) HS einfach			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 3){NewLine}XPatternT1(#LED,12,SI_LocalVar,12,0,32,0,0,500 ms,0,0,0,0,0,0,0,128,0,0,128,0,0,0,0,0,0,0,0,0,0,128,0,0,0,0,0,0,0,0,88,0,0,128,0,0  ,0,63,128,63,128,63)	13	4	3	0	0			
+Line:	Act		305 - 306	Rot		_Dep_Signal4_RGB (pc) HS 5r			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 4){NewLine}XPatternT1(#LED,12,SI_LocalVar,15,0,64,0,0,500 ms,0,0,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,176,6,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,80,85  ,0,63,128,63,128,63,128,63)	17	5	4	0	0			
+Line:	Act		307 - 308	Rot		_Dep_Signal4_RGB (pc) HS 5l			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 4){NewLine}XPatternT1(#LED,12,SI_LocalVar,15,0,64,0,0,500 ms,0,0,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,176,6,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,80,85  ,0,63,128,63,128,63,128,63)	22	5	4	0	0			
+Line:	-																
+Line:	-		309	Rot		_Dep_Signal4_RGB (pc) Vorsignal			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 2){NewLine}XPatternT1(#LED,12,SI_LocalVar,12,0,16,0,0,500 ms,0,0,0,0,0,0,0,128,0,0,128,0,0,0,0,0,0,0,124,0,0,124,0,0  ,0,63,128,63)		4	2	0	0			
+Line:	Act		310 - 313	Rot		_Dep_Signal4_RGB (pc) HS 5 Plus			// Activation: N_Buttons{NewLine}InCh_to_TmpVar(#InCh, 8){NewLine}XPatternT1(#LED,12,SI_LocalVar,27,0,64,0,0,500 ms,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,5,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,64,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,128,5,0,0,4,0,0,0,0,0,4,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,128,5,0,0,4,0,0,0,89,0,0,89,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,4,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,89,0,0,89,0,0  ,0,63,128,63,128,63,128,63,128,63,128,63,128,63,128,63)	27	9	8	0	0			
+Line:	-																
+Line:	Act			Ende					RGB_Heartbeat2(#LED, 2, 5)	36	1	0	0	0			
