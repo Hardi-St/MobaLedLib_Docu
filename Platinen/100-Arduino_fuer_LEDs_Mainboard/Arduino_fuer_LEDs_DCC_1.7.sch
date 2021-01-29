@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -12677,7 +12677,7 @@ DCC, Selectrix, CAN</text>
 </text>
 <text x="48.26" y="121.92" size="1.778" layer="97" rot="R90">A6, A7: No Din/Dout 
             No Pullup</text>
-<text x="238.76" y="-15.24" size="3.81" layer="97">Ver.: 1.7</text>
+<text x="238.76" y="-15.24" size="3.81" layer="97">Ver.: 1.7.1</text>
 <wire x1="-81.28" y1="198.12" x2="-81.28" y2="200.66" width="0.1524" layer="97"/>
 <wire x1="-81.28" y1="200.66" x2="-82.042" y2="201.422" width="0.1524" layer="97"/>
 <wire x1="-82.042" y1="201.422" x2="-80.264" y2="201.93" width="0.1524" layer="97"/>
@@ -12743,7 +12743,9 @@ https://www.mikrocontroller.net/topic/441586?goto=5267064#5267064</text>
 31.08.20: - Corrected the LED modules
                =&gt; Ver. 1.6
 10.09.20: - Changed LM293 comment
-18.10.20: - Added optional buffer IC3</text>
+18.10.20: - Added optional buffer IC3
+29.01.21: =&gt; Vwr.: 1.7.1
+                - moved IC3 (problem with narrow pads)</text>
 <text x="-91.44" y="31.75" size="1.778" layer="91">O2</text>
 <text x="-91.44" y="16.51" size="1.778" layer="91">O1</text>
 <text x="-91.44" y="24.13" size="1.778" layer="91">O1a</text>
@@ -12812,9 +12814,10 @@ SJ_SX1 &amp; 2 verbinden wenn IC2 nicht bestückt wird. R21 - R24 entfällt dan 
 
 SJ_SX3 verbinden wenn die Platine aus dem SX Bus versorgt werden soll.
 Das geht aber nur bei wenigen LEDs.</text>
-<text x="-68.58" y="83.82" size="1.524" layer="97" align="top-left">Wenn die Platine aus dem DCC Signal versorgt wird (IC1... bestückt), 
+<text x="-68.58" y="86.36" size="1.524" layer="97" align="top-left">Wenn die Platine aus dem DCC Signal versorgt wird (IC1... bestückt), 
 dann kann OK1 entfallen. Stattdessen wird eine Diode Pin3 nach Pin2
-verwendet und NO_OPTO verbunden.</text>
+verwendet und NO_OPTO verbunden.
+R8 muss dann mit 33K bestückt werden. (Noch nicht getestet)</text>
 <text x="113.03" y="36.83" size="1.778" layer="97">Achtung: der LM293N
 kann NICHT benutzt
 werden!</text>
@@ -12822,6 +12825,11 @@ werden!</text>
 IC3, R2 und R9 können anstelle von R26
 bestückt werden. Dann bleibt SJ2 offen.
 (Noch nicht getestet)
+
+</text>
+<text x="33.02" y="-12.7" size="1.524" layer="97" align="top-left">Achtung: Selectrix Empfang funktioniert
+NICHT wenn der DCC Optokoppler OK1
+eingesteckt ist!
 
 </text>
 </plain>
