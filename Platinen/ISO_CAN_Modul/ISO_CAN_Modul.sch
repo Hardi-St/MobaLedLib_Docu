@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10733,10 +10733,10 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY6" library="supply2" deviceset="+5V" device=""/>
 <part name="C3" library="capacitor-wima" deviceset="C" device="2.5/2" value="100 nF"/>
 <part name="LED2" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1" value="Blue"/>
-<part name="R11" library="resistor" deviceset="R-EU_" device="R0805" value="2K2"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="M0805" value="2K2"/>
 <part name="SUPPLY61" library="supply2" deviceset="+5V" device=""/>
-<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1" value="Red"/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
+<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1" value="Red"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
 <part name="CAN1" library="ISO_CAN_Modul" deviceset="MCP2515_ISO_CAN_PINS" device=""/>
 <part name="SUPPLY7" library="supply2" deviceset="+5V" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
@@ -10752,10 +10752,10 @@ by exp-lbrs.ulp</description>
 <part name="X4" library="con-subd" deviceset="M09" device="D" value="Male"/>
 <part name="INT" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="TRACE" value="SOLDERJUMPERTRACE"/>
 <part name="CS3" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO"/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0204/7" value="120"/>
+<part name="R4" library="resistor" deviceset="R-EU_" device="0204/7" value="120"/>
 <part name="CON8" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="Term"/>
-<part name="LED1" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1" value="Green"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
+<part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1" value="Green"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
 <part name="X5" library="Arduino_fuer_LEDs_DCC_2" deviceset="AK500/2+M" device=""/>
 </parts>
 <sheets>
@@ -10765,7 +10765,7 @@ by exp-lbrs.ulp</description>
 übereinander montiert werden. Bei der einen Platine
 wird der Chip Select über CS1 gemacht, bei der anderen 
 über CS2. CS1 muss dazu getrennt werden.
-Falls man mal 3 Platinen stapelm will, dann muss INT
+Falls man mal 3 Platinen stapeln will, dann muss INT
 getrennt werden und CS3 verbunden werden.</text>
 <text x="162.56" y="63.5" size="1.778" layer="97" align="top-left">Senkrecht montierter Stecker
 (Mit etwas Abstand wenn IC-Fassung
@@ -10779,7 +10779,7 @@ des Steckers geschoben und verlötet.
 Achtung: Platinendicke Max. 1.2mm</text>
 <text x="76.2" y="58.42" size="1.778" layer="97" rot="R180">Die LEDs sind optional. Sie leuchten nur,
 wenn das von der Software unterstützt wird.</text>
-<text x="160.02" y="147.32" size="1.778" layer="97" rot="R180">Die Rechte Seite des CAN Transceivers (VCC2)
+<text x="160.02" y="147.32" size="1.778" layer="97" rot="R180">Die rechte Seite des CAN Transceivers (VCC2)
 kann entweder vom Empfänger mit 5V gespeist
 werden  über einen DC/DC Wandler.</text>
 <text x="241.3" y="21.59" size="2.1844" layer="92">by Hardi</text>
@@ -10854,18 +10854,18 @@ verwendet wird. </text>
 <attribute name="NAME" x="52.959" y="75.438" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="46.99" y="80.391" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R11" gate="G$1" x="58.42" y="76.2" smashed="yes">
+<instance part="R2" gate="G$1" x="58.42" y="76.2" smashed="yes">
 <attribute name="NAME" x="54.61" y="77.6986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="72.898" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY61" gate="+5V" x="35.56" y="72.39" smashed="yes" rot="R90">
 <attribute name="VALUE" x="32.385" y="70.485" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED3" gate="G$1" x="43.18" y="68.58" smashed="yes" rot="R90">
+<instance part="LED1" gate="G$1" x="43.18" y="68.58" smashed="yes" rot="R90">
 <attribute name="NAME" x="52.959" y="70.866" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="47.498" y="64.897" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R12" gate="G$1" x="58.42" y="68.58" smashed="yes">
+<instance part="R1" gate="G$1" x="58.42" y="68.58" smashed="yes">
 <attribute name="NAME" x="54.61" y="70.0786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="54.61" y="65.278" size="1.778" layer="96"/>
 </instance>
@@ -10924,7 +10924,7 @@ verwendet wird. </text>
 <instance part="CS3" gate="1" x="55.88" y="109.22" smashed="yes" rot="MR180">
 <attribute name="NAME" x="52.578" y="112.776" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="R1" gate="G$1" x="210.82" y="81.28" smashed="yes" rot="R90">
+<instance part="R4" gate="G$1" x="210.82" y="81.28" smashed="yes" rot="R90">
 <attribute name="NAME" x="209.3214" y="77.47" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="209.296" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -10932,11 +10932,11 @@ verwendet wird. </text>
 <attribute name="VALUE" x="205.74" y="63.5" size="1.778" layer="96" rot="MR90"/>
 <attribute name="NAME" x="216.662" y="63.5" size="1.778" layer="95" rot="MR90"/>
 </instance>
-<instance part="LED1" gate="G$1" x="157.48" y="83.82" smashed="yes">
+<instance part="LED3" gate="G$1" x="157.48" y="83.82" smashed="yes">
 <attribute name="NAME" x="153.416" y="79.121" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="161.671" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R2" gate="G$1" x="157.48" y="73.66" smashed="yes" rot="R90">
+<instance part="R3" gate="G$1" x="157.48" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="155.9814" y="69.85" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="160.782" y="69.85" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -10949,7 +10949,7 @@ verwendet wird. </text>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
+<net name="TXCAN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="TXCAN"/>
 <wire x1="101.6" y1="96.52" x2="121.92" y2="96.52" width="0.1524" layer="91"/>
@@ -10958,7 +10958,7 @@ verwendet wird. </text>
 <wire x1="124.46" y1="93.98" x2="128.27" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="RXCAN" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="RXD"/>
 <wire x1="128.27" y1="96.52" x2="124.46" y2="96.52" width="0.1524" layer="91"/>
@@ -11038,13 +11038,13 @@ verwendet wird. </text>
 <wire x1="38.1" y1="72.39" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="76.2" x2="38.1" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="40.64" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="68.58" x2="38.1" y2="72.39" width="0.1524" layer="91"/>
 <junction x="38.1" y="72.39"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="OSC2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="OSC2"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -11055,7 +11055,7 @@ verwendet wird. </text>
 <junction x="104.14" y="76.2"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="OSC1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="OSC1"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -11066,7 +11066,7 @@ verwendet wird. </text>
 <junction x="104.14" y="86.36"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="VCC2_EXT" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="1"/>
 <wire x1="177.8" y1="99.06" x2="187.96" y2="99.06" width="0.1524" layer="91"/>
@@ -11152,7 +11152,7 @@ verwendet wird. </text>
 <wire x1="226.06" y1="111.76" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
 <junction x="226.06" y="96.52"/>
 <label x="226.06" y="111.76" size="1.778" layer="95"/>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="86.36" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
 <junction x="210.82" y="96.52"/>
 </segment>
@@ -11201,7 +11201,7 @@ verwendet wird. </text>
 <net name="N$9" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="RX0BF"/>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="76.2" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="81.28" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -11211,7 +11211,7 @@ verwendet wird. </text>
 <pinref part="IC1" gate="G$1" pin="RX1BF"/>
 <wire x1="68.58" y1="78.74" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="68.58" x2="68.58" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -11226,18 +11226,18 @@ verwendet wird. </text>
 <wire x1="157.48" y1="129.54" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
 <junction x="157.48" y="99.06"/>
 <label x="160.02" y="106.68" size="1.778" layer="95" rot="R90"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="157.48" y1="99.06" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="CS_J1" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
 <pinref part="CS2" gate="1" pin="1"/>
 <wire x1="50.8" y1="116.84" x2="35.56" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="CS" class="0">
 <segment>
 <pinref part="CS1" gate="1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="CS"/>
@@ -11291,11 +11291,11 @@ verwendet wird. </text>
 <junction x="218.44" y="91.44"/>
 <wire x1="157.48" y1="68.58" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
 <junction x="170.18" y="68.58"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <label x="162.56" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="CS_INT" class="0">
 <segment>
 <pinref part="CAN1" gate="G$1" pin="INT"/>
 <pinref part="INT" gate="1" pin="1"/>
@@ -11307,31 +11307,31 @@ verwendet wird. </text>
 <wire x1="45.72" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="LED2" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="C"/>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="TERM" class="0">
 <segment>
 <pinref part="CON8" gate="G$1" pin="1"/>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="210.82" y1="73.66" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="LED1" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="LED3" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
