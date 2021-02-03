@@ -10767,9 +10767,11 @@ wird der Chip Select über CS1 gemacht, bei der anderen
 über CS2. CS1 muss dazu getrennt werden.
 Falls man mal 3 Platinen stapelm will, dann muss INT
 getrennt werden und CS3 verbunden werden.</text>
-<text x="162.56" y="55.88" size="1.778" layer="97">Senkrecht montierter Stecker
+<text x="162.56" y="63.5" size="1.778" layer="97" align="top-left">Senkrecht montierter Stecker
 (Mit etwas Abstand wenn IC-Fassung
-für IC1 verwendet wird)</text>
+für IC1 verwendet wird)
+Vermutlich kann man das IC trotzdem
+nicht mehr wechseln ;-(</text>
 <text x="182.88" y="124.46" size="1.778" layer="97">Am Platinenrand montierte Stecker.
 Dazu wird die Platine zwischen die Pins
 des Steckers geschoben und verlötet. 
@@ -10794,6 +10796,11 @@ billige IC Fassung gesteckt
 werden wenn die Pins 
 gerade gebogen werden.
 Nicht in eine Präzisionsfassung.</text>
+<text x="220.98" y="63.5" size="1.778" layer="97">R1 wird auf der
+Platinenunterseite
+platziert wenn der 
+stehende Sub-9
+verwendet wird. </text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -10917,13 +10924,13 @@ Nicht in eine Präzisionsfassung.</text>
 <instance part="CS3" gate="1" x="55.88" y="109.22" smashed="yes" rot="MR180">
 <attribute name="NAME" x="52.578" y="112.776" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="R1" gate="G$1" x="205.74" y="81.28" smashed="yes" rot="R90">
-<attribute name="NAME" x="204.2414" y="77.47" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="204.216" y="81.28" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="210.82" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="209.3214" y="77.47" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="209.296" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="CON8" gate="G$1" x="205.74" y="66.04" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="200.66" y="63.5" size="1.778" layer="96" rot="MR90"/>
-<attribute name="NAME" x="211.582" y="63.5" size="1.778" layer="95" rot="MR90"/>
+<instance part="CON8" gate="G$1" x="210.82" y="66.04" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="205.74" y="63.5" size="1.778" layer="96" rot="MR90"/>
+<attribute name="NAME" x="216.662" y="63.5" size="1.778" layer="95" rot="MR90"/>
 </instance>
 <instance part="LED1" gate="G$1" x="157.48" y="83.82" smashed="yes">
 <attribute name="NAME" x="153.416" y="79.121" size="1.778" layer="95" rot="R90"/>
@@ -11086,7 +11093,8 @@ Nicht in eine Präzisionsfassung.</text>
 <wire x1="153.67" y1="93.98" x2="180.34" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="93.98" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="93.98" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="93.98" x2="231.14" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="93.98" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="CAN1" gate="G$2" pin="CAN_L"/>
@@ -11102,7 +11110,6 @@ Nicht in eine Präzisionsfassung.</text>
 <wire x1="208.28" y1="104.14" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
 <junction x="208.28" y="93.98"/>
 <pinref part="CON8" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="93.98" x2="208.28" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="X5" gate="G$3" pin="KL"/>
 <wire x1="236.22" y1="116.84" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="116.84" x2="223.52" y2="93.98" width="0.1524" layer="91"/>
@@ -11112,6 +11119,8 @@ Nicht in eine Präzisionsfassung.</text>
 <wire x1="223.52" y1="121.92" x2="223.52" y2="116.84" width="0.1524" layer="91"/>
 <junction x="223.52" y="116.84"/>
 <label x="226.06" y="121.92" size="1.778" layer="95"/>
+<wire x1="213.36" y1="73.66" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<junction x="213.36" y="93.98"/>
 </segment>
 </net>
 <net name="CAN_H" class="0">
@@ -11123,7 +11132,8 @@ Nicht in eine Präzisionsfassung.</text>
 <wire x1="231.14" y1="96.52" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
 <label x="167.64" y="96.52" size="1.778" layer="95"/>
 <pinref part="X2" gate="-1" pin="7"/>
-<wire x1="226.06" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="96.52" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="96.52" x2="153.67" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="68.58" x2="180.34" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
@@ -11142,6 +11152,9 @@ Nicht in eine Präzisionsfassung.</text>
 <wire x1="226.06" y1="111.76" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
 <junction x="226.06" y="96.52"/>
 <label x="226.06" y="111.76" size="1.778" layer="95"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="86.36" x2="210.82" y2="96.52" width="0.1524" layer="91"/>
+<junction x="210.82" y="96.52"/>
 </segment>
 </net>
 <net name="CS_CAN0" class="0">
@@ -11276,8 +11289,6 @@ Nicht in eine Präzisionsfassung.</text>
 <junction x="205.74" y="91.44"/>
 <wire x1="218.44" y1="91.44" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
 <junction x="218.44" y="91.44"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="86.36" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="68.58" x2="170.18" y2="68.58" width="0.1524" layer="91"/>
 <junction x="170.18" y="68.58"/>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -11307,7 +11318,7 @@ Nicht in eine Präzisionsfassung.</text>
 <segment>
 <pinref part="CON8" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="73.66" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="73.66" x2="210.82" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
