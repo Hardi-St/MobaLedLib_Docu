@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10321,6 +10321,10 @@ part number 2062-2P from STA</description>
 <pad name="P$2" x="0" y="5.08" drill="1.1" diameter="1.9"/>
 <pad name="P$3" x="2.54" y="5.08" drill="1.1" diameter="1.9"/>
 </package>
+<package name="1X01S">
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.778" shape="octagon" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="M01">
@@ -10344,6 +10348,10 @@ part number 2062-2P from STA</description>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="M01S">
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.6096" layer="94"/>
+<pin name="1" x="0" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10628,6 +10636,35 @@ part number 2062-2P from STA</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="M01S" prefix="J" uservalue="yes">
+<description>Standard 2-pin 0.1" header. Use with &lt;br&gt;
+- straight break away headers ( PRT-00116)&lt;br&gt;
+- right angle break away headers (PRT-00553)&lt;br&gt;
+- swiss pins (PRT-00743)&lt;br&gt;
+- machine pins (PRT-00117)&lt;br&gt;
+- female headers (PRT-00115)&lt;br&gt;&lt;br&gt;
+
+ Molex polarized connector foot print use with: PRT-08233 with associated crimp pins and housings.&lt;br&gt;&lt;br&gt;
+
+2.54_SCREWTERM for use with  PRT-10571.&lt;br&gt;&lt;br&gt;
+
+3.5mm Screw Terminal footprints for  PRT-08084&lt;br&gt;&lt;br&gt;
+
+5mm Screw Terminal footprints for use with PRT-08432</description>
+<gates>
+<gate name="G$1" symbol="M01S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01S">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="Arduino_fuer_LEDs_DCC_2">
@@ -10757,6 +10794,11 @@ by exp-lbrs.ulp</description>
 <part name="LED3" library="led" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/1" value="Green"/>
 <part name="R3" library="resistor" deviceset="R-EU_" device="M0805" value="1K"/>
 <part name="X5" library="Arduino_fuer_LEDs_DCC_2" deviceset="AK500/2+M" device=""/>
+<part name="J2" library="SparkFun-Connectors" deviceset="M01S" device=""/>
+<part name="J3" library="SparkFun-Connectors" deviceset="M01S" device=""/>
+<part name="J4" library="SparkFun-Connectors" deviceset="M01S" device=""/>
+<part name="C4" library="capacitor-wima" deviceset="C" device="2.5/2" value="100 nF"/>
+<part name="J5" library="SparkFun-Connectors" deviceset="M01S" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10945,6 +10987,14 @@ verwendet wird. </text>
 <instance part="X5" gate="G$3" x="241.3" y="116.84" smashed="yes" rot="R180">
 <attribute name="VALUE" x="252.73" y="125.603" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="J2" gate="G$1" x="109.22" y="76.2" smashed="yes" rot="R90"/>
+<instance part="J3" gate="G$1" x="109.22" y="86.36" smashed="yes" rot="R90"/>
+<instance part="J4" gate="G$1" x="109.22" y="101.6" smashed="yes" rot="R90"/>
+<instance part="C4" gate="G$1" x="162.56" y="124.46" smashed="yes" rot="R180">
+<attribute name="NAME" x="166.116" y="124.079" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="171.196" y="129.159" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="J5" gate="G$1" x="162.56" y="129.54" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -11012,6 +11062,8 @@ verwendet wird. </text>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="101.6" x2="104.14" y2="101.6" width="0.1524" layer="91"/>
 <junction x="104.14" y="101.6"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<junction x="109.22" y="101.6"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VCC1"/>
@@ -11053,6 +11105,8 @@ verwendet wird. </text>
 <wire x1="104.14" y1="76.2" x2="101.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="77.47" x2="104.14" y2="76.2" width="0.1524" layer="91"/>
 <junction x="104.14" y="76.2"/>
+<pinref part="J2" gate="G$1" pin="1"/>
+<junction x="109.22" y="76.2"/>
 </segment>
 </net>
 <net name="OSC1" class="0">
@@ -11064,6 +11118,8 @@ verwendet wird. </text>
 <wire x1="104.14" y1="86.36" x2="101.6" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="85.09" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <junction x="104.14" y="86.36"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<junction x="109.22" y="86.36"/>
 </segment>
 </net>
 <net name="VCC2_EXT" class="0">
@@ -11228,6 +11284,11 @@ verwendet wird. </text>
 <label x="160.02" y="106.68" size="1.778" layer="95" rot="R90"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="157.48" y1="99.06" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="129.54" x2="162.56" y2="129.54" width="0.1524" layer="91"/>
+<junction x="157.48" y="129.54"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+<junction x="162.56" y="129.54"/>
 </segment>
 </net>
 <net name="CS_J1" class="0">
@@ -11279,10 +11340,11 @@ verwendet wird. </text>
 <wire x1="236.22" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
 <junction x="193.04" y="91.44"/>
 <wire x1="152.4" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="124.46" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="124.46" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
 <junction x="154.94" y="91.44"/>
 <pinref part="IC3" gate="G$1" pin="G-OUT"/>
 <pinref part="X4" gate="-1" pin="3"/>
+<wire x1="154.94" y1="121.92" x2="154.94" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="104.14" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="91.44" x2="193.04" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="91.44" x2="205.74" y2="91.44" width="0.1524" layer="91"/>
@@ -11293,6 +11355,9 @@ verwendet wird. </text>
 <junction x="170.18" y="68.58"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <label x="162.56" y="68.58" size="1.778" layer="95"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<junction x="154.94" y="121.92"/>
+<wire x1="154.94" y1="121.92" x2="162.56" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CS_INT" class="0">
