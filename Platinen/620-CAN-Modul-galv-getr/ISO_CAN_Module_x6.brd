@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="6.25" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -32,9 +32,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -9864,6 +9864,18 @@
 <text x="88.36851875" y="91.156525" size="0.8128" layer="25" ratio="10">X3</text>
 <text x="75.65581875" y="106.777525" size="0.8128" layer="25" ratio="10" rot="R270">X4</text>
 <text x="89.87981875" y="102.237275" size="1.016" layer="25" ratio="10" rot="R90">X5</text>
+<text x="63.46381875" y="21.326525" size="0.889" layer="26" rot="MR0">R3</text>
+<text x="63.46381875" y="21.326525" size="0.889" layer="26" rot="MR0">R3</text>
+<text x="78.74625" y="35.5475" size="1.016" layer="26" rot="MR270">EXT_PWR</text>
+<text x="78.5875" y="64.28125" size="1.016" layer="26" rot="MR270">EXT_PWR</text>
+<text x="42.55125" y="64.44" size="1.016" layer="26" rot="MR270">EXT_PWR</text>
+<text x="42.55125" y="93.3325" size="1.016" layer="26" rot="MR270">EXT_PWR</text>
+<text x="78.74625" y="93.3325" size="1.016" layer="26" rot="MR270">EXT_PWR</text>
+<text x="62.8525" y="27.4575" size="1.016" layer="26" rot="MR0">INT</text>
+<text x="62.8525" y="56.35" size="1.016" layer="26" rot="MR0">INT</text>
+<text x="26.6575" y="56.35" size="1.016" layer="26" rot="MR0">INT</text>
+<text x="26.6575" y="85.40125" size="1.016" layer="26" rot="MR0">INT</text>
+<text x="62.69375" y="85.40125" size="1.016" layer="26" rot="MR0">INT</text>
 </plain>
 <libraries>
 <library name="capacitor-wima">
@@ -10026,7 +10038,7 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 Based on the previous libraries:
 &lt;ul&gt;
 &lt;li&gt;r.lbr
-&lt;li&gt;cap.lbr 
+&lt;li&gt;cap.lbr
 &lt;li&gt;cap-fe.lbr
 &lt;li&gt;captant.lbr
 &lt;li&gt;polcap.lbr
@@ -11399,7 +11411,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
 &lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
@@ -11492,6 +11504,8 @@ by exp-lbrs.ulp</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="DATE" value="05.02.21"/>
+<attribute name="VERSION" value="V. 1.0"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -11502,10 +11516,10 @@ by exp-lbrs.ulp</description>
 <designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
+Die Standard-Design-Rules sind so gewählt, dass sie für
+die meisten Anwendungen passen. Sollte ihre Platine
 besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
+Einstellungen hier und speichern die Design Rules unter
 einem neuen Namen ab.</description>
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
@@ -11819,9 +11833,7 @@ design rules under a new name.</description>
 <element name="IC6" library="MLL-Dominik-Hardi" package="DCDC-TEA_NME" value="B0505S-1W" x="48.6476" y="54.800075" smashed="yes" rot="R180">
 <attribute name="VALUE" x="46.7936" y="53.072575" size="0.889" layer="21" rot="R180"/>
 </element>
-<element name="EXT_PWR1" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="40.0751" y="62.420075" smashed="yes" rot="MR0">
-<attribute name="NAME" x="42.6151" y="65.233075" size="1.016" layer="22" rot="MR270"/>
-</element>
+<element name="EXT_PWR1" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="40.0751" y="62.420075" smashed="yes" rot="MR0"/>
 <element name="J6" library="SparkFun-Connectors" package="1X01" value="" x="20.0726" y="74.167575" smashed="yes">
 <attribute name="VALUE" x="18.8026" y="70.992575" size="1.27" layer="27"/>
 </element>
@@ -11835,9 +11847,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="41.3451" y="82.244775" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="37.2176" y="71.449775" size="0.889" layer="21" ratio="10"/>
 </element>
-<element name="INT1" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="28.3276" y="57.022575" smashed="yes" rot="MR180">
-<attribute name="NAME" x="26.7401" y="56.387575" size="1.016" layer="22" rot="MR0"/>
-</element>
+<element name="INT1" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="28.3276" y="57.022575" smashed="yes" rot="MR180"/>
 <element name="CS6" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="26.4226" y="65.277575" smashed="yes" rot="MR180"/>
 <element name="R7" library="resistor" package="0204/7" value="120" x="32.7726" y="72.897575" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="32.3789" y="71.830775" size="0.889" layer="22" ratio="10" rot="MR90"/>
@@ -11907,9 +11917,7 @@ design rules under a new name.</description>
 <element name="IC9" library="MLL-Dominik-Hardi" package="DCDC-TEA_NME" value="B0505S-1W" x="48.6476" y="83.727025" smashed="yes" rot="R180">
 <attribute name="VALUE" x="46.7936" y="81.999525" size="0.889" layer="21" rot="R180"/>
 </element>
-<element name="EXT_PWR2" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="40.0751" y="91.347025" smashed="yes" rot="MR0">
-<attribute name="NAME" x="42.6151" y="94.160025" size="1.016" layer="22" rot="MR270"/>
-</element>
+<element name="EXT_PWR2" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="40.0751" y="91.347025" smashed="yes" rot="MR0"/>
 <element name="J11" library="SparkFun-Connectors" package="1X01" value="" x="20.0726" y="103.094525" smashed="yes">
 <attribute name="VALUE" x="18.8026" y="99.919525" size="1.27" layer="27"/>
 </element>
@@ -11923,9 +11931,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="41.3451" y="111.171725" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="37.2176" y="100.376725" size="0.889" layer="21" ratio="10"/>
 </element>
-<element name="INT2" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="28.3276" y="85.949525" smashed="yes" rot="MR180">
-<attribute name="NAME" x="26.7401" y="85.314525" size="1.016" layer="22" rot="MR0"/>
-</element>
+<element name="INT2" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="28.3276" y="85.949525" smashed="yes" rot="MR180"/>
 <element name="CS9" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="26.4226" y="94.204525" smashed="yes" rot="MR180"/>
 <element name="R11" library="resistor" package="0204/7" value="120" x="32.7726" y="101.824525" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="32.3789" y="100.757725" size="0.889" layer="22" ratio="10" rot="MR90"/>
@@ -11995,9 +12001,7 @@ design rules under a new name.</description>
 <element name="IC12" library="MLL-Dominik-Hardi" package="DCDC-TEA_NME" value="B0505S-1W" x="84.73631875" y="25.873125" smashed="yes" rot="R180">
 <attribute name="VALUE" x="82.88231875" y="24.145625" size="0.889" layer="21" rot="R180"/>
 </element>
-<element name="EXT_PWR3" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="76.16381875" y="33.493125" smashed="yes" rot="MR0">
-<attribute name="NAME" x="78.70381875" y="36.306125" size="1.016" layer="22" rot="MR270"/>
-</element>
+<element name="EXT_PWR3" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="76.16381875" y="33.493125" smashed="yes" rot="MR0"/>
 <element name="J16" library="SparkFun-Connectors" package="1X01" value="" x="56.16131875" y="45.240625" smashed="yes">
 <attribute name="VALUE" x="54.89131875" y="42.065625" size="1.27" layer="27"/>
 </element>
@@ -12011,9 +12015,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="77.43381875" y="53.317825" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="73.30631875" y="42.522825" size="0.889" layer="21" ratio="10"/>
 </element>
-<element name="INT3" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="64.41631875" y="28.095625" smashed="yes" rot="MR180">
-<attribute name="NAME" x="62.82881875" y="27.460625" size="1.016" layer="22" rot="MR0"/>
-</element>
+<element name="INT3" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="64.41631875" y="28.095625" smashed="yes" rot="MR180"/>
 <element name="CS12" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="62.51131875" y="36.350625" smashed="yes" rot="MR180"/>
 <element name="R15" library="resistor" package="0204/7" value="120" x="68.86131875" y="43.970625" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="68.46761875" y="42.903825" size="0.889" layer="22" ratio="10" rot="MR90"/>
@@ -12083,9 +12085,7 @@ design rules under a new name.</description>
 <element name="IC15" library="MLL-Dominik-Hardi" package="DCDC-TEA_NME" value="B0505S-1W" x="84.73631875" y="54.800075" smashed="yes" rot="R180">
 <attribute name="VALUE" x="82.88231875" y="53.072575" size="0.889" layer="21" rot="R180"/>
 </element>
-<element name="EXT_PWR4" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="76.16381875" y="62.420075" smashed="yes" rot="MR0">
-<attribute name="NAME" x="78.70381875" y="65.233075" size="1.016" layer="22" rot="MR270"/>
-</element>
+<element name="EXT_PWR4" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="76.16381875" y="62.420075" smashed="yes" rot="MR0"/>
 <element name="J21" library="SparkFun-Connectors" package="1X01" value="" x="56.16131875" y="74.167575" smashed="yes">
 <attribute name="VALUE" x="54.89131875" y="70.992575" size="1.27" layer="27"/>
 </element>
@@ -12100,7 +12100,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="73.30631875" y="71.449775" size="0.889" layer="21" ratio="10"/>
 </element>
 <element name="INT4" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="64.41631875" y="57.022575" smashed="yes" rot="MR180">
-<attribute name="NAME" x="62.82881875" y="56.387575" size="1.016" layer="22" rot="MR0"/>
+<attribute name="NAME" x="62.82881875" y="56.387575" size="1.016" layer="21"/>
 </element>
 <element name="CS15" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="62.51131875" y="65.277575" smashed="yes" rot="MR180"/>
 <element name="R19" library="resistor" package="0204/7" value="120" x="68.86131875" y="72.897575" smashed="yes" rot="MR90">
@@ -12171,9 +12171,7 @@ design rules under a new name.</description>
 <element name="IC18" library="MLL-Dominik-Hardi" package="DCDC-TEA_NME" value="B0505S-1W" x="84.73631875" y="83.727025" smashed="yes" rot="R180">
 <attribute name="VALUE" x="82.88231875" y="81.999525" size="0.889" layer="21" rot="R180"/>
 </element>
-<element name="EXT_PWR5" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="76.16381875" y="91.347025" smashed="yes" rot="MR0">
-<attribute name="NAME" x="78.70381875" y="94.160025" size="1.016" layer="22" rot="MR270"/>
-</element>
+<element name="EXT_PWR5" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="76.16381875" y="91.347025" smashed="yes" rot="MR0"/>
 <element name="J26" library="SparkFun-Connectors" package="1X01" value="" x="56.16131875" y="103.094525" smashed="yes">
 <attribute name="VALUE" x="54.89131875" y="99.919525" size="1.27" layer="27"/>
 </element>
@@ -12187,9 +12185,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="77.43381875" y="111.171725" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="73.30631875" y="100.376725" size="0.889" layer="21" ratio="10"/>
 </element>
-<element name="INT5" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="64.41631875" y="85.949525" smashed="yes" rot="MR180">
-<attribute name="NAME" x="62.82881875" y="85.314525" size="1.016" layer="22" rot="MR0"/>
-</element>
+<element name="INT5" library="SparkFun-Retired" package="SJ_2S-TRACE" value="SOLDERJUMPERTRACE" x="64.41631875" y="85.949525" smashed="yes" rot="MR180"/>
 <element name="CS18" library="SparkFun-Retired" package="SJ_2S-NO" value="SOLDERJUMPERNO" x="62.51131875" y="94.204525" smashed="yes" rot="MR180"/>
 <element name="R23" library="resistor" package="0204/7" value="120" x="68.86131875" y="101.824525" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="68.46761875" y="100.757725" size="0.889" layer="22" ratio="10" rot="MR90"/>
