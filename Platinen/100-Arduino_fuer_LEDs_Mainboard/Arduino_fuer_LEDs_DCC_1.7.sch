@@ -12818,7 +12818,7 @@ Das geht aber nur bei wenigen LEDs.</text>
 dann kann OK1 entfallen. Stattdessen wird eine Diode Pin3 nach Pin2
 verwendet und NO_OPTO verbunden.
 R8 muss dann mit 33K bestückt werden. (Noch nicht getestet)</text>
-<text x="113.03" y="36.83" size="1.778" layer="97">Achtung: der LM293N
+<text x="113.03" y="36.83" size="1.778" layer="97">Achtung: der LM292N
 kann NICHT benutzt
 werden!</text>
 <text x="60.96" y="5.08" size="1.524" layer="97" align="top-left">SJ2 ist normalerweise verbunden.
