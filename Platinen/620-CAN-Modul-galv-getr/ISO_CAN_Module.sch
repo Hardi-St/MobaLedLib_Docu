@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10838,7 +10838,7 @@ billige IC Fassung gesteckt
 werden wenn die Pins 
 gerade gebogen werden.
 Nicht in eine Präzisionsfassung.</text>
-<text x="220.98" y="63.5" size="1.778" layer="97">R1 wird auf der
+<text x="220.98" y="63.5" size="1.778" layer="97">R4 wird auf der
 Platinenunterseite
 platziert wenn der 
 stehende Sub-9
