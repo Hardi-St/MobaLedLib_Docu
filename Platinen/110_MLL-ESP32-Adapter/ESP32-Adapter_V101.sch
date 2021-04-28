@@ -835,14 +835,14 @@
 <text x="-7.62" y="25.4" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 <text x="2.54" y="-12.7" size="3.81" layer="97" rot="R90">ESP32-38</text>
-<pin name="SD2" x="-15.24" y="-17.78" length="middle" direction="in"/>
-<pin name="SD3" x="-15.24" y="-20.32" length="middle" direction="in"/>
-<pin name="GND_1" x="-15.24" y="-22.86" length="middle" direction="pwr"/>
+<pin name="SD2" x="-15.24" y="-17.78" length="middle" direction="nc"/>
+<pin name="SD3" x="-15.24" y="-20.32" length="middle" direction="nc"/>
+<pin name="CMD" x="-15.24" y="-22.86" length="middle" direction="nc"/>
 <pin name="D0" x="17.78" y="-12.7" length="middle" direction="in" rot="R180"/>
-<pin name="CLK" x="17.78" y="-25.4" length="middle" direction="in" rot="R180"/>
-<pin name="SD0" x="17.78" y="-22.86" length="middle" direction="in" rot="R180"/>
+<pin name="CLK" x="17.78" y="-25.4" length="middle" direction="nc" rot="R180"/>
+<pin name="SD0" x="17.78" y="-22.86" length="middle" direction="nc" rot="R180"/>
 <pin name="GND_2" x="17.78" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="SD1" x="17.78" y="-20.32" length="middle" direction="in" rot="R180"/>
+<pin name="SD1" x="17.78" y="-20.32" length="middle" direction="nc" rot="R180"/>
 </symbol>
 <symbol name="ESP32-30">
 <wire x1="-10.16" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
@@ -1070,6 +1070,7 @@
 <device name="" package="ESP32-38">
 <connects>
 <connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CMD" pad="GND_1"/>
 <connect gate="G$1" pin="D0" pad="D0"/>
 <connect gate="G$1" pin="D12" pad="D12"/>
 <connect gate="G$1" pin="D13" pad="D13"/>
@@ -1094,7 +1095,6 @@
 <connect gate="G$1" pin="D5" pad="D5"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
 <connect gate="G$1" pin="GND_2" pad="GND_2"/>
 <connect gate="G$1" pin="GND_3" pad="GND_3"/>
 <connect gate="G$1" pin="RX0" pad="RX0"/>
@@ -1115,6 +1115,7 @@
 <device name="D" package="ESP32-38D">
 <connects>
 <connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CMD" pad="GND_1"/>
 <connect gate="G$1" pin="D0" pad="D0"/>
 <connect gate="G$1" pin="D12" pad="D12"/>
 <connect gate="G$1" pin="D13" pad="D13"/>
@@ -1139,7 +1140,6 @@
 <connect gate="G$1" pin="D5" pad="D5"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
 <connect gate="G$1" pin="GND_2" pad="GND_2"/>
 <connect gate="G$1" pin="GND_3" pad="GND_3"/>
 <connect gate="G$1" pin="RX0" pad="RX0"/>
@@ -1160,6 +1160,7 @@
 <device name="9" package="ESP32-38_9">
 <connects>
 <connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CMD" pad="GND_1"/>
 <connect gate="G$1" pin="D0" pad="D0"/>
 <connect gate="G$1" pin="D12" pad="D12"/>
 <connect gate="G$1" pin="D13" pad="D13"/>
@@ -1184,7 +1185,6 @@
 <connect gate="G$1" pin="D5" pad="D5"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND_1" pad="GND_1"/>
 <connect gate="G$1" pin="GND_2" pad="GND_2"/>
 <connect gate="G$1" pin="GND_3" pad="GND_3"/>
 <connect gate="G$1" pin="RX0" pad="RX0"/>
@@ -1205,6 +1205,7 @@
 <device name="D_OHNE" package="ESP32-38D_0">
 <connects>
 <connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CMD" pad="CMD"/>
 <connect gate="G$1" pin="D0" pad="D0"/>
 <connect gate="G$1" pin="D12" pad="D12"/>
 <connect gate="G$1" pin="D13" pad="D13"/>
@@ -1229,7 +1230,6 @@
 <connect gate="G$1" pin="D5" pad="D5"/>
 <connect gate="G$1" pin="EN" pad="EN"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GND_1" pad="CMD"/>
 <connect gate="G$1" pin="GND_2" pad="GND_2"/>
 <connect gate="G$1" pin="GND_3" pad="GND_3"/>
 <connect gate="G$1" pin="RX0" pad="RX0"/>
