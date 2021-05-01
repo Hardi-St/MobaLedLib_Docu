@@ -14412,7 +14412,7 @@ Based on the following sources:
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="2.0"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="O1" library="con-harting-ml" deviceset="ML6" device="" value=" "/>
+<part name="IN" library="con-harting-ml" deviceset="ML6" device="" value=" "/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -14546,7 +14546,7 @@ Blau = 255 =&gt; Schneller
 Wenn ein DIL WS2811 verwendet ist, dann
 bewegt sich der Stepper 5 mal langsamer. 
 =&gt; Die Jumper müssen anders gesetzt sein.</text>
-<text x="196.85" y="135.89" size="1.778" layer="97">12V für Stepper</text>
+<text x="196.85" y="148.59" size="1.778" layer="97">12V für Stepper</text>
 <text x="241.3" y="20.32" size="2.54" layer="92">by Hardi</text>
 <text x="215.9" y="20.32" size="3.81" layer="97">Ver.: 1.0</text>
 <text x="162.56" y="6.35" size="4.064" layer="97" distance="40">Einfache Schritt-
@@ -14600,7 +14600,7 @@ Abstimmungen
 machen.</text>
 <text x="72.39" y="39.37" size="1.778" layer="97" align="top-left">LED in Weiche
 oder Signal</text>
-<text x="196.85" y="110.49" size="1.778" layer="97" rot="R180">Bei einem kleinen
+<text x="196.85" y="123.19" size="1.778" layer="97" rot="R180">Bei einem kleinen
 Stepper reichen 100uF</text>
 <wire x1="245.11" y1="92.71" x2="245.11" y2="85.09" width="0.1524" layer="97"/>
 </plain>
@@ -14625,16 +14625,16 @@ Stepper reichen 100uF</text>
 </instance>
 <instance part="GND8" gate="1" x="218.44" y="66.04" smashed="yes" rot="MR0"/>
 <instance part="GND11" gate="1" x="226.06" y="86.36" smashed="yes" rot="MR270"/>
-<instance part="C5" gate="G$1" x="200.66" y="109.22" smashed="yes">
-<attribute name="NAME" x="200.1774" y="102.743" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="194.183" y="113.5126" size="1.778" layer="96"/>
+<instance part="C5" gate="G$1" x="200.66" y="121.92" smashed="yes">
+<attribute name="NAME" x="200.1774" y="115.443" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="194.183" y="126.2126" size="1.778" layer="96"/>
 </instance>
 <instance part="GND28" gate="1" x="223.52" y="63.5" smashed="yes" rot="MR0"/>
-<instance part="GND29" gate="1" x="200.66" y="101.6" smashed="yes" rot="MR0"/>
-<instance part="GND30" gate="1" x="208.28" y="101.6" smashed="yes" rot="MR0"/>
-<instance part="C10" gate="G$1" x="208.28" y="109.22" smashed="yes">
-<attribute name="NAME" x="206.629" y="101.854" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="212.979" y="101.854" size="1.778" layer="96" rot="R90"/>
+<instance part="GND29" gate="1" x="200.66" y="114.3" smashed="yes" rot="MR0"/>
+<instance part="GND30" gate="1" x="208.28" y="114.3" smashed="yes" rot="MR0"/>
+<instance part="C10" gate="G$1" x="208.28" y="121.92" smashed="yes">
+<attribute name="NAME" x="206.629" y="114.554" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="212.979" y="114.554" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C11" gate="G$1" x="223.52" y="71.12" smashed="yes">
 <attribute name="NAME" x="226.314" y="68.961" size="1.778" layer="95"/>
@@ -14661,15 +14661,15 @@ Stepper reichen 100uF</text>
 <attribute name="VALUE" x="34.29" y="89.916" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND2" gate="1" x="40.64" y="88.9" smashed="yes" rot="R270"/>
-<instance part="O1" gate="1" x="20.32" y="66.04" smashed="yes" rot="R180">
-<attribute name="VALUE" x="24.13" y="73.66" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="24.13" y="60.198" size="1.778" layer="95" rot="R180"/>
+<instance part="IN" gate="1" x="17.78" y="66.04" smashed="yes" rot="R180">
+<attribute name="VALUE" x="21.59" y="73.66" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="21.59" y="60.198" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="P+4" gate="1" x="12.7" y="71.12" smashed="yes">
-<attribute name="VALUE" x="10.16" y="71.12" size="1.778" layer="96"/>
+<instance part="P+4" gate="1" x="10.16" y="71.12" smashed="yes">
+<attribute name="VALUE" x="7.62" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="12.7" y="60.96" smashed="yes">
-<attribute name="VALUE" x="10.16" y="58.42" size="1.778" layer="96"/>
+<instance part="GND3" gate="1" x="10.16" y="60.96" smashed="yes">
+<attribute name="VALUE" x="7.62" y="58.42" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="1" x="58.42" y="111.76" smashed="yes">
 <attribute name="VALUE" x="60.96" y="111.76" size="1.778" layer="96" rot="R90"/>
@@ -14686,8 +14686,8 @@ Stepper reichen 100uF</text>
 <instance part="GND1" gate="1" x="63.5" y="93.98" smashed="yes" rot="R270">
 <attribute name="VALUE" x="60.96" y="96.52" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="6=12V" gate="1" x="185.42" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="187.96" y="121.92" size="1.778" layer="95" rot="R270"/>
+<instance part="6=12V" gate="1" x="30.48" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="33.02" y="50.8" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="GND6" gate="1" x="58.42" y="53.34" smashed="yes">
 <attribute name="VALUE" x="55.88" y="50.8" size="1.778" layer="96"/>
@@ -14768,7 +14768,7 @@ Stepper reichen 100uF</text>
 <instance part="H2" gate="G$1" x="236.22" y="170.18" smashed="yes">
 <attribute name="NAME" x="238.252" y="170.7642" size="1.778" layer="95"/>
 </instance>
-<instance part="GND10" gate="1" x="198.12" y="119.38" smashed="yes" rot="MR0"/>
+<instance part="GND10" gate="1" x="198.12" y="132.08" smashed="yes" rot="MR0"/>
 <instance part="SV1" gate="1" x="45.72" y="33.02" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="33.02" y="31.75" size="1.778" layer="96" rot="MR90"/>
 <attribute name="NAME" x="54.102" y="31.75" size="1.778" layer="95" rot="MR90"/>
@@ -14782,15 +14782,15 @@ Stepper reichen 100uF</text>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="X1" gate="G$1" x="198.12" y="132.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="200.279" y="125.73" size="1.016" layer="95" rot="R90"/>
+<instance part="X1" gate="G$1" x="198.12" y="144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="200.279" y="138.43" size="1.016" layer="95" rot="R90"/>
 </instance>
-<instance part="X1" gate="G$3" x="205.74" y="132.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="207.899" y="125.73" size="1.016" layer="95" rot="R90"/>
-<attribute name="VALUE" x="194.437" y="133.35" size="1.016" layer="96" rot="R270"/>
+<instance part="X1" gate="G$3" x="205.74" y="144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="207.899" y="138.43" size="1.016" layer="95" rot="R90"/>
+<attribute name="VALUE" x="194.437" y="146.05" size="1.016" layer="96" rot="R270"/>
 </instance>
-<instance part="X1" gate="G$2" x="213.36" y="132.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="215.519" y="125.73" size="1.016" layer="95" rot="R90"/>
+<instance part="X1" gate="G$2" x="213.36" y="144.78" smashed="yes" rot="R270">
+<attribute name="NAME" x="215.519" y="138.43" size="1.016" layer="95" rot="R90"/>
 </instance>
 <instance part="Q3" gate="1" x="99.06" y="132.08" smashed="yes">
 <attribute name="NAME" x="93.98" y="133.35" size="1.778" layer="95"/>
@@ -14925,11 +14925,11 @@ Stepper reichen 100uF</text>
 <wire x1="48.26" y1="43.18" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="O1" gate="1" pin="3"/>
+<pinref part="IN" gate="1" pin="3"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="12.7" y1="66.04" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="O1" gate="1" pin="5"/>
-<junction x="12.7" y="63.5"/>
+<wire x1="10.16" y1="66.04" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="IN" gate="1" pin="5"/>
+<junction x="10.16" y="63.5"/>
 </segment>
 <segment>
 <pinref part="U2R" gate="G$1" pin="GND"/>
@@ -14953,12 +14953,12 @@ Stepper reichen 100uF</text>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="KL"/>
-<wire x1="198.12" y1="127" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="139.7" x2="198.12" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="198.12" y1="121.92" x2="205.74" y2="121.92" width="0.1524" layer="91"/>
-<junction x="198.12" y="121.92"/>
+<wire x1="198.12" y1="134.62" x2="205.74" y2="134.62" width="0.1524" layer="91"/>
+<junction x="198.12" y="134.62"/>
 <pinref part="X1" gate="G$3" pin="KL"/>
-<wire x1="205.74" y1="121.92" x2="205.74" y2="127" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="134.62" x2="205.74" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -15008,7 +15008,7 @@ Stepper reichen 100uF</text>
 <pinref part="SV3" gate="1" pin="1"/>
 </segment>
 <segment>
-<pinref part="O1" gate="1" pin="1"/>
+<pinref part="IN" gate="1" pin="1"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -15235,12 +15235,12 @@ Stepper reichen 100uF</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<wire x1="27.94" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="68.58" x2="40.64" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U2R" gate="G$1" pin="DIN"/>
 <wire x1="40.64" y1="68.58" x2="40.64" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="68.58" x2="55.88" y2="68.58" width="0.1524" layer="91"/>
 <junction x="40.64" y="68.58"/>
-<pinref part="O1" gate="1" pin="2"/>
+<pinref part="IN" gate="1" pin="2"/>
 <wire x1="55.88" y1="68.58" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="68.58" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
 <junction x="55.88" y="68.58"/>
@@ -15271,7 +15271,7 @@ Stepper reichen 100uF</text>
 </net>
 <net name="N$4" class="0">
 <segment>
-<wire x1="27.94" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="66.04" x2="45.72" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="66.04" x2="45.72" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="66.04" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
 <junction x="45.72" y="66.04"/>
@@ -15280,7 +15280,7 @@ Stepper reichen 100uF</text>
 <wire x1="45.72" y1="104.14" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
 <junction x="45.72" y="104.14"/>
-<pinref part="O1" gate="1" pin="4"/>
+<pinref part="IN" gate="1" pin="4"/>
 <pinref part="SV1" gate="1" pin="4"/>
 <pinref part="SV3" gate="1" pin="4"/>
 <junction x="45.72" y="104.14"/>
@@ -15305,41 +15305,30 @@ Stepper reichen 100uF</text>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="O1" gate="1" pin="6"/>
-<pinref part="6=5V" gate="1" pin="1"/>
-<junction x="27.94" y="63.5"/>
-<wire x1="27.94" y1="55.88" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="1" pin="6"/>
 <pinref part="SV3" gate="1" pin="6"/>
-<wire x1="50.8" y1="40.64" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="55.88" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="55.88" x2="50.8" y2="55.88" width="0.1524" layer="91"/>
-<junction x="50.8" y="55.88"/>
-<pinref part="6=12V" gate="1" pin="1"/>
+<wire x1="50.8" y1="40.64" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="53.34" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="109.22" x2="55.88" y2="109.22" width="0.1524" layer="91"/>
 <junction x="50.8" y="109.22"/>
 <wire x1="55.88" y1="109.22" x2="55.88" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="124.46" x2="185.42" y2="124.46" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="6=12V" gate="1" pin="2"/>
-<wire x1="185.42" y1="114.3" x2="185.42" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="6=12V" gate="1" pin="1"/>
+<wire x1="35.56" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+<junction x="50.8" y="53.34"/>
+<wire x1="55.88" y1="124.46" x2="200.66" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="+"/>
-<wire x1="185.42" y1="111.76" x2="200.66" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="111.76" x2="208.28" y2="111.76" width="0.1524" layer="91"/>
-<junction x="200.66" y="111.76"/>
-<junction x="208.28" y="111.76"/>
-<wire x1="208.28" y1="111.76" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="111.76" x2="223.52" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="111.76" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="124.46" x2="208.28" y2="124.46" width="0.1524" layer="91"/>
+<junction x="200.66" y="124.46"/>
+<junction x="208.28" y="124.46"/>
+<wire x1="208.28" y1="124.46" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="124.46" x2="223.52" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="124.46" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="VMOT"/>
 <wire x1="223.52" y1="88.9" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$2" pin="KL"/>
-<wire x1="213.36" y1="127" x2="213.36" y2="111.76" width="0.1524" layer="91"/>
-<junction x="213.36" y="111.76"/>
+<wire x1="213.36" y1="139.7" x2="213.36" y2="124.46" width="0.1524" layer="91"/>
+<junction x="213.36" y="124.46"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -15589,6 +15578,16 @@ Stepper reichen 100uF</text>
 <wire x1="93.98" y1="50.8" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
 <junction x="93.98" y="63.5"/>
 <label x="83.82" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="IN" gate="1" pin="6"/>
+<pinref part="6=5V" gate="1" pin="1"/>
+<junction x="25.4" y="63.5"/>
+<wire x1="25.4" y1="53.34" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="6=12V" gate="1" pin="2"/>
 </segment>
 </net>
 </nets>
