@@ -1,0 +1,200 @@
+SheetName¯Servo Rot
+Version¯1
+Erste RGB LED: ¯7
+Startkanal der RGB LED: ¯0
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯1
+Bits pro Wert: ¯8
+Wert Min: ¯0
+Wert Max: ¯255
+Wert ausgeschaltet: ¯0
+Mode: ¯PF_No_SWITCH_OFF
+Analoges Überblenden: ¯
+Goto Mode: ¯1
+Goto Aktivierung: ¯Binary
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Servo_rot
+Dauer¯10 sek
+Goto Tabelle¯¯E¯S¯E
+LED_Tab¯Rot¯20¯0¯200¯0
+LED_Attr¯13¯i255
+RGB_LED_CheckBox¯           0
+msoTextBox2¯492;0;767;34,3926¯Dit blad toont de configuratie van een Duits ingangssignaal.
+De configuratie komt overeen met de vorige voorbeelden.{Attrib}B1,59
+msoTextBox1¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox3¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox0¯492;0;767;34,3926¯Dieses Blatt zeigt die Konfiguration eines Einfahrtsignals.Die Konfiguration entspricht den vorangegangenen Beispielen.{Attrib}B1,60
+msoShapeOval¯506,25;204;19;19¯LED_M99O01L1
+
+SheetName¯Servo Grün
+Version¯1
+Erste RGB LED: ¯7
+Startkanal der RGB LED: ¯1
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯1
+Bits pro Wert: ¯8
+Wert Min: ¯0
+Wert Max: ¯255
+Wert ausgeschaltet: ¯0
+Mode: ¯0
+Analoges Überblenden: ¯
+Goto Mode: ¯1
+Goto Aktivierung: ¯Binary
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Servo_gruen
+Dauer¯10 sek
+Goto Tabelle¯¯E¯S¯E
+LED_Tab¯Gruen¯20¯0¯200¯0
+LED_Attr¯13¯i5287936
+RGB_LED_CheckBox¯           0
+msoTextBox2¯492;0;767;34,3926¯Dit blad toont de configuratie van een Duits ingangssignaal.
+De configuratie komt overeen met de vorige voorbeelden.{Attrib}B1,59
+msoTextBox1¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox3¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox0¯492;0;767;34,3926¯Dieses Blatt zeigt die Konfiguration eines Einfahrtsignals.Die Konfiguration entspricht den vorangegangenen Beispielen.{Attrib}B1,60
+msoShapeOval¯506;204;19;19¯LED_M99O01L1
+
+SheetName¯Servo Blau
+Version¯1
+Erste RGB LED: ¯7
+Startkanal der RGB LED: ¯2
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯1
+Bits pro Wert: ¯8
+Wert Min: ¯0
+Wert Max: ¯255
+Wert ausgeschaltet: ¯0
+Mode: ¯0
+Analoges Überblenden: ¯
+Goto Mode: ¯1
+Goto Aktivierung: ¯Binary
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Servo_blau
+Dauer¯10 sek
+Goto Tabelle¯¯E¯S¯E
+LED_Tab¯Blau¯20¯0¯200¯0
+LED_Attr¯13¯i12611584
+RGB_LED_CheckBox¯           0
+msoTextBox2¯492;0;767;34,3926¯Dit blad toont de configuratie van een Duits ingangssignaal.
+De configuratie komt overeen met de vorige voorbeelden.{Attrib}B1,59
+msoTextBox1¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox3¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox0¯492;0;767;34,3926¯Dieses Blatt zeigt die Konfiguration eines Einfahrtsignals.Die Konfiguration entspricht den vorangegangenen Beispielen.{Attrib}B1,60
+msoShapeOval¯506;204;19;19¯LED_M99O01L1
+
+SheetName¯Herzstückpoli_1
+Version¯1
+Erste RGB LED: ¯7
+Startkanal der RGB LED: ¯0
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯2
+Bits pro Wert: ¯1
+Wert Min: ¯0
+Wert Max: ¯255
+Wert ausgeschaltet: ¯0
+Mode: ¯0
+Analoges Überblenden: ¯
+Goto Mode: ¯1
+Goto Aktivierung: ¯Binary
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Herz _1
+Dauer¯1500 ms¯400 ms¯400 ms¯1400 ms¯400 ms
+Goto Tabelle¯¯¯E¯S¯¯E
+LED_Tab¯Rot¯0¯255¯0¯0¯0¯0
+LED_Tab¯Grün¯0¯0¯0¯0¯255¯0
+LED_Attr¯13¯i255
+LED_Attr¯15¯i4697456
+RGB_LED_CheckBox¯           0
+msoTextBox2¯492;0;767;34,3926¯Dit blad toont de configuratie van een Duits ingangssignaal.
+De configuratie komt overeen met de vorige voorbeelden.{Attrib}B1,59
+msoTextBox1¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox3¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox0¯492;0;767;34,3926¯Dieses Blatt zeigt die Konfiguration eines Einfahrtsignals.Die Konfiguration entspricht den vorangegangenen Beispielen.{Attrib}B1,60
+msoShapeOval¯506;204;19;19¯LED_M99O01L1
+msoShapeOval¯536,25;204;19;19¯LED_M99O01L2
+
+SheetName¯Herzstückpoli_2
+Version¯1
+Erste RGB LED: ¯7
+Startkanal der RGB LED: ¯2
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯2
+Bits pro Wert: ¯1
+Wert Min: ¯0
+Wert Max: ¯255
+Wert ausgeschaltet: ¯0
+Mode: ¯0
+Analoges Überblenden: ¯
+Goto Mode: ¯1
+Goto Aktivierung: ¯Binary
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Herz _2
+Dauer¯1500 ms¯400 ms¯400 ms¯1400 ms¯400 ms
+Goto Tabelle¯¯¯E¯S¯¯E
+LED_Tab¯Blau 1. WS2811¯0¯255¯0¯0¯0¯0
+LED_Tab¯Rot 2. WS2811¯0¯0¯0¯0¯255¯0
+LED_Attr¯13¯i12611584
+LED_Attr¯15¯i255
+RGB_LED_CheckBox¯           0
+msoTextBox2¯492;0;767;34,3926¯Dit blad toont de configuratie van een Duits ingangssignaal.
+De configuratie komt overeen met de vorige voorbeelden.{Attrib}B1,59
+msoTextBox1¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox3¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox0¯492;0;767;34,3926¯Dieses Blatt zeigt die Konfiguration eines Einfahrtsignals.Die Konfiguration entspricht den vorangegangenen Beispielen.{Attrib}B1,60
+msoShapeOval¯506;204;19;19¯LED_M99O01L1
+msoShapeOval¯536;204;19;19¯LED_M99O01L2
+
+SheetName¯Herzstückpoli_3
+Version¯1
+Erste RGB LED: ¯7
+Startkanal der RGB LED: ¯1
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯2
+Bits pro Wert: ¯1
+Wert Min: ¯0
+Wert Max: ¯255
+Wert ausgeschaltet: ¯0
+Mode: ¯0
+Analoges Überblenden: ¯
+Goto Mode: ¯1
+Goto Aktivierung: ¯Binary
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Herz _3
+Dauer¯1500 ms¯400 ms¯10 ms
+Goto Tabelle¯¯¯E¯S¯¯E
+LED_Tab¯Gruen 2 WS2811¯0¯255¯0¯0¯0¯0
+LED_Tab¯Blau 2. WS2811¯0¯0¯0¯0¯255¯0
+LED_Attr¯13¯i5287936
+LED_Attr¯15¯i12611584
+RGB_LED_CheckBox¯           0
+msoTextBox2¯492;0;767;34,3926¯Dit blad toont de configuratie van een Duits ingangssignaal.
+De configuratie komt overeen met de vorige voorbeelden.{Attrib}B1,59
+msoTextBox1¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox3¯492;0;767;34,3926¯This sheet shows the configuration of an entry signal. The configuration corresponds to the previous examples.{Attrib}B1,56
+msoTextBox0¯492;0;767;34,3926¯Dieses Blatt zeigt die Konfiguration eines Einfahrtsignals.Die Konfiguration entspricht den vorangegangenen Beispielen.{Attrib}B1,60
+msoShapeOval¯506;204;19;19¯LED_M99O01L1
+msoShapeOval¯536;204;19;19¯LED_M99O01L2

@@ -1,0 +1,159 @@
+Head:	Program_Generator configuration file	V1.0
+Sheet:	Selectrix	Servo Master
+Line:	Act									RGB_Heartbeat(#LED)	0	1	0	0	0
+Line:	-														
+Line:	Act		70	1	AnAus		Servo_rot     1. Platine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,28,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	1	C1-1	1	0	0
+Line:	Act		70	2	AnAus		Servo_gruen 1. Platine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,29,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	1	C2-2	1	0	0
+Line:	Act		70	3	AnAus		Servo_blau   1. Platine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,30,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	1	C3-3	1	0	0
+Line:	-														
+Line:	Act		70	1	AnAus		Herz _1 für die erste Servoplatine 			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT5(#LED,128,SI_LocalVar,2,0,255,0,0,1900 ms,400 ms,400 ms,1900 ms,400 ms,4,2  ,0,0,63,128,0,63)	2	C1-2	1	0	0
+Line:	Act		70	2	AnAus		Herz _2 für die zweiteServoplatine 			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,130,SI_LocalVar,2,0,255,0,0,400 ms,4,2  ,0,0,63,128,0,63)	2	C3-4	1	0	0
+Line:	Act		70	3	AnAus		Herz _3 für die dritte Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,129,SI_LocalVar,2,0,255,0,0,400 ms,4,2  ,0,0,63,128,0,63)	3	C2-3	1	0	0
+Line:	-				 										
+Line:	Act		71	1	AnAus		Servo_rot     2. Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,28,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	4	C1-1	1	0	0
+Line:	Act		71	2	AnAus		Servo_gruen 2. Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,29,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	4	C2-2	1	0	0
+Line:	Act		71	3	AnAus		Servo_blau   2. Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,30,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	4	C3-3	1	0	0
+Line:	-														
+Line:	Act		71	1	AnAus		Herz _1 für die zweite Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,128,SI_LocalVar,2,0,255,0,0,400 ms,4,2  ,0,0,63,128,0,63)	5	C1-2	1	0	0
+Line:	Act		71	2	AnAus		Herz _1  für die zweite Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,130,SI_LocalVar,2,0,255,0,0,400 ms,4,2  ,0,0,63,128,0,63)	5	C3-4	1	0	0
+Line:	Act		71	3	AnAus		Herz _3  für die zweite Servoplatine			// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,129,SI_LocalVar,2,0,255,0,0,400 ms,4,2  ,0,0,63,128,0,63)	6	C2-3	1	0	0
+Line:	-														
+Line:	Act									#define ENABLE_STORE_STATUS   			0	0	
+Line:	-														
+Line:	Act		90	2	AnAus					Mainboard_LED(1, #InCh)			1	0	
+Line:	Act		90	3	AnAus					Mainboard_LED(2, #InCh)			1	0	
+Line:	Act		90	4	AnAus					Mainboard_LED(3, #InCh)			1	0	
+Line:	Act									RGB_Heartbeat2(#LED, 5, 180)	7	1	0	0	
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
+Line:	-														
