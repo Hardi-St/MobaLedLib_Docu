@@ -1,0 +1,87 @@
+Head:	Program_Generator configuration file	V1.0
+Sheet:	Selectrix	PB Haus,Strasse, Weiche Master
+Line:	Act									RGB_Heartbeat2(#LED, 5, 100)	0-0	1	0	0	0
+Line:	-														
+Line:	-														
+Line:	Act		10	1	AnAus		Selectrix/ Taster-01     Herz_und_Servo1			Logic(Herz_und_Servo1, #InCh OR SwitchB1)			1	0	
+Line:	Act		10	2	AnAus		Selectrix/ Taster-02     Herz_und_Servo2			Logic(Herz_und_Servo2, #InCh OR Taster_B_1)			1	0	
+Line:	Act		10	3	AnAus		Selectrix/ Taster-03     Herz_und_Servo3			Logic(Herz_und_Servo3, #InCh OR Taster_C_1)			1	0	
+Line:	Act		10	4	AnAus		Selectrix/ Taster-04     Baustelle Andreas Haus			Logic(Slot_4, #InCh OR Taster_D_1)			1	0	
+Line:	Act		10	5	AnAus		Selectrix/ Taster-05     Weiche			Logic(Slot_5, #InCh OR Taster_E_1)			1	0	
+Line:	Act		10	6	Tast		Selectrix/ Taster-06     Entkuppler			Logic(Slot_6, #InCh OR Taster_F_1)			1	0	
+Line:	Act		10	7	AnAus		Selectrix/ Taster-07     Strassenleuchten			Logic(Slot_7, #InCh OR Taster_G_1)			1	0	
+Line:	Act		10	8	AnAus		Selectrix/ Taster-08    MOS			Logic(Slot_8, #InCh OR Taster_H_1)			1	0	
+Line:	Act		11	1	AnAus		Selectrix/ Taster-09     Haus 1 und Haus 2			Logic(Slot_9, #InCh OR Taster_I_1)			1	0	
+Line:	Act		11	2	AnAus		Selectrix/ Taster-10     LED Signal			Logic(Slot_10, #InCh OR Taster_J_1)			1	0	
+Line:	Act														
+Line:	-														
+Line:	Act		SwitchB1				Herz_und_Servo1       Wanne 1 und 2         Taster 1	1	2	PushButton_0_1(#InCh, Taster_A_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		Taster_A_1							Const(#LED, C1, #InCh, 10, 150)	1-0	C1-1	1	0	1
+Line:	Act														
+Line:	Act		SwitchB2				Herz_und_Servo2       Wanne 1 und 2         Taster 2	1	2	PushButton_0_1(#InCh, Taster_B_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		Taster_B_1							Const(#LED, C2, #InCh, 10, 150)	1-0	C2-2	1	0	1
+Line:	Act														
+Line:	Act		SwitchB3				Herz_und_Servo3       Wanne 1 und 2         Taster 3	1	2	PushButton_0_1(#InCh, Taster_C_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		Taster_C_1							Const(#LED, C3, #InCh, 20, 150)	1-0	C3-3	1	0	1
+Line:	Act														
+Line:	Act		SwitchB4				Baustelle, Andreas,  House      Wanne 3    T aster 4	1	3	PushButton_0_1(#InCh, Taster_D_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		Taster_D_1							Const(#LED, C1, #InCh, 10, 150)	1-1	C1-1	1	0	1
+Line:	Act														
+Line:	Act		SwitchB5				Weiche                 Wanne 4                      Taster 5	1	4	PushButton_0_1(#InCh, Taster_E_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		Taster_E_1							Const(#LED, C2, #InCh, 10, 150)	1-1	C2-2	1	0	1
+Line:	Act														
+Line:	Act		SwitchB6				Entkuppelgleis        Wanne 4                     Taster 6	1	4	PushButton_w_LED_BL_0_1(#LED, C3, #InCh, Taster_F_0, 1, 0, 1, 0, 100, 127, 31)	1-1	C3-3	1	0	1
+Line:	Act		 Taster_F_1							Const(#LED, C3, #InCh, 30, 150)	1-2	C3-3	1	0	1
+Line:	Act														
+Line:	Act		SwitchB7				Strassenbeleuchtung         Wanne 5           Taster 7	1	5	PushButton_0_1(#InCh,  Taster_G_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		 Taster_G_1							Const(#LED, C1, #InCh, 30, 150)	1-3	C1-1	1	0	1
+Line:	Act														
+Line:	Act		SwitchB8				MOS         Wanne 6                                  Taster 8	1	6	PushButton_0_1(#InCh,  Taster_H_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		 Taster_H_1							Const(#LED, C2, #InCh, 10, 150)	1-3	C2-2	1	0	1
+Line:	Act														
+Line:	Act		SwitchB9				Haus 1 und Haus 2    Wanne 7                  Taster 9	1	7	PushButton_0_1(#InCh,  Taster_I_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		  Taster_I_1							Const(#LED, C3, #InCh, 1, 250)	1-3	C3-3	1	0	1
+Line:	Act														
+Line:	Act		SwitchB10				Fire , Ampel, Kamin, Gaslight Wanne 8     Taster 10	1	8	PushButton_0_1(#InCh, Taster_J_0, 1, 1, 0, 0, 0)			1	0	
+Line:	Act		 Taster_J_1							Const(#LED, C1, #InCh, 10, 150)	1-4	C1-1	1	0	1
+Line:	Act		Herz_und_Servo1				Herz _1 (pc)                                          Taster 1		1	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,128,SI_LocalVar,2,0,255,0,0,600 ms,4,2  ,0,0,63,128,0,63)	0-1	C1-2	1	0	0
+Line:	Act		Herz_und_Servo2				Herz _2 (pc)                                          Taster 2		1	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,130,SI_LocalVar,2,0,255,0,0,600 ms,4,2  ,0,0,63,128,0,63)	0-1	C3-4	1	0	0
+Line:	Act		Herz_und_Servo3				Herz _3 (pc)                                          Taster 3		1	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,129,SI_LocalVar,2,0,255,0,0,600 ms,4,2  ,0,0,63,128,0,63)	0-2	C2-3	1	0	0
+Line:	-														
+Line:	Act		Herz_und_Servo1				Servo_rot (pc)                                        Taster 1		2	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,28,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	0-3	C1-1	1	0	0
+Line:	Act		Herz_und_Servo2				Servo_gruen (pc)                                    Taster 2		2	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,29,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	0-3	C2-2	1	0	0
+Line:	Act		Herz_und_Servo3				Servo_blau (pc)                                      Taster 3		2	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,30,SI_LocalVar,1,0,255,0,0,10 sek,20,0,200,0  ,0,63,128,63)	0-3	C3-3	1	0	0
+Line:	-														
+Line:	-														
+Line:	Act		Slot_4				Baustellenlicht                                       Taster 4		3	ConstrWarnLightRGB6(#LED, #InCh, 5, 255, 100 ms, 0 ms, 500 ms)	0-4	6	1	0	0
+Line:	Act		Slot_4				Andreas                                                Taster 4		3	AndreaskrRGB(#LED, #InCh)	0-10	2	1	0	0
+Line:	Act		Slot_4				House_warm                                         Taster 4		3	House(#LED, #InCh, 1, 1, ROOM_WARM_W)	0-12	1	1	0	0
+Line:	-														
+Line:	Act		Slot_5				Weiche                                                 Taster 5		4	// Activation: Binary{NewLine}Bin_InCh_to_TmpVar(#InCh, 1){NewLine}PatternT1(#LED,0,SI_LocalVar,2,0,255,0,0,500 ms,18  ,0,63,128,63)	0-13	C1-2	1	0	0
+Line:	-														
+Line:	Act		Slot_6				Entkuppler                                             Taster 6		4	MonoFlop(Entkuppler, #InCh, 500)			1	0	
+Line:	Act		Entkuppler							Const(#LED, C3, #InCh, 0, 255)	0-13	C3-3	1	0	0
+Line:	-														
+Line:	Act		Slot_7				Strassenleuchten                                   Taster 7		5	GasLights(#LED, #InCh, NEON_LIGHT1D, NEON_LIGHT2D, NEON_LIGHT3D, NEON_LIGHT1D, NEON_LIGHT2D, NEON_LIGHT3D, NEON_LIGHT1D, NEON_LIGHT2D, NEON_LIGHT3D)	0-14	3	1	0	0
+Line:	-														
+Line:	Act		Slot_8				MOS                                                     Taster 8		6	GasLights(#LED, #InCh, GAS_LIGHT1, GAS_LIGHT2, GAS_LIGHT3)	0-17	1	1	0	0
+Line:	-														
+Line:	Act		Slot_9				Kleine Häuser                                        Taster 9		7	HouseT(#LED, #InCh, 4, 6, 1, 3, ROOM_WARM_W, NEON_LIGHT, ROOM_RED, ROOM_WARM_W, NEON_LIGHT, ROOM_RED)	0-18	6	1	0	0
+Line:	-														
+Line:	Act		Slot_10				Feuer                                                    Taster 10		8	Fire(#LED, #InCh, 11, 100)	0-24	11	1	0	0
+Line:	Act		Slot_10				Ampel                                                   Taster 10		9	RGB_AmpelXFade(#LED, #InCh)	0-35	6	1	0	0
+Line:	Act		Slot_10				Kamin                                                   Taster 10		9	House(#LED, #InCh, 3, 3, ROOM_CHIMNEY, ROOM_CHIMNEY, ROOM_CHIMNEY)	0-41	3	1	0	0
+Line:	Act		Slot_10				Gaslichter                                              Taster 10		10	GasLights(#LED, #InCh, GAS_LIGHT, GAS_LIGHT, GAS_LIGHT)	0-44	3	1	0	0
+Line:	-														
+Line:	-														
+Line:	-									#define ENABLE_STORE_STATUS   			0	0	
+Line:	-														
+Line:	Act						Alle LEDs werden aktiv	 	 	RGB_Heartbeat2(#LED, 5, 50)	0-47	1	0	0	0
+Line:	-														
+Line:	-														
+Line:	-						Wechselschaltung								
+Line:	-		10	4	Tast		Selectrix/ Taster-04			 			1	0	
+Line:	-		SX_OR_Taster4				Taster LED	1	3	PushButton_w_LED_BL_0_1(#LED, C3, #InCh, Slot_3_0, 1, 1, 1, 0, 30 sek, 127, 31)		C3-3	1	0	1
+Line:	-		User4_1				Baustellenlicht		3	ConstrWarnLightRGB6(#LED, #InCh, 5, 255, 100 ms, 0 ms, 500 ms)		6	1	0	0
+Line:	-		User4_1							AndreaskrRGB(#LED, #InCh)		2	1	0	0
+Line:	-		User4_1							House(#LED, #InCh, 1, 1, ROOM_WARM_W)		1	1	0	0
