@@ -1,0 +1,18 @@
+ToDo Liste der MobaLedLib
+~~~~~~~~~~~~~~~~~~~~~~~~~
+26.11.21:  Problem mit vertauschten WS2811 Pins bei dem Servo Modul
+           Bei der Platinen Version 1.1 und einer mit "Nein" erzeugten ATTiny
+           Software (#7047) sind die Kanäle 0 und 1 des Servos im Farbtest Programm vertauscht.
+           Das Servo war am Stecker SV1 angeschlossen. Mit dem Schiebregler im Servo Test wurde es
+           über Servo Anschluss 0
+
+           Meine Farbtest Version V3.09 25.04.2021
+           Alte Platine SMD WS2811 O.K. aber der mittlere Anschluss ist gestört. Das Servo wackellt ein bisschen. EVtl. HArdware Problem der Platine.
+                                        Wenn der ATTiny in der DIL Platine steckt, dann tritt das nicht auf. Dann sind aber die Servos getauschst
+
+           Alte Platine DIL WS2811 O.K.
+
+           Wenn ein ATTiny der für die alten Platine konfiguriert ist in eine Platine mit DIL WS2811 gesteckt wird,
+           ist die Schiebregler Verstellung vertauscht. Aber die MinMax Programmierung stimmt
+
+           Mit Strg+Klick wurde die Version V03.10 01.05.2021 des Farbtests herunter geladen
