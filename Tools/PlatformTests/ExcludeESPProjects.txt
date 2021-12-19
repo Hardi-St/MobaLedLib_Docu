@@ -1,0 +1,24 @@
+-------- examples not ready ported to ESP32
+11.CAN_Bus_MS2_RailwaySignal.ino
+12.CAN_Bus_MS2_Switch_Lights.ino
+14.Switches_80_and_more.ino
+17.Darkness_Detection.ino
+19.Logic.ino
+20.Huge_Configuration.ino
+22.Burning_House.ino
+24.DCC_and_Sound.ino
+25.Analog_Push_Button.ino
+
+--- currently not compiling cause by implementation problem
+26.MM2Interface.ino
+
+-------- examples for different platforms
+23_A.DCC_Interface.ino
+23_A.Selectrix_Interface.ino
+23_B.DCC_Rail_Decoder_Receiver.ino
+
+01.ATTiny85_Servo.ino
+02.CharlieplexTiny
+02.CharlieplexTiny_Old_V1
+03.ATTiny85_Sound
+02.Tiny_UniProg.ino
