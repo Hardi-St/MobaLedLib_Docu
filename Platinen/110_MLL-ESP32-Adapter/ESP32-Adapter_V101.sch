@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -10772,6 +10772,14 @@ Main</text>
 <text x="354.33" y="20.32" size="1.778" layer="94">&gt;PROJEKT</text>
 <text x="354.33" y="15.24" size="1.778" layer="94">&gt;DATUM</text>
 <text x="354.33" y="10.16" size="1.778" layer="94">&gt;AUTOREN</text>
+<wire x1="157.48" y1="144.78" x2="162.56" y2="139.7" width="0.1524" layer="94"/>
+<text x="165.1" y="139.7" size="1.778" layer="94">nicht
+Bestücken</text>
+<text x="294.64" y="58.42" size="1.778" layer="94">nicht
+Bestücken</text>
+<wire x1="287.02" y1="66.04" x2="292.1" y2="60.96" width="0.1524" layer="94"/>
+<wire x1="287.02" y1="60.96" x2="292.1" y2="66.04" width="0.1524" layer="94"/>
+<wire x1="157.48" y1="139.7" x2="162.56" y2="144.78" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="76.2" y="157.48" smashed="yes">
