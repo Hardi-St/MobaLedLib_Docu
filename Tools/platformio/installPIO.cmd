@@ -16,16 +16,16 @@ goto :eof
 
 :errorNoPython
 echo.
-echo Error: Python not installed - please visit https://www.python.org/downloads/windows/
+pause Error: Python not installed - please visit https://www.python.org/downloads/windows/
 start https://www.python.org/downloads/windows/
-goto :eof
+exit 1
 
 :failed1
 echo.
 pause Download of installPIO.ps1 failed
-goto :eof
+exit 1
 
 :failed2
 echo.
 pause Execution of installPIO.ps1 failed
-goto :eof
+exit 1
