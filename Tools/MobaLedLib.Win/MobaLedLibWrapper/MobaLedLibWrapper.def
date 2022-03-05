@@ -1,0 +1,14 @@
+LIBRARY
+
+EXPORTS
+    GetWrapperVersion  @1
+    Create             @2
+    CreateSampleConfig @3
+    Update             @4
+    GetLedColor        @5
+    SetInput           @6
+    GetInput           @7
+    ShowLEDWindow      @8
+    CloseLEDWindow     @9
+    IsLEDWindowVisible @10
+    GetLEDWindowRect   @11
