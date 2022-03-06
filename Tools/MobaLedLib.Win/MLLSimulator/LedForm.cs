@@ -107,7 +107,7 @@ namespace MLLSimulator
         {
             try
             {
-                var config = File.ReadAllBytes(@".\config.bin");
+                var config = File.ReadAllBytes(@".\LEDConfigWithFire.bin");
                 ledsPtr = MobaLedLib.Create(config, config.Length);
                 timer1.Interval = 20;
                 timer1.Start();
