@@ -51,6 +51,7 @@ uint8_t _ledX;
 uint8_t _ledY;
 uint8_t _ledOffset;
 uint8_t _ledSize;
+bool showSingleLeds = false;
 int _windowPosX;
 int _windowPosY;
 bool _autoUpdate;
@@ -70,13 +71,15 @@ MobaLedLib_Prepare();
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
+void DrawLEDs(const HWND& hWnd);
+
 void Register()
 {
     //MessageBox(NULL, L"MessageThread", L"", 0);
 
     WNDCLASSEX wcex;
     wcex.cbSize = sizeof(WNDCLASSEX);
-    wcex.style = CS_HREDRAW | CS_VREDRAW;
+    wcex.style = CS_HREDRAW | CS_VREDRAW | CS_DBLCLKS;
     wcex.lpfnWndProc = (WNDPROC)WndProc;
     wcex.cbClsExtra = 0;
     wcex.cbWndExtra = 0;
@@ -277,42 +280,90 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         break;
     case WM_PAINT:
     {
-        PAINTSTRUCT ps;
-        HDC hdc = BeginPaint(hWnd, &ps);
+        DrawLEDs(hWnd);
+        break;
+    }
+    case WM_LBUTTONDBLCLK:
+    {
+        showSingleLeds = !showSingleLeds;
+        InvalidateRect(hWnd, NULL, TRUE);
+        DrawLEDs(hWnd);
+        break;
+    }
 
-        int posX = 10, posY = 100;
-        int size = _ledSize;
-
-        for (int y = 0; y < _ledY; y++)
+    default:
+        if (message != 127 && message!=70 && message!=133 && message != 20 && message != 71 && message != 28 && message != 134 && message != 6 && message != 641
+            && message != 642 && message != 61 && message != 7 && message != 8 && message != 49422 && message != 132 && message != 512 && message != 32
+            && message != 160 && message != 674 && message != 513 && message != 514 && message != 161 && message != 274 && message != WM_MOUSEACTIVATE)
         {
-            for (int x = 0; x < _ledX; x++)
+            int a = 0;
+            a++;
+        }
+        return DefWindowProc(hWnd, message, wParam, lParam);
+    }
+    return 0;
+}
+
+
+void DrawLEDs(const HWND& hWnd)
+{
+    PAINTSTRUCT ps;
+    HDC hdc = BeginPaint(hWnd, &ps);
+
+    int posX = 10, posY = 100;
+    int size = _ledSize;
+
+    for (int y = 0; y < _ledY; y++)
+    {
+        for (int x = 0; x < _ledX; x++)
+        {
+            int ledIndex = _ledOffset + y * _ledX + x;
+            if (ledIndex < NUM_LEDS)
             {
-                int ledIndex = _ledOffset + y * _ledX + x;
-                if (ledIndex < NUM_LEDS)
+                posX = baseX + border + x * (size + space);
+                posY = baseY + border + y * (size + space);
+
+                HPEN hPen = CreatePen(PS_SOLID, 1, 0x404040);
+                SelectObject(ps.hdc, hPen);
+
+                if (!showSingleLeds)
                 {
-                    posX = baseX + border + x * (size + space);
-                    posY = baseY + border + y * (size + space);
-
-                    HPEN hPen = CreatePen(PS_SOLID, 1, 0x404040);
-                    SelectObject(ps.hdc, hPen);
-
                     // blue green red
                     int color = (CorrectColor(pLeds[ledIndex].b) << 16) + (CorrectColor(pLeds[ledIndex].g) << 8) + CorrectColor(pLeds[ledIndex].r);
                     HBRUSH hBrush = CreateSolidBrush(color);
                     SelectObject(ps.hdc, hBrush);
                     Ellipse(ps.hdc, posX, posY, posX + size, posY + size);
                     DeleteObject(hBrush);
-                    DeleteObject(hPen);
                 }
+                else
+                {
+                    int color = CorrectColor(pLeds[ledIndex].r);
+                    HBRUSH hBrush = CreateSolidBrush(color);
+                    SelectObject(ps.hdc, hBrush);
+                    Ellipse(ps.hdc, posX, posY, posX + size/2, posY + size/2);
+                    DeleteObject(hBrush);
+
+                    color = (CorrectColor(pLeds[ledIndex].g) << 8);
+                    hBrush = CreateSolidBrush(color);
+                    SelectObject(ps.hdc, hBrush);
+                    Ellipse(ps.hdc, posX+size/2-1, posY, posX + size / 2 + size / 2-1, posY + size / 2);
+                    DeleteObject(hBrush);
+
+                    color = (CorrectColor(pLeds[ledIndex].b) << 16);
+                    hBrush = CreateSolidBrush(color);
+                    SelectObject(ps.hdc, hBrush);
+                    int xOffset = ((size * 25) / 100);
+                    int yOffset = ((size * 42) / 100);
+                    Ellipse(ps.hdc, posX + xOffset, posY+ yOffset, posX + xOffset + size/2, posY+ yOffset+size/2);
+                    DeleteObject(hBrush);
+
+                }
+
+                DeleteObject(hPen);
             }
         }
-        EndPaint(hWnd, &ps);
-        break;
     }
-    default:
-        return DefWindowProc(hWnd, message, wParam, lParam);
-    }
-    return 0;
+    EndPaint(hWnd, &ps);
 }
 
 void __stdcall SetInput(unsigned char channel, unsigned char On)
@@ -346,6 +397,11 @@ void _stdcall ShowLEDWindow(unsigned char ledsX, unsigned char ledsY, unsigned c
             0,                      // use default creation flags 
             &dwThreadId);   // returns the thread identifier
     }
+    else
+    {
+        InvalidateRect(myhWnd, NULL, TRUE);
+    }
+
 }
 
 void _stdcall CloseLEDWindow()
