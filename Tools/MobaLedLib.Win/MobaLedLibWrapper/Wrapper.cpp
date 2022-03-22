@@ -23,6 +23,13 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110 - 1301 USA
 */
 
+/*
+ * Change Log
+ * ============================================================================
+ * 
+ * 2022-03-22  KG  Added third show style "combined" to visual output
+ */
+
 extern "C" {
     __declspec(dllexport) int __stdcall GetWrapperVersion();
     __declspec(dllexport) const unsigned char* __stdcall Create(unsigned char* config, int configLenght);
@@ -51,7 +58,10 @@ uint8_t _ledX;
 uint8_t _ledY;
 uint8_t _ledOffset;
 uint8_t _ledSize;
-bool showSingleLeds = false;
+
+enum LedVisualStyle { lvsRGB = 1, lvsSingles, lvsCombined };
+
+LedVisualStyle showLedStyle = lvsRGB;
 int _windowPosX;
 int _windowPosY;
 bool _autoUpdate;
@@ -285,7 +295,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     }
     case WM_LBUTTONDBLCLK:
     {
-        showSingleLeds = !showSingleLeds;
+        if (showLedStyle == lvsCombined)
+            showLedStyle = lvsRGB;
+        else
+            showLedStyle = LedVisualStyle(showLedStyle + 1);
+
         InvalidateRect(hWnd, NULL, TRUE);
         DrawLEDs(hWnd);
         break;
@@ -326,7 +340,7 @@ void DrawLEDs(const HWND& hWnd)
                 HPEN hPen = CreatePen(PS_SOLID, 1, 0x404040);
                 SelectObject(ps.hdc, hPen);
 
-                if (!showSingleLeds)
+                if (showLedStyle == lvsRGB  ||  showLedStyle == lvsCombined)
                 {
                     // blue green red
                     int color = (CorrectColor(pLeds[ledIndex].b) << 16) + (CorrectColor(pLeds[ledIndex].g) << 8) + CorrectColor(pLeds[ledIndex].r);
@@ -335,18 +349,30 @@ void DrawLEDs(const HWND& hWnd)
                     Ellipse(ps.hdc, posX, posY, posX + size, posY + size);
                     DeleteObject(hBrush);
                 }
-                else
+
+                if (showLedStyle == lvsSingles || showLedStyle == lvsCombined)
                 {
+                    int ledsize;
+                    int centerX = posX + size / 2;
+                    int centerY = posY + size / 2;
+                    int deltaX = 2;
+                    int deltaY = 2;
+
+                    if (showLedStyle == lvsSingles)
+                        ledsize = size / 2;
+                    else
+                        ledsize = size / 3;
+
                     int color = CorrectColor(pLeds[ledIndex].r);
                     HBRUSH hBrush = CreateSolidBrush(color);
                     SelectObject(ps.hdc, hBrush);
-                    Ellipse(ps.hdc, posX, posY, posX + size/2, posY + size/2);
+                    Ellipse(ps.hdc, centerX - ledsize, centerY - ledsize + deltaY, centerX, centerY + deltaY);
                     DeleteObject(hBrush);
 
                     color = (CorrectColor(pLeds[ledIndex].g) << 8);
                     hBrush = CreateSolidBrush(color);
                     SelectObject(ps.hdc, hBrush);
-                    Ellipse(ps.hdc, posX+size/2-1, posY, posX + size / 2 + size / 2-1, posY + size / 2);
+                    Ellipse(ps.hdc, centerX, centerY - ledsize + deltaY, centerX + ledsize, centerY + deltaY);
                     DeleteObject(hBrush);
 
                     color = (CorrectColor(pLeds[ledIndex].b) << 16);
@@ -354,11 +380,9 @@ void DrawLEDs(const HWND& hWnd)
                     SelectObject(ps.hdc, hBrush);
                     int xOffset = ((size * 25) / 100);
                     int yOffset = ((size * 42) / 100);
-                    Ellipse(ps.hdc, posX + xOffset, posY+ yOffset, posX + xOffset + size/2, posY+ yOffset+size/2);
+                    Ellipse(ps.hdc, centerX - ledsize / 2, centerY - deltaY, centerX + ledsize / 2, centerY + ledsize - deltaY);
                     DeleteObject(hBrush);
-
                 }
-
                 DeleteObject(hPen);
             }
         }
