@@ -467,49 +467,6 @@ Fits EIAJ packages (wide version of the SOIC-8).</description>
 <wire x1="1.3875" y1="-3.7275" x2="-1.3875" y2="-3.7275" width="0.254" layer="21"/>
 <wire x1="1.3875" y1="-3.7275" x2="-1.3875" y2="-3.7275" width="0.254" layer="22"/>
 </package>
-<package name="CON-LABEL_MLLRM200">
-<circle x="2.8575" y="2.06375" radius="0.635" width="0.127" layer="21"/>
-<circle x="0.9525" y="2.06375" radius="0.635" width="0.127" layer="21"/>
-<circle x="-0.9525" y="2.06375" radius="0.635" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="-0.47625" x2="2.2225" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="2.2225" y1="-0.47625" x2="2.2225" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="2.2225" y1="0.79375" x2="3.4925" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="0.79375" x2="3.4925" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="-0.47625" x2="1.5875" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="0.79375" x2="0.3175" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="0.3175" y1="0.79375" x2="0.3175" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="0.3175" y1="-0.47625" x2="1.5875" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-0.3175" y1="-0.47625" x2="-0.3175" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="-0.3175" y1="0.79375" x2="-1.5875" y2="0.79375" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="0.79375" x2="-1.5875" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="-0.47625" x2="-0.3175" y2="-0.47625" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="-2.8575" x2="3.4925" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="-0.9525" x2="2.2225" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="2.2225" y1="-0.9525" x2="2.2225" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="2.2225" y1="-2.8575" x2="3.4925" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="-0.9525" x2="1.5875" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="1.5875" y1="-2.8575" x2="0.3175" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="0.3175" y1="-2.8575" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="0.3175" y1="-0.9525" x2="1.5875" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="-0.3175" y1="-0.9525" x2="-0.3175" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="-0.3175" y1="-2.8575" x2="-1.5875" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="-2.8575" x2="-1.5875" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="-1.5875" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="-2.2225" y1="-0.9525" x2="-2.2225" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="-2.2225" y1="-2.8575" x2="-3.4925" y2="-2.8575" width="0.127" layer="21"/>
-<wire x1="-3.4925" y1="-2.8575" x2="-3.4925" y2="-0.9525" width="0.127" layer="21"/>
-<wire x1="-3.4925" y1="-0.9525" x2="-2.2225" y2="-0.9525" width="0.127" layer="21"/>
-<text x="3.175" y="-1.27" size="1.27" layer="21" rot="R180">R</text>
-<text x="1.27" y="-1.27" size="1.27" layer="21" rot="R180">G</text>
-<text x="-0.635" y="-1.27" size="1.27" layer="21" rot="R180">B</text>
-<text x="2.8575" y="2.2225" size="1.27" layer="21" rot="R180" align="center">+</text>
-<text x="3.01625" y="0.47625" size="0.6096" layer="21" rot="R180">R</text>
-<text x="1.27" y="0.47625" size="0.6096" layer="21" rot="R180">G</text>
-<text x="-0.635" y="0.47625" size="0.6096" layer="21" rot="R180">B</text>
-<text x="0.9525" y="2.2225" size="1.27" layer="21" rot="R180" align="center">+</text>
-<text x="-0.9525" y="2.2225" size="1.27" layer="21" rot="R180" align="center">+</text>
-<text x="-2.8575" y="-1.74625" size="1.27" layer="21" rot="R180" align="center">+</text>
-</package>
 <package name="CON-LABEL_MLLRM200_RGB">
 <circle x="2.8575" y="2.06375" radius="0.635" width="0.127" layer="21"/>
 <circle x="0.9525" y="2.06375" radius="0.635" width="0.127" layer="21"/>
@@ -624,6 +581,49 @@ Fits EIAJ packages (wide version of the SOIC-8).</description>
 <text x="0.971125" y="2.1103625" size="1.27" layer="21" rot="R180" align="center">+</text>
 <text x="-0.933875" y="2.1103625" size="1.27" layer="21" rot="R180" align="center">+</text>
 </package>
+<package name="CON-LABEL_MLLRM200_3">
+<circle x="2.8575" y="2.06375" radius="0.635" width="0.127" layer="21"/>
+<circle x="0.9525" y="2.06375" radius="0.635" width="0.127" layer="21"/>
+<circle x="-0.9525" y="2.06375" radius="0.635" width="0.127" layer="21"/>
+<wire x1="3.4925" y1="-0.47625" x2="2.2225" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="-0.47625" x2="2.2225" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="0.79375" x2="3.4925" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="3.4925" y1="0.79375" x2="3.4925" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="-0.47625" x2="1.5875" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="0.79375" x2="0.3175" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="0.79375" x2="0.3175" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.47625" x2="1.5875" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="-0.47625" x2="-0.3175" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="0.79375" x2="-1.5875" y2="0.79375" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="0.79375" x2="-1.5875" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="-0.47625" x2="-0.3175" y2="-0.47625" width="0.127" layer="21"/>
+<wire x1="3.4925" y1="-2.8575" x2="3.4925" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="3.4925" y1="-0.9525" x2="2.2225" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="-0.9525" x2="2.2225" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="2.2225" y1="-2.8575" x2="3.4925" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="-0.9525" x2="1.5875" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="1.5875" y1="-2.8575" x2="0.3175" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-2.8575" x2="0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="0.3175" y1="-0.9525" x2="1.5875" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="-0.9525" x2="-0.3175" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="-0.3175" y1="-2.8575" x2="-1.5875" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="-2.8575" x2="-1.5875" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-1.5875" y1="-0.9525" x2="-0.3175" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-2.2225" y1="-0.9525" x2="-2.2225" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="-2.2225" y1="-2.8575" x2="-3.4925" y2="-2.8575" width="0.127" layer="21"/>
+<wire x1="-3.4925" y1="-2.8575" x2="-3.4925" y2="-0.9525" width="0.127" layer="21"/>
+<wire x1="-3.4925" y1="-0.9525" x2="-2.2225" y2="-0.9525" width="0.127" layer="21"/>
+<text x="3.175" y="-1.27" size="1.27" layer="21" rot="R180">B</text>
+<text x="1.27" y="-1.27" size="1.27" layer="21" rot="R180">G</text>
+<text x="-0.635" y="-1.27" size="1.27" layer="21" rot="R180">R</text>
+<text x="2.8575" y="2.2225" size="1.27" layer="21" rot="R180" align="center">+</text>
+<text x="3.01625" y="0.47625" size="0.6096" layer="21" rot="R180">B</text>
+<text x="1.27" y="0.47625" size="0.6096" layer="21" rot="R180">G</text>
+<text x="-0.635" y="0.47625" size="0.6096" layer="21" rot="R180">R</text>
+<text x="0.9525" y="2.2225" size="1.27" layer="21" rot="R180" align="center">+</text>
+<text x="-0.9525" y="2.2225" size="1.27" layer="21" rot="R180" align="center">+</text>
+<text x="-2.8575" y="-1.74625" size="1.27" layer="21" rot="R180" align="center">+</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED-BUS-IN">
@@ -720,6 +720,14 @@ Fits EIAJ packages (wide version of the SOIC-8).</description>
 <pin name="P$4" x="-2.54" y="0" visible="pad" length="short"/>
 </symbol>
 <symbol name="CON-LABEL_MLLRM200">
+<wire x1="0" y1="0" x2="11.43" y2="0" width="0.254" layer="94"/>
+<wire x1="11.43" y1="0" x2="11.43" y2="6.35" width="0.254" layer="94"/>
+<wire x1="11.43" y1="6.35" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="1.27" y="1.27" size="1.27" layer="94">CON_LABEL
+MLLRM200</text>
+</symbol>
+<symbol name="CON-LABEL_MLLRM200_3">
 <wire x1="0" y1="0" x2="11.43" y2="0" width="0.254" layer="94"/>
 <wire x1="11.43" y1="0" x2="11.43" y2="6.35" width="0.254" layer="94"/>
 <wire x1="11.43" y1="6.35" x2="0" y2="6.35" width="0.254" layer="94"/>
@@ -944,18 +952,6 @@ MLLRM200</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CON-LABEL_MLLRM200">
-<gates>
-<gate name="G$1" symbol="CON-LABEL_MLLRM200" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CON-LABEL_MLLRM200">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CON-LABEL_MLLRM200_2">
 <gates>
 <gate name="G$1" symbol="CON-LABEL_MLLRM200" x="0" y="0"/>
@@ -972,6 +968,18 @@ MLLRM200</text>
 </technologies>
 </device>
 <device name="RGB_M" package="CON-LABEL_MLLRM200_RGB_M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CON-LABEL_MLLRM200_3">
+<gates>
+<gate name="G$1" symbol="CON-LABEL_MLLRM200_3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CON-LABEL_MLLRM200_3">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -9796,9 +9804,9 @@ LED
 <part name="SJ3.4" library="MLL-Dominik-Hardi" deviceset="SJ-CON" device=""/>
 <part name="M1_OUT" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
 <part name="M2_IN" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
-<part name="M3_IN" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
+<part name="IN" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
 <part name="M2_OUT" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
-<part name="M3_OUT" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
+<part name="OUT" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
 <part name="M1_IN" library="MLL-Dominik-Hardi" deviceset="4XRM254" device=""/>
 <part name="TERM3" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="" package3d_urn="urn:adsk.eagle:package:15471/1"/>
 <part name="DS1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED-GREEN" device="1206" package3d_urn="urn:adsk.eagle:package:39352/1" value="GREEN"/>
@@ -9813,7 +9821,6 @@ LED
 <part name="U$19" library="MLL-Dominik-Hardi" deviceset="4XRM200LONG-NOH_DOUBLE" device=""/>
 <part name="U$20" library="MLL-Dominik-Hardi" deviceset="4XRM200LONG-NOH_DOUBLE" device=""/>
 <part name="LED1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:39361/1" value="LED 3MM GREEN"/>
-<part name="U$2" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200" device=""/>
 <part name="U$4" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200_2" device="RGB_M" value="CON-LABEL_MLLRM200_2RGB_M"/>
 <part name="U$5" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200_2" device="RGB"/>
 <part name="U$1" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200_2" device="RGB_M" value="CON-LABEL_MLLRM200_2RGB_M"/>
@@ -9821,10 +9828,11 @@ LED
 <part name="U$8" library="MLL-Dominik-Hardi" deviceset="4XRM200LONG-NOH_DOUBLE" device=""/>
 <part name="U$7" library="MLL-Dominik-Hardi" deviceset="4XRM200LONG-NOH_DOUBLE" device=""/>
 <part name="U$9" library="MLL-Dominik-Hardi" deviceset="4XRM200LONG-NOH_DOUBLE" device=""/>
-<part name="U$6" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200" device=""/>
 <part name="SJ2.2" library="MLL-Dominik-Hardi" deviceset="SJ-CON" device=""/>
 <part name="SJ1.2" library="MLL-Dominik-Hardi" deviceset="SJ-CON" device="" value="DO"/>
 <part name="SJ1.1" library="MLL-Dominik-Hardi" deviceset="SJ-CON" device="" value="DO"/>
+<part name="U$2" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200_3" device=""/>
+<part name="U$6" library="MLL-Dominik-Hardi" deviceset="CON-LABEL_MLLRM200_3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10208,9 +10216,9 @@ LED
 </instance>
 <instance part="M1_OUT" gate="G$1" x="119.38" y="236.22" smashed="yes" grouprefs="WS2811-G1"/>
 <instance part="M2_IN" gate="G$1" x="140.97" y="236.22" smashed="yes" rot="MR0" grouprefs="WS2811-G2"/>
-<instance part="M3_IN" gate="G$1" x="274.32" y="236.22" smashed="yes" rot="MR0" grouprefs="WS2811-G3"/>
+<instance part="IN" gate="G$1" x="274.32" y="236.22" smashed="yes" rot="MR0" grouprefs="WS2811-G3"/>
 <instance part="M2_OUT" gate="G$1" x="245.11" y="236.22" smashed="yes" grouprefs="WS2811-G2"/>
-<instance part="M3_OUT" gate="G$1" x="381" y="236.22" smashed="yes" grouprefs="WS2811-G3"/>
+<instance part="OUT" gate="G$1" x="381" y="236.22" smashed="yes" grouprefs="WS2811-G3"/>
 <instance part="M1_IN" gate="G$1" x="13.97" y="236.22" smashed="yes" rot="MR0" grouprefs="WS2811-G1"/>
 <instance part="TERM3" gate="1" x="364.49" y="247.65" smashed="yes" grouprefs="WS2811-G3">
 <attribute name="NAME" x="361.95" y="250.19" size="1.778" layer="95"/>
@@ -10241,15 +10249,13 @@ LED
 <attribute name="NAME" x="103.251" y="44.958" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="108.585" y="44.958" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="U$2" gate="G$1" x="144.78" y="35.56" smashed="yes"/>
 <instance part="U$4" gate="G$1" x="160.02" y="35.56" smashed="yes"/>
 <instance part="U$5" gate="G$1" x="160.02" y="27.94" smashed="yes"/>
 <instance part="U$1" gate="G$1" x="144.78" y="27.94" smashed="yes"/>
-<instance part="U$3" gate="G$1" x="129.54" y="35.56" smashed="yes"/>
+<instance part="U$3" gate="G$1" x="144.78" y="35.56" smashed="yes"/>
 <instance part="U$8" gate="G$1" x="82.55" y="153.67" smashed="yes" rot="MR270"/>
 <instance part="U$7" gate="G$1" x="74.93" y="102.87" smashed="yes" rot="R270"/>
 <instance part="U$9" gate="G$1" x="74.93" y="195.58" smashed="yes" rot="R270"/>
-<instance part="U$6" gate="G$1" x="129.54" y="27.94" smashed="yes"/>
 <instance part="SJ2.2" gate="G$1" x="129.54" y="255.27" smashed="yes">
 <attribute name="NAME" x="128.27" y="241.3" size="1.27" layer="95"/>
 </instance>
@@ -10261,6 +10267,8 @@ LED
 <attribute name="NAME" x="10.16" y="93.98" size="1.27" layer="95"/>
 <attribute name="VALUE" x="10.16" y="88.9" size="0.6096" layer="95"/>
 </instance>
+<instance part="U$2" gate="G$1" x="129.54" y="35.56" smashed="yes"/>
+<instance part="U$6" gate="G$1" x="129.54" y="27.94" smashed="yes"/>
 </instances>
 <busses>
 <bus name="+5V,DI,DO-RET,G1-IN,GND">
@@ -10478,8 +10486,8 @@ LED
 <junction x="284.48" y="243.84" grouprefs="WS2811-G3"/>
 <pinref part="SJ3.1" gate="G$1" pin="P$2"/>
 <wire x1="257.81" y1="259.08" x2="260.35" y2="259.08" width="0.1524" layer="91"/>
-<pinref part="M3_OUT" gate="G$1" pin="P$1"/>
-<pinref part="M3_IN" gate="G$1" pin="P$1"/>
+<pinref part="OUT" gate="G$1" pin="P$1"/>
+<pinref part="IN" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <wire x1="285.75" y1="224.79" x2="285.75" y2="226.06" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
@@ -10723,8 +10731,8 @@ LED
 <wire x1="279.4" y1="251.46" x2="279.4" y2="238.76" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <pinref part="SJ3.3" gate="G$1" pin="P$2"/>
 <wire x1="257.81" y1="251.46" x2="260.35" y2="251.46" width="0.1524" layer="91"/>
-<pinref part="M3_OUT" gate="G$1" pin="P$3"/>
-<pinref part="M3_IN" gate="G$1" pin="P$3"/>
+<pinref part="OUT" gate="G$1" pin="P$3"/>
+<pinref part="IN" gate="G$1" pin="P$3"/>
 </segment>
 <segment>
 <wire x1="285.75" y1="203.2" x2="285.75" y2="204.47" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
@@ -11289,7 +11297,7 @@ LED
 <label x="288.29" y="241.3" size="1.778" layer="95" grouprefs="WS2811-G3"/>
 <pinref part="SJ3.2" gate="G$1" pin="P$2"/>
 <wire x1="257.81" y1="255.27" x2="260.35" y2="255.27" width="0.1524" layer="91"/>
-<pinref part="M3_IN" gate="G$1" pin="P$2"/>
+<pinref part="IN" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="W8-VCC" class="0">
@@ -11486,7 +11494,7 @@ LED
 <wire x1="299.72" y1="45.72" x2="377.19" y2="45.72" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <wire x1="377.19" y1="45.72" x2="377.19" y2="99.06" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <label x="377.19" y="220.98" size="1.778" layer="95" rot="R90" grouprefs="WS2811-G3"/>
-<pinref part="M3_OUT" gate="G$1" pin="P$2"/>
+<pinref part="OUT" gate="G$1" pin="P$2"/>
 <pinref part="TERM3" gate="1" pin="2"/>
 <wire x1="369.57" y1="247.65" x2="377.19" y2="247.65" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <wire x1="377.19" y1="247.65" x2="377.19" y2="241.3" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
@@ -11604,11 +11612,11 @@ LED
 <wire x1="257.81" y1="247.65" x2="297.18" y2="247.65" width="0.1524" layer="91"/>
 <junction x="297.18" y="247.65" grouprefs="WS2811-G3"/>
 <wire x1="297.18" y1="236.22" x2="297.18" y2="247.65" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
-<pinref part="M3_IN" gate="G$1" pin="P$4"/>
+<pinref part="IN" gate="G$1" pin="P$4"/>
 <wire x1="276.86" y1="236.22" x2="297.18" y2="236.22" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <wire x1="297.18" y1="247.65" x2="356.87" y2="247.65" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <pinref part="TERM3" gate="1" pin="1"/>
-<pinref part="M3_OUT" gate="G$1" pin="P$4"/>
+<pinref part="OUT" gate="G$1" pin="P$4"/>
 <wire x1="356.87" y1="247.65" x2="359.41" y2="247.65" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <wire x1="378.46" y1="236.22" x2="356.87" y2="236.22" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
 <wire x1="356.87" y1="236.22" x2="356.87" y2="247.65" width="0.1524" layer="91" grouprefs="WS2811-G3"/>
