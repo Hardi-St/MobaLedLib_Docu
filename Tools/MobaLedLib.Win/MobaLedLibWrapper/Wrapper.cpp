@@ -28,6 +28,8 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110 - 1301 USA
  * ============================================================================
  * 
  * 2022-03-22  KG  Added third show style "combined" to visual output
+ * 2022-04-11  KG  Added support for Z or S style wired matrix boards (keys S or Z)
+ * 2022-04-11  KG  Added support for displaying the led number (keys N)
  */
 
 extern "C" {
@@ -59,9 +61,13 @@ uint8_t _ledY;
 uint8_t _ledOffset;
 uint8_t _ledSize;
 
-enum LedVisualStyle { lvsRGB = 1, lvsSingles, lvsCombined };
+enum LedVisualStyle { lvsRGB = 1, lvsSingles, lvsCombined, lvsMax };
+enum LedVisualOrder { lvoZ = 1, lvoS, lvoMax };
 
 LedVisualStyle showLedStyle = lvsRGB;
+LedVisualOrder showLedOrder = lvoZ;
+bool showLedNumbers = false;
+
 int _windowPosX;
 int _windowPosY;
 bool _autoUpdate;
@@ -295,13 +301,43 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     }
     case WM_LBUTTONDBLCLK:
     {
-        if (showLedStyle == lvsCombined)
+        showLedStyle = LedVisualStyle(showLedStyle + 1);
+        if (showLedStyle == lvsMax)
             showLedStyle = lvsRGB;
-        else
-            showLedStyle = LedVisualStyle(showLedStyle + 1);
 
         InvalidateRect(hWnd, NULL, TRUE);
         DrawLEDs(hWnd);
+        break;
+    }
+
+    case WM_KEYUP:
+    {
+        switch (wParam)
+        {
+        case 'N':
+        {
+            showLedNumbers = !showLedNumbers;
+            InvalidateRect(hWnd, NULL, TRUE);
+            DrawLEDs(hWnd);
+            break;
+        }
+
+        case 'S':
+        {
+            showLedOrder = lvoS;
+            InvalidateRect(hWnd, NULL, TRUE);
+            DrawLEDs(hWnd);
+            break;
+        }
+
+        case 'Z':
+        {
+            showLedOrder = lvoZ;
+            InvalidateRect(hWnd, NULL, TRUE);
+            DrawLEDs(hWnd);
+            break;
+        }
+        }
         break;
     }
 
@@ -323,15 +359,25 @@ void DrawLEDs(const HWND& hWnd)
 {
     PAINTSTRUCT ps;
     HDC hdc = BeginPaint(hWnd, &ps);
+    TCHAR number[5];
 
     int posX = 10, posY = 100;
     int size = _ledSize;
+    int _ZSx = 0;
 
     for (int y = 0; y < _ledY; y++)
     {
         for (int x = 0; x < _ledX; x++)
         {
-            int ledIndex = _ledOffset + y * _ledX + x;
+            if (showLedOrder == lvoZ)
+                _ZSx = x;
+            else
+                if (y % 2 == 1)
+                    _ZSx = _ledX - x - 1;
+                else
+                    _ZSx = x;
+
+            int ledIndex = _ledOffset + y * _ledX + _ZSx;
             if (ledIndex < NUM_LEDS)
             {
                 posX = baseX + border + x * (size + space);
@@ -383,6 +429,20 @@ void DrawLEDs(const HWND& hWnd)
                     Ellipse(ps.hdc, centerX - ledsize / 2, centerY - deltaY, centerX + ledsize / 2, centerY + ledsize - deltaY);
                     DeleteObject(hBrush);
                 }
+
+                if (showLedNumbers)
+                {
+                    RECT rect;
+                    GetClientRect(hWnd, &rect);
+
+                    SetTextColor(ps.hdc, RGB(0xA0, 0xA0, 0xA0));
+                    SetBkMode(ps.hdc, TRANSPARENT);
+                    rect.left = posX;
+                    rect.top = posY + _ledSize - 14;
+                    swprintf(number, 4, L"%d", ledIndex);
+                    DrawText(hdc, number, -1, &rect, DT_SINGLELINE | DT_NOCLIP);
+                }
+
                 DeleteObject(hPen);
             }
         }
