@@ -108,7 +108,8 @@ namespace MLLSimulator
             try
             {
                 var config = File.ReadAllBytes(@".\LEDConfigWithFire.bin");
-                ledsPtr = MobaLedLib.Create(config, config.Length);
+                var l2vConfig = new byte[] { 1, 0, 3, 40 };
+                ledsPtr = MobaLedLib.CreateEx(config, config.Length, l2vConfig, l2vConfig.Length);
                 timer1.Interval = 20;
                 timer1.Start();
             }
@@ -121,7 +122,7 @@ namespace MLLSimulator
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MobaLedLib.ShowLEDWindow(16, 16, 32, 1, 100, 100, true);
+            MobaLedLib.ShowLEDWindow(16, 16, 48, 1, 100, 100, true);
         }
 
         private void button4_Click(object sender, EventArgs e)

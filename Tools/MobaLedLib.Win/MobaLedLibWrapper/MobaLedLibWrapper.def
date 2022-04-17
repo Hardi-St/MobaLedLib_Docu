@@ -12,3 +12,4 @@ EXPORTS
     CloseLEDWindow     @9
     IsLEDWindowVisible @10
     GetLEDWindowRect   @11
+    CreateEx           @12
