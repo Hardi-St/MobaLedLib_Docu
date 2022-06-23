@@ -30,11 +30,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110 - 1301 USA
  * 2022-03-22  KG  Added third show style "combined" to visual output
  * 2022-04-11  KG  Added support for Z or S style wired matrix boards (keys S or Z)
  * 2022-04-11  KG  Added support for displaying the led number (keys N)
+ * 2022-04-17  JW  Added support for Led2Var
+ *                 change release to 1.01.00 because of interface change
+ * 
  */
 
 extern "C" {
     __declspec(dllexport) int __stdcall GetWrapperVersion();
     __declspec(dllexport) const unsigned char* __stdcall Create(unsigned char* config, int configLenght);
+    __declspec(dllexport) const unsigned char* __stdcall CreateEx(unsigned char* config, int configLenght, unsigned char* led2var, int led2varLength);
     __declspec(dllexport) const unsigned char* __stdcall CreateSampleConfig();
     __declspec(dllexport) void __stdcall Update();
     __declspec(dllexport) int __stdcall GetLedColor(unsigned char ledNr);
@@ -47,8 +51,29 @@ extern "C" {
 }
 
 #define NUM_LEDS 256
+#define T_EQUAL_THEN     0
+#define T_NOT_EQUAL_THEN 1
+#define T_LESS_THEN      2
+#define T_GREATER_THAN   3
+#define T_BIN_MASK       4
+#define T_NOT_BIN_MASK   5
 
+#ifdef _MSC_VER
+#define PACK( __Declaration__ ) __pragma( pack(push, 1) ) __Declaration__ __pragma( pack(pop))
+#else
+#define PACK( __Declaration__ ) __Declaration__ __attribute__((__packed__))
+#endif
+PACK(typedef struct
+    {
+        uint8_t  Var_Nr;
+        uint8_t  LED_Nr;
+        uint8_t  Offset_and_Typ; // ---oottt    Offset: 0..2
+        uint8_t  Val;
+    } LED2Var_Tab_T;
+)
 static CRGB* pLeds = new CRGB[NUM_LEDS];
+static BYTE* l2vConfig;
+static int l2vConfigLength;
 char classname[] = "LEDSimulatorClass";
 static uint8_t MyConfigRam[2048];
 static HWND myhWnd = NULL;
@@ -81,6 +106,8 @@ int windowBoardY = 20;
 bool isRegistered = false;
 bool running = false;
 bool updateThreadRunning = false;
+/* forward declarations */
+void Update_LED2Var();
 
 MobaLedLib_Prepare();
 
@@ -137,7 +164,7 @@ int __stdcall GetWrapperVersion()
     // major.minor.revision e.g. 10000 = 01.00.00
     // in case the exported function interface changes you need to increase major/and or minor version
     // if interface is compatible only revision changes
-    return 10000;           // version 01.00.00
+    return 10100;           // version 01.00.00
 }
 
 const unsigned char* __stdcall CreateSampleConfig()
@@ -154,11 +181,18 @@ const unsigned char* __stdcall CreateSampleConfig()
 
 const unsigned char* __stdcall Create(unsigned char* config, int configLenght)
 {
+    return CreateEx(config, configLenght, NULL, 0);
+}
+const unsigned char* __stdcall CreateEx(unsigned char* config, int configLenght, unsigned char* led2var, int led2varLength)
+{
     EnterCriticalSection(&lock);
     memset(pLeds, 0, NUM_LEDS * sizeof(CRGB));
 
     void* myConfig = malloc(configLenght);
     memcpy(myConfig, config, configLenght);
+    l2vConfig = (BYTE*)malloc(led2varLength);
+    memcpy(l2vConfig, led2var, led2varLength);
+    l2vConfigLength = led2varLength;
 
     if (pMobaLedLib != NULL) delete pMobaLedLib;
     pMobaLedLib = new MobaLedLib_C(pLeds, NUM_LEDS, (unsigned char*)myConfig, MyConfigRam, sizeof(MyConfigRam), NULL, NULL);
@@ -173,6 +207,7 @@ void __stdcall Update()
     {
         pMobaLedLib->Update();
     }
+    Update_LED2Var();
     LeaveCriticalSection(&lock);
     if (running && myhWnd != NULL)
     {
@@ -523,4 +558,46 @@ void OnDetach(HMODULE hModule)
 {
     CloseLEDWindow();
     DeleteCriticalSection(&lock);
+}
+//-------------------
+void Update_LED2Var()
+//-------------------
+// Uses 194 bytes + 4 bytes per processed LED
+{
+    {
+        for (uint8_t i = 0; i < l2vConfigLength / sizeof(LED2Var_Tab_T); i++)
+        {
+            const LED2Var_Tab_T* p = (LED2Var_Tab_T*)(l2vConfig + i * sizeof(LED2Var_Tab_T));
+            uint8_t Var_Nr = pgm_read_byte_near(&p->Var_Nr);
+            uint8_t LED_Nr = pgm_read_byte_near(&p->LED_Nr);
+            uint8_t Offset_and_Typ = pgm_read_byte_near(&p->Offset_and_Typ);
+            uint8_t Val = pgm_read_byte_near(&p->Val);
+            uint8_t Offset = Offset_and_Typ >> 3;
+            int8_t  Typ = Offset_and_Typ & 0x07;
+            uint8_t LED_Val = *(&pLeds[LED_Nr].r+Offset);
+            uint8_t Res;
+            switch (Typ)
+            {
+            case T_GREATER_THAN:   Res = (LED_Val > Val); break;
+            case T_LESS_THEN:      Res = (LED_Val < Val); break;
+            default:                                                                                        // 28.11.20: Juergen
+            case T_EQUAL_THEN:     Res = (LED_Val == Val); break;
+            case T_NOT_EQUAL_THEN: Res = (LED_Val != Val); break;
+            case T_BIN_MASK:       Res = (LED_Val & Val); break;
+            case T_NOT_BIN_MASK:   Res = !(LED_Val & Val); break;
+            }
+            SetInput(Var_Nr, Res);
+#if 0 // Debug
+            uint32_t PERIOD = 500;
+            static uint32_t Disp = PERIOD;
+            if (millis() >= Disp)
+            {
+                char s[40];
+                sprintf(s, "%3i: V%-3i L%-3i O%i T%i V%-3i Act%-3i R%i", i, Var_Nr, LED_Nr, Offset, Typ, Val, LED_Val, Res);
+                Serial.println(s);
+                if (i == sizeof(LED2Var_Tab) / sizeof(LED2Var_Tab_T) - 1) Disp += 1000;
+            }
+#endif
+        }
+    }
 }

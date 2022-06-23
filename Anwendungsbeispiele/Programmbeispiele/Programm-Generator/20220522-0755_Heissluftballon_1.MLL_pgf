@@ -1,0 +1,8 @@
+Head:	Program_Generator configuration file	V1.0
+Sheet:	DCC	Heissluftballon_1
+Line:	Act								RGB_Heartbeat2(#LED, 5, 128)	0	1	0	0	0
+Line:	-													
+Line:	Act		100	AnAus					Random(BALLON1, #InCh, RM_NORMAL, 5 Sek, 15 Sek, 3800, 3800)			1	0	
+Line:	Act		BALLON1			Heissluftballon_1 (pc) - Lichteffekt			XPatternT6(#LED,28,#InCh,6,0,255,0,PM_NORMAL,1,200,1000,100,1,2500,20,5,5,0,0,0,200,20,50,255,20,50,255,255,255,255,255,255,75,0,0,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0)	1	2	1	0	0
+Line:	-													
+Line:	Act		BALLON1			Soundeffekt			Sound_JQ6500_Seq1(#LED, #InCh)	3	C1-1	1	0	0

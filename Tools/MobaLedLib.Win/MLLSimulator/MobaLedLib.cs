@@ -29,6 +29,8 @@ namespace MLLSimulator
         [DllImport(@"MobaLedLibWrapper.dll", CallingConvention = CallingConvention.StdCall)]
         extern public static IntPtr Create(byte[] configData, int configLength);
         [DllImport(@"MobaLedLibWrapper.dll", CallingConvention = CallingConvention.StdCall)]
+        extern public static IntPtr CreateEx(byte[] configData, int configLength, byte[] l2vData, int l2vLength);
+        [DllImport(@"MobaLedLibWrapper.dll", CallingConvention = CallingConvention.StdCall)]
         extern public static void Update();
         [DllImport(@"MobaLedLibWrapper.dll", CallingConvention = CallingConvention.StdCall)]
         extern public static void SetInput(byte channel, byte on);

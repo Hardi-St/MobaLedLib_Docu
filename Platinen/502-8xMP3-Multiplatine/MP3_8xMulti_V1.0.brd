@@ -7749,6 +7749,7 @@
 <text x="89.3826" y="37.7952" size="1.6764" layer="52" rot="MR0">&gt;PROJECT</text>
 <text x="88.646" y="32.8168" size="1.4224" layer="52" rot="MR0">&gt;LINK</text>
 <text x="90.17" y="43.815" size="1.27" layer="25" rot="R270">+5V</text>
+<text x="88.9" y="1.778" size="1.6764" layer="25">+</text>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
