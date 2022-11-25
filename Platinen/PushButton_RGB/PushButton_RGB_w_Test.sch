@@ -21693,7 +21693,7 @@ part number 2062-2P from STA</description>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1" value="green"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="green"/>
 <part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="470"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -22134,7 +22134,6 @@ https://jlcpcb.com/partdetail/Tcwin-TC5050RGBF20_3CESAF51/C784541
 <attribute name="NAME" x="361.188" y="230.378" size="1.778" layer="95"/>
 </instance>
 <instance part="TST_LED1" gate="G$1" x="365.76" y="218.44" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="371.348" y="215.392" size="1.778" layer="96" rot="MR90"/>
 <attribute name="NAME" x="362.204" y="226.822" size="1.778" layer="95" rot="MR270"/>
 </instance>
 <instance part="H4" gate="G$1" x="287.02" y="10.16" smashed="yes"/>
