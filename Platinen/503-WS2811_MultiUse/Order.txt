@@ -1,0 +1,27 @@
+Dicke/PCB Thickness: 0.8mm
+Surface Finish: LeadFree HASL
+SMT assembly: bottom
+
+Base Material: FR-4
+Layers: 2
+Dimension: 77.7 mm* 71 mm 71mm* 77.66mm
+PCB Qty: 30
+Product Type:
+Different Design: 1
+Delivery Format: Single PCB
+PCB Thickness: 0.8
+Impedance Control: no
+PCB Color: Green
+Silkscreen: White
+Surface Finish: LeadFree HASL
+Deburring/Edge rounding: No
+Outer Copper Weight: 1
+Gold Fingers: No
+Flying Probe Test: Fully Test
+Castellated Holes: no
+Remove Order Number: No
+4-Wire Kelvin Test:No
+Material Type:FR4-Standard Tg 130-140C
+Paper between PCBs:No
+Appearance Quality:IPC Class 2 Standard
+Confirm Production file:No
