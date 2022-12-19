@@ -1,0 +1,20 @@
+Dicke mindestens 1.2mm - bisherige Bestellungen 1.6mm
+Surface Finish: LeadFree HASL
+SMT assembly: bottom
+
+Layers: 2
+Dimension: 203 mm* 75 mm
+PCB Thickness: 1.6
+Impedance Control: no
+PCB Color: Green
+Silkscreen: White
+Surface Finish: LeadFree HASL
+Deburring/Edge rounding: No
+Outer Copper Weight: 1
+Gold Fingers: No
+Flying Probe Test: Fully Test
+Castellated Holes: no
+Remove Order Number: No
+4-Wire Kelvin Test:No
+Material Type:FR4-Standard Tg 130-140C
+Paper between PCBs:No
