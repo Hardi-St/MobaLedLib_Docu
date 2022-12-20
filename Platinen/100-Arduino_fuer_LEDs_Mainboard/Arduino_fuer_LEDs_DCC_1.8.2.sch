@@ -16673,7 +16673,7 @@ Mini-Verteiler abgesägt wird.</text>
 <text x="112.268" y="47.498" size="1.778" layer="97" align="top-left">Selectrix und
 LocoNet
 (Seite 2)</text>
-<text x="59.182" y="48.514" size="1.778" layer="97">LN TX</text>
+<text x="59.182" y="48.514" size="1.778" layer="97">LN RX</text>
 <text x="58.928" y="38.354" size="1.778" layer="97">SX</text>
 <text x="58.928" y="33.274" size="1.778" layer="97">DCC/SX</text>
 <wire x1="109.22" y1="27.94" x2="109.22" y2="53.34" width="0.1524" layer="97"/>
@@ -16705,6 +16705,7 @@ Platinenrückseite (SMD)</text>
 Erweiterung ESP32</text>
 <text x="109.22" y="10.16" size="1.9304" layer="97" align="top-left">ToDo:
 - Correct LED0 / LEDn text (PCB)</text>
+<text x="59.182" y="45.974" size="1.778" layer="97">LN TX</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="76.2" y="203.2" smashed="yes" rot="R270"/>
@@ -17807,15 +17808,15 @@ Erweiterung ESP32</text>
 </net>
 <net name="D2_2" class="0">
 <segment>
-<wire x1="63.5" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="33.02" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="33.02" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="58.42" x2="-33.02" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="58.42" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D2"/>
 <pinref part="OK1" gate="A" pin="VO"/>
-<wire x1="-33.02" y1="66.04" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
-<junction x="68.58" y="33.02"/>
+<wire x1="-33.02" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
+<junction x="71.12" y="33.02"/>
 <wire x1="-45.72" y1="73.66" x2="-33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="73.66" x2="-33.02" y2="66.04" width="0.1524" layer="91"/>
 <junction x="-33.02" y="66.04"/>
@@ -18293,28 +18294,28 @@ Erweiterung ESP32</text>
 <junction x="-76.2" y="25.4"/>
 </segment>
 </net>
-<net name="D47_2" class="0">
+<net name="D48_2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="D4"/>
 <label x="101.6" y="38.1" size="1.778" layer="95"/>
-<wire x1="63.5" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="D7"/>
-<wire x1="66.04" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="45.72" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="38.1" x2="66.04" y2="45.72" width="0.1524" layer="91"/>
-<junction x="66.04" y="38.1"/>
+<wire x1="63.5" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="D8"/>
+<wire x1="68.58" y1="38.1" x2="109.22" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="48.26" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
+<junction x="68.58" y="38.1"/>
 </segment>
 </net>
-<net name="D38_2" class="0">
+<net name="D37_2" class="0">
 <segment>
-<label x="101.6" y="48.26" size="1.778" layer="95"/>
-<wire x1="109.22" y1="48.26" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="D8"/>
+<label x="101.6" y="45.72" size="1.778" layer="95"/>
+<wire x1="109.22" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D3"/>
-<wire x1="73.66" y1="48.26" x2="63.5" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="35.56" x2="73.66" y2="48.26" width="0.1524" layer="91"/>
-<junction x="73.66" y="48.26"/>
+<wire x1="73.66" y1="35.56" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="D7"/>
+<wire x1="63.5" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<junction x="73.66" y="45.72"/>
 </segment>
 </net>
 </nets>
@@ -18907,25 +18908,6 @@ distributor is cut off.</text>
 <wire x1="137.16" y1="241.3" x2="60.96" y2="241.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D47_2" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<pinref part="IC2" gate="A" pin="OUT"/>
-<wire x1="88.9" y1="220.98" x2="86.36" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="SJ_SX1" gate="1" pin="2"/>
-<wire x1="91.44" y1="231.14" x2="86.36" y2="231.14" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="231.14" x2="86.36" y2="220.98" width="0.1524" layer="91"/>
-<junction x="86.36" y="220.98"/>
-<wire x1="86.36" y1="220.98" x2="78.74" y2="220.98" width="0.1524" layer="91"/>
-<label x="60.96" y="220.98" size="1.778" layer="95"/>
-<wire x1="78.74" y1="220.98" x2="60.96" y2="220.98" width="0.1524" layer="91"/>
-<junction x="78.74" y="220.98"/>
-<pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="91.44" y1="236.22" x2="86.36" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="236.22" x2="86.36" y2="231.14" width="0.1524" layer="91"/>
-<junction x="86.36" y="231.14"/>
-</segment>
-</net>
 <net name="N$38" class="0">
 <segment>
 <pinref part="R24" gate="G$1" pin="2"/>
@@ -19019,17 +19001,6 @@ distributor is cut off.</text>
 <pinref part="R31" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="D38_2" class="0">
-<segment>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="165.1" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
-<label x="60.96" y="165.1" size="1.778" layer="95"/>
-<pinref part="SJ_LN2" gate="1" pin="2"/>
-<wire x1="68.58" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="170.18" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
-<junction x="68.58" y="165.1"/>
-</segment>
-</net>
 <net name="N$40" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
@@ -19083,6 +19054,36 @@ distributor is cut off.</text>
 <segment>
 <pinref part="IC2" gate="B" pin="OUT"/>
 <pinref part="SJ_SX6" gate="1" pin="1"/>
+</segment>
+</net>
+<net name="D37_2" class="0">
+<segment>
+<pinref part="R31" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="165.1" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
+<label x="60.96" y="165.1" size="1.778" layer="95"/>
+<pinref part="SJ_LN2" gate="1" pin="2"/>
+<wire x1="68.58" y1="165.1" x2="60.96" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="170.18" x2="68.58" y2="165.1" width="0.1524" layer="91"/>
+<junction x="68.58" y="165.1"/>
+</segment>
+</net>
+<net name="D48_2" class="0">
+<segment>
+<pinref part="R22" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="A" pin="OUT"/>
+<wire x1="88.9" y1="220.98" x2="86.36" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="SJ_SX1" gate="1" pin="2"/>
+<wire x1="91.44" y1="231.14" x2="86.36" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="231.14" x2="86.36" y2="220.98" width="0.1524" layer="91"/>
+<junction x="86.36" y="220.98"/>
+<wire x1="86.36" y1="220.98" x2="78.74" y2="220.98" width="0.1524" layer="91"/>
+<label x="60.96" y="220.98" size="1.778" layer="95"/>
+<wire x1="78.74" y1="220.98" x2="60.96" y2="220.98" width="0.1524" layer="91"/>
+<junction x="78.74" y="220.98"/>
+<pinref part="R30" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="236.22" x2="86.36" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="236.22" x2="86.36" y2="231.14" width="0.1524" layer="91"/>
+<junction x="86.36" y="231.14"/>
 </segment>
 </net>
 </nets>
