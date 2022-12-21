@@ -16447,10 +16447,6 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="R9" library="rcl" deviceset="R-EU_" device="0204/7" value="10K"/>
 <part name="P+30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="IC3" library="74xx-us" library_urn="urn:adsk.eagle:library:88" deviceset="74*125" device="N" package3d_urn="urn:adsk.eagle:package:16407/2"/>
-<part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND54" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="CON5" library="Connectors_Inline3_7" deviceset="M04" device="B4B-ZR4P" value="M04B4B-ZR4P"/>
 <part name="U1" library="Arduino_fuer_LEDs_DCC_2_All" deviceset="WS2812_BREAKOUT" device=""/>
 <part name="U4" library="Arduino_fuer_LEDs_DCC_2_All" deviceset="WS2812_BREAKOUT" device=""/>
@@ -16515,6 +16511,8 @@ Source: www.tycoelectronics.com .. ENG_DS_1654001_1099_RJ_L_0507.pdf</descriptio
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="SJ_SX6" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO"/>
 <part name="SJ_LN2" library="SparkFun-Retired" deviceset="SOLDERJUMPER" device="NO"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="0207/2V" value="10K"/>
+<part name="P+24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16637,7 +16635,7 @@ https://wiki.mobaledlib.de/
 https://www.stummiforum.de/t165060f7-MobaLedLib-LEDs-Servos-Sound.html 
 https://github.com/Hardi-St/MobaLedLib
 https://github.com/Hardi-St/MobaLedLib_Docu</text>
-<text x="31.75" y="81.28" size="1.524" layer="97">Mit dem Prg_Boot Jumpern
+<text x="41.91" y="-12.7" size="1.524" layer="97">Mit dem Prg_Boot Jumpern
 kann man den Bootloader
 des LED Nanos flashen damit
 dieser in Zukunft mit 115200
@@ -16694,7 +16692,8 @@ Platinenrückseite (SMD)</text>
                   for analog buttons.
                   (1:A5, 2:GND, 5:A7) 
 19.12.22: =&gt; Ver. 1.8.2
-               - Corrected LED0/n text (PCB)</text>
+                - Corrected LED0/n text (PCB)
+21.12.22: - Spare 74125 used to replace Prg_Boot Jumpers</text>
 <text x="297.18" y="53.34" size="1.524" layer="97" align="top-left">Idee:
 - Zweite CS Leitung per Lötjumper damit man
    zwei CAN Busse gleichzeitig verwenden kann 
@@ -16913,9 +16912,9 @@ Erweiterung ESP32</text>
 <attribute name="VALUE" x="33.02" y="78.74" size="1.778" layer="96" rot="MR0"/>
 <attribute name="NAME" x="30.48" y="89.662" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="JP4" gate="A" x="66.04" y="83.82" smashed="yes" rot="MR270">
-<attribute name="NAME" x="72.39" y="90.805" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="72.39" y="80.01" size="1.778" layer="96" rot="MR0"/>
+<instance part="JP4" gate="A" x="66.04" y="93.98" smashed="yes" rot="MR270">
+<attribute name="NAME" x="72.39" y="100.965" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="72.39" y="90.17" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="FRAME3" gate="G$1" x="-104.14" y="-30.48" smashed="yes">
 <attribute name="DRAWING_NAME" x="240.03" y="-15.24" size="1.778" layer="94"/>
@@ -17011,18 +17010,14 @@ Erweiterung ESP32</text>
 <attribute name="NAME" x="88.265" y="83.82" size="1.778" layer="95" rot="MR270"/>
 <attribute name="VALUE" x="96.52" y="83.82" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="IC3" gate="C" x="63.5" y="0" smashed="yes" rot="MR180">
-<attribute name="NAME" x="66.04" y="-3.175" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="66.04" y="5.08" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC3" gate="D" x="38.1" y="83.82" smashed="yes" rot="MR90">
+<attribute name="NAME" x="41.275" y="86.36" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="44.196" y="74.168" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="IC3" gate="D" x="86.36" y="0" smashed="yes" rot="MR180">
-<attribute name="NAME" x="88.9" y="-3.175" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="88.9" y="5.08" size="1.778" layer="96" rot="MR180"/>
+<instance part="IC3" gate="C" x="58.42" y="83.82" smashed="yes" rot="R90">
+<attribute name="NAME" x="55.245" y="86.36" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="65.278" y="76.454" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND51" gate="1" x="63.5" y="-12.7" smashed="yes"/>
-<instance part="GND52" gate="1" x="53.34" y="-2.54" smashed="yes"/>
-<instance part="GND53" gate="1" x="76.2" y="-2.54" smashed="yes"/>
-<instance part="GND54" gate="1" x="86.36" y="-12.7" smashed="yes"/>
 <instance part="CON5" gate="G$1" x="147.32" y="213.36" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="139.7" y="218.44" size="1.778" layer="96" rot="MR180"/>
 <attribute name="NAME" x="137.16" y="210.82" size="1.778" layer="95" rot="MR90"/>
@@ -17123,6 +17118,13 @@ Erweiterung ESP32</text>
 </instance>
 <instance part="KEY_A7" gate="1" x="-20.32" y="127" smashed="yes" rot="R180">
 <attribute name="NAME" x="-15.24" y="125.73" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="R19" gate="G$1" x="48.26" y="93.98" smashed="yes" rot="MR270">
+<attribute name="NAME" x="46.7614" y="96.52" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="51.562" y="96.52" size="1.778" layer="96" rot="MR270"/>
+</instance>
+<instance part="P+24" gate="1" x="48.26" y="101.6" smashed="yes">
+<attribute name="VALUE" x="43.18" y="101.6" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -17317,22 +17319,6 @@ Erweiterung ESP32</text>
 <pinref part="GND43" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="IC3" gate="C" pin="OE"/>
-<pinref part="GND51" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="C" pin="I"/>
-<pinref part="GND52" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="D" pin="I"/>
-<pinref part="GND53" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="D" pin="OE"/>
-<pinref part="GND54" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
@@ -17515,6 +17501,10 @@ Erweiterung ESP32</text>
 <pinref part="R20" gate="G$1" pin="1"/>
 <pinref part="P+35" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="P+24" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="D10" class="0">
 <segment>
@@ -17535,10 +17525,10 @@ Erweiterung ESP32</text>
 <pinref part="U2" gate="G$1" pin="D10"/>
 <pinref part="CAN2" gate="1" pin="CS"/>
 <junction x="71.12" y="147.32"/>
-<wire x1="71.12" y1="93.98" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="104.14" x2="71.12" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="3"/>
-<wire x1="68.58" y1="86.36" x2="68.58" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="96.52" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="170.18" x2="71.12" y2="170.18" width="0.1524" layer="91"/>
 <junction x="71.12" y="170.18"/>
 </segment>
@@ -18031,8 +18021,12 @@ Erweiterung ESP32</text>
 <segment>
 <pinref part="U3" gate="G$1" pin="D13"/>
 <wire x1="30.48" y1="58.42" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="58.42" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="58.42" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
+<pinref part="IC3" gate="D" pin="I"/>
+<wire x1="20.32" y1="73.66" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+<junction x="20.32" y="73.66"/>
 </segment>
 </net>
 <net name="N$24" class="0">
@@ -18082,7 +18076,11 @@ Erweiterung ESP32</text>
 <pinref part="U3" gate="G$1" pin="D10"/>
 <wire x1="66.04" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="2"/>
-<wire x1="66.04" y1="86.36" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="96.52" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="C" pin="I"/>
+<wire x1="66.04" y1="73.66" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="73.66" x2="66.04" y2="73.66" width="0.1524" layer="91"/>
+<junction x="66.04" y="73.66"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -18090,9 +18088,13 @@ Erweiterung ESP32</text>
 <wire x1="25.4" y1="104.14" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="RST"/>
 <wire x1="25.4" y1="121.92" x2="30.48" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="104.14" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="1"/>
-<wire x1="63.5" y1="104.14" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="104.14" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="IC3" gate="C" pin="O"/>
+<wire x1="58.42" y1="93.98" x2="58.42" y2="104.14" width="0.1524" layer="91"/>
+<junction x="58.42" y="104.14"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -18204,7 +18206,8 @@ Erweiterung ESP32</text>
 <wire x1="185.42" y1="180.34" x2="185.42" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="193.04" x2="68.58" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="D13"/>
-<wire x1="20.32" y1="86.36" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="86.36" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="93.98" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="CAN2" gate="1" pin="CLK"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
@@ -18214,6 +18217,9 @@ Erweiterung ESP32</text>
 <junction x="30.48" y="152.4"/>
 <wire x1="185.42" y1="162.56" x2="68.58" y2="162.56" width="0.1524" layer="91"/>
 <junction x="68.58" y="162.56"/>
+<pinref part="IC3" gate="D" pin="O"/>
+<wire x1="38.1" y1="93.98" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
+<junction x="20.32" y="93.98"/>
 </segment>
 </net>
 <net name="GND2" class="0">
@@ -18316,6 +18322,20 @@ Erweiterung ESP32</text>
 <pinref part="U3" gate="G$1" pin="D7"/>
 <wire x1="63.5" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <junction x="73.66" y="45.72"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="IC3" gate="D" pin="OE"/>
+<pinref part="IC3" gate="C" pin="OE"/>
+<wire x1="48.26" y1="83.82" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
+<junction x="48.26" y="83.82"/>
+<wire x1="48.26" y1="71.12" x2="68.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="71.12" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="D9"/>
+<wire x1="68.58" y1="50.8" x2="63.5" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="83.82" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
