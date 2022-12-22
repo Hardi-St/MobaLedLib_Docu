@@ -16694,10 +16694,9 @@ Platinenrückseite (SMD)</text>
 19.12.22: =&gt; Ver. 1.8.2
                 - Corrected LED0/n text (PCB)
 21.12.22: - Spare 74125 used to replace Prg_Boot Jumpers</text>
-<text x="297.18" y="53.34" size="1.524" layer="97" align="top-left">Idee:
-- Zweite CS Leitung per Lötjumper damit man
-   zwei CAN Busse gleichzeitig verwenden kann 
-   (für Tests)
+<text x="82.804" y="178.054" size="1.524" layer="97" align="top-left">Idee:
+- Zweite CS Leitung per Lötjumper damit man zwei 
+CAN Busse gleichzeitig verwenden kann (für Tests)
 
 </text>
 <text x="78.232" y="219.71" size="1.524" layer="97">Pins für optionale
