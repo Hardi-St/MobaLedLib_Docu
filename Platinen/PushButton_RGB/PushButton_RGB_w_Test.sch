@@ -21933,7 +21933,10 @@ in the string and if
 KEYBOARD1 is used for
 a second string.</text>
 <text x="323.596" y="32.258" size="2.1844" layer="97" distance="70">Revision History:
-18.11.22: Started</text>
+18.11.22: Started
+09.01.23: - Moved the Diodes / LED at
+                  the bottom for better
+                  manufacturing </text>
 <text x="377.444" y="7.874" size="2.1844" layer="94">V 1.0</text>
 <text x="41.91" y="215.646" size="1.778" layer="97">Buttons:
 1 +C
