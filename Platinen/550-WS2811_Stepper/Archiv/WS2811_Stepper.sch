@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.05" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -14425,8 +14425,8 @@ Based on the following sources:
 <part name="Q1" library="transistor-small-signal" deviceset="BS170" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="Q2" library="transistor-small-signal" deviceset="BS170" device=""/>
-<part name="CON2" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="End SW2"/>
 <part name="CON1" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="End SW1"/>
+<part name="CON2" library="SparkFun-Connectors" deviceset="M02" device="PTH" value="End SW2"/>
 <part name="D2" library="diode" deviceset="1N4148" device="DO35-7" value="1N4148"/>
 <part name="D1" library="diode" deviceset="1N4148" device="DO35-7" value="1N4148"/>
 <part name="C1" library="resistor" deviceset="C-EU" device="050-024X044" value="220nF"/>
@@ -14554,9 +14554,9 @@ motor Steuerung
 mit WS2811</text>
 <text x="153.67" y="171.45" size="1.778" layer="97" align="top-left">Bei einem winzigen Schrittmotor
 werden keine Endschalter benötigt.
-Dann entfallen Q1, Q2, D2 &amp; CON2.
+Dann entfallen Q1, Q2, D2 &amp; CON1.
 Stattdessen wird der Jumper NO_END_SW
-und CON1 verbunden.</text>
+und CON2 verbunden.</text>
 <text x="224.79" y="57.15" size="1.778" layer="97" align="top-left">Achtung:
 Spannung am A4988 Poti
 auf 0.15V einstellen für die
@@ -14703,11 +14703,11 @@ Stepper reichen 100uF</text>
 <attribute name="NAME" x="114.3" y="90.17" size="1.778" layer="95"/>
 <attribute name="VALUE" x="123.19" y="92.71" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="CON2" gate="G$1" x="111.76" y="157.48" smashed="yes" rot="MR270">
+<instance part="CON1" gate="G$1" x="111.76" y="157.48" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="103.886" y="163.83" size="1.778" layer="96" rot="MR270"/>
 <attribute name="NAME" x="105.918" y="160.02" size="1.778" layer="95" rot="MR270"/>
 </instance>
-<instance part="CON1" gate="G$1" x="124.46" y="157.48" smashed="yes" rot="MR270">
+<instance part="CON2" gate="G$1" x="124.46" y="157.48" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="129.286" y="163.322" size="1.778" layer="96" rot="MR270"/>
 <attribute name="NAME" x="118.618" y="160.02" size="1.778" layer="95" rot="MR270"/>
 </instance>
@@ -15160,7 +15160,7 @@ Stepper reichen 100uF</text>
 <junction x="96.52" y="71.12"/>
 </segment>
 </net>
-<net name="M2B" class="0">
+<net name="N$31" class="0">
 <segment>
 <pinref part="M1" gate="G$1" pin="2B"/>
 <wire x1="218.44" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
@@ -15176,7 +15176,7 @@ Stepper reichen 100uF</text>
 <pinref part="J10" gate="1" pin="2"/>
 </segment>
 </net>
-<net name="M2A" class="0">
+<net name="N$40" class="0">
 <segment>
 <pinref part="M1" gate="G$1" pin="2A"/>
 <wire x1="218.44" y1="81.28" x2="231.14" y2="81.28" width="0.1524" layer="91"/>
@@ -15191,7 +15191,7 @@ Stepper reichen 100uF</text>
 <pinref part="J10" gate="1" pin="1"/>
 </segment>
 </net>
-<net name="M1A" class="0">
+<net name="N$41" class="0">
 <segment>
 <pinref part="M1" gate="G$1" pin="1A"/>
 <wire x1="218.44" y1="78.74" x2="233.68" y2="78.74" width="0.1524" layer="91"/>
@@ -15207,7 +15207,7 @@ Stepper reichen 100uF</text>
 <pinref part="J10" gate="1" pin="3"/>
 </segment>
 </net>
-<net name="M1B" class="0">
+<net name="N$35" class="0">
 <segment>
 <wire x1="243.84" y1="96.52" x2="243.84" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="1B"/>
@@ -15303,7 +15303,7 @@ Stepper reichen 100uF</text>
 <junction x="58.42" y="63.5"/>
 </segment>
 </net>
-<net name="VCC2" class="0">
+<net name="N$7" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="6"/>
 <pinref part="SV3" gate="1" pin="6"/>
@@ -15333,9 +15333,9 @@ Stepper reichen 100uF</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="CON2" gate="G$1" pin="1"/>
+<pinref part="CON1" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="149.86" x2="111.76" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="CON1" gate="G$1" pin="2"/>
+<pinref part="CON2" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="137.16" x2="121.92" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
@@ -15359,7 +15359,7 @@ Stepper reichen 100uF</text>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="CON1" gate="G$1" pin="1"/>
+<pinref part="CON2" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="124.46" y1="149.86" x2="124.46" y2="127" width="0.1524" layer="91"/>
 <pinref part="Q4" gate="1" pin="S"/>
@@ -15370,7 +15370,7 @@ Stepper reichen 100uF</text>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="CON2" gate="G$1" pin="2"/>
+<pinref part="CON1" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="109.22" y1="149.86" x2="109.22" y2="127" width="0.1524" layer="91"/>
 <pinref part="Q3" gate="1" pin="S"/>
