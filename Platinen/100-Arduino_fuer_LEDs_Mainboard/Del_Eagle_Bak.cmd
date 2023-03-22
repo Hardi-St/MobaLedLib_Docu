@@ -5,3 +5,4 @@ DEL *.s#?
 DEL *.b#?
 DEL *.l#?
 DEL *.job
+Del *.pro
