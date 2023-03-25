@@ -16701,8 +16701,12 @@ CAN Busse gleichzeitig verwenden kann (für Tests)
 </text>
 <text x="78.232" y="219.71" size="1.524" layer="97">Pins für optionale
 Erweiterung ESP32</text>
-<text x="109.22" y="10.16" size="1.9304" layer="97" align="top-left">ToDo:
-- Correct LED0 / LEDn text (PCB)</text>
+<text x="106.68" y="15.24" size="1.9304" layer="97" align="top-left">ToDo:
+- 2 oder 3 CAN Busse z.B. für GBM Übersetzung (Hardi GBM -&gt; Märklin)
+  - CAN Int Pin oder zus. Pin für 2/3 CAN Busse mit Galv. Getrenten CAN Modul
+  - Zweite CS Leitung per Lötjumper für IC4 damit man zwei 
+    CAN Busse gleichzeitig verwenden kann (für Tests)
+  - Pin6 von LEDs0 und LEDs 2 Stecker mit Pin6 der Miniverteiler verbinden</text>
 <text x="59.182" y="45.974" size="1.778" layer="97">LN TX</text>
 </plain>
 <instances>
