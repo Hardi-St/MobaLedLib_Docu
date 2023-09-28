@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -14476,6 +14476,8 @@ Based on the following sources:
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="J10" library="con-harting-ml" deviceset="ML6" device="" value=" "/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14517,8 +14519,11 @@ ist.</text>
 wenn keine weiteren
 Platinen an Stecker SV3 
 angeschlossen werden.</text>
-<text x="229.87" y="29.21" size="1.778" layer="97">Revision History:
-22.04.21: Started</text>
+<text x="222.25" y="26.67" size="1.778" layer="97">Revision History:
+22.04.21: Started
+28.09.23: Connected 4017
+                to GND/+5V
+                Ver. 1.1</text>
 <wire x1="109.22" y1="157.48" x2="109.22" y2="165.1" width="0.1524" layer="97"/>
 <wire x1="109.22" y1="165.1" x2="107.442" y2="171.196" width="0.1524" layer="97"/>
 <wire x1="107.696" y1="170.18" x2="109.22" y2="170.18" width="0.1524" layer="97"/>
@@ -14531,7 +14536,7 @@ angeschlossen werden.</text>
 <wire x1="121.92" y1="170.18" x2="121.92" y2="172.72" width="0.1524" layer="97"/>
 <wire x1="121.92" y1="172.72" x2="124.46" y2="172.72" width="0.1524" layer="97"/>
 <wire x1="124.46" y1="172.72" x2="124.46" y2="157.48" width="0.1524" layer="97"/>
-<text x="176.53" y="64.77" size="1.778" layer="97" align="top-left">MS1 MS2 MS3
+<text x="166.37" y="64.77" size="1.778" layer="97" align="top-left">MS1 MS2 MS3
   -       -      -    Full Step (Schnell)
   X      -      -    1/2 Step
   -      X      -    1/4 Step
@@ -14548,7 +14553,7 @@ bewegt sich der Stepper 5 mal langsamer.
 =&gt; Die Jumper müssen anders gesetzt sein.</text>
 <text x="196.85" y="148.59" size="1.778" layer="97">12V für Stepper</text>
 <text x="241.3" y="20.32" size="2.54" layer="92">by Hardi</text>
-<text x="215.9" y="20.32" size="3.81" layer="97">Ver.: 1.0</text>
+<text x="215.9" y="20.32" size="3.81" layer="97">Ver.: 1.1</text>
 <text x="162.56" y="6.35" size="4.064" layer="97" distance="40">Einfache Schritt-
 motor Steuerung
 mit WS2811</text>
@@ -14879,6 +14884,13 @@ Stepper reichen 100uF</text>
 <instance part="P+14" gate="1" x="248.92" y="81.28" smashed="yes" rot="R270">
 <attribute name="VALUE" x="248.92" y="83.82" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="IC1" gate="P" x="106.68" y="53.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="105.41" y="55.245" size="1.778" layer="95"/>
+</instance>
+<instance part="GND17" gate="1" x="99.06" y="50.8" smashed="yes" rot="MR0"/>
+<instance part="P+15" gate="1" x="116.84" y="53.34" smashed="yes" rot="R270">
+<attribute name="VALUE" x="118.11" y="52.324" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -14986,6 +14998,10 @@ Stepper reichen 100uF</text>
 <pinref part="IC1" gate="A" pin="ENA"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="P" pin="VSS"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -15073,6 +15089,10 @@ Stepper reichen 100uF</text>
 <segment>
 <pinref part="J10" gate="1" pin="5"/>
 <pinref part="P+14" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="P" pin="VDD"/>
+<pinref part="P+15" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -15421,11 +15441,6 @@ Stepper reichen 100uF</text>
 <junction x="142.24" y="139.7"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<junction x="167.64" y="137.16"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="Q2"/>
@@ -15521,13 +15536,14 @@ Stepper reichen 100uF</text>
 <net name="N$33" class="0">
 <segment>
 <pinref part="IC1" gate="A" pin="Q0"/>
-<wire x1="116.84" y1="43.18" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="STEP"/>
 <wire x1="177.8" y1="73.66" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="50.8" x2="154.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="NORM_STEP" gate="1" pin="2"/>
 <junction x="154.94" y="73.66"/>
-<wire x1="116.84" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="50.8" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="43.18" x2="121.92" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="43.18" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -15593,6 +15609,24 @@ Stepper reichen 100uF</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,218.44,86.36,M1,GNDMOT,GND,,,"/>
+<approved hash="104,1,218.44,73.66,M1,VDD,+5V,,,"/>
+<approved hash="104,1,218.44,88.9,M1,VMOT,VCC2,,,"/>
+<approved hash="104,1,66.04,63.5,U2R,VDD,N$5,,,"/>
+<approved hash="104,1,66.04,83.82,U3H,VDD,N$5,,,"/>
+<approved hash="104,1,99.06,53.34,IC1P,VSS,GND,,,"/>
+<approved hash="104,1,114.3,53.34,IC1P,VDD,+5V,,,"/>
+<approved hash="209,1,177.8,76.2,N$1,,,,,"/>
+<approved hash="209,1,177.8,78.74,N$1,,,,,"/>
+<approved hash="206,1,66.04,71.12,N$3,,,,,"/>
+<approved hash="206,1,66.04,91.44,N$3,,,,,"/>
+<approved hash="113,1,46.0096,38.0577,SV1,,,,,"/>
+<approved hash="113,1,46.0096,111.802,SV3,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME2,,,,,"/>
+<approved hash="113,1,17.7377,84.1096,SV2,,,,,"/>
+<approved hash="113,1,127,27.6504,SV4,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
