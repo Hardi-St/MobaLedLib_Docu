@@ -11129,7 +11129,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="54.6862" y="43.5356" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="58.1533" y="47.16145" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="J2" library="con-tycoelectronics" package="RJ11-NO_SHIELD_NO_MOUNT_HOULE" value="LocoNet" x="97.79" y="30.00375" smashed="yes" rot="R90">
+<element name="J2" library="con-tycoelectronics" package="RJ11-NO_SHIELD_NO_MOUNT_HOULE" value="LNet" x="97.79" y="30.00375" smashed="yes" rot="R90">
 <attribute name="NAME" x="96.67875" y="30.7975" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="98.90125" y="29.845" size="1.27" layer="25" ratio="12" rot="R90" align="center"/>
 </element>
