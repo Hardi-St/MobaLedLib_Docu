@@ -12733,7 +12733,7 @@ https://www.mikrocontroller.net/topic/441586?goto=5267064#5267064</text>
 03.06.20: Added R26 (Pull Down für TX)
 29.07.20: Added Prg_Boot jumper
 30.07.20: Added C8, C9, R27 (analog Taster)
-               - Removed LocoNet
+               - Removed LNet
                - Removed CV read option
                - Added Selextrix OP and connectors
                - Added opt power supply terminal 
