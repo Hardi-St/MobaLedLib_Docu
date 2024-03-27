@@ -1,0 +1,6 @@
+Kommentar:
+Board with plated slots drawn on layer "46 Milling" in eagle.
+For pushbuttons
+EARU https://de.aliexpress.com/item/4000215749571.html
+The vias within these slots could be milled away (DRC).
+
