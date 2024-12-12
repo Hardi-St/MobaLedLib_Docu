@@ -1,1 +1,6 @@
-
+Der Weichenantrieb mit Laterne ist für die Spurgröße H0 mit einem waagerechten Hub der Stellschwelle von 4 mm ausgelegt.
+In dieser Variante ist ein Servo vom Typ SG 90 vorgesehen.
+Als Stelldraht kommt Federstahldraht mit einem Durchmesser von 0.8 mm zum Einsatz.
+Der Führungsstab der Laterne, der sowohl für die Drehbewegung als auch für die Beleuchtung zuständig ist, wurde mit einem Lichtleiter oder Akylstab mit einem Durchmesser von 1 mm realisiert.
+Die Einzelteile wurden mit PLA auf einem BambuLep P1S (Nozzel 0.4) ausgedruckt.
+Es können vereinzelt Nacharbeiten bei den Bohrungen erforderlich sein.
