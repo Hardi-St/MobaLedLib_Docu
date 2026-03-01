@@ -5,4 +5,4 @@ Fuer Schaeden an der Platine uebernehme ich keine Gewaehr!
 Bei flach liegender Montage ist zusaetzlich der Rahmen noetig, um den Abstand zur Holzplatte zu gewaehrleisten.
 Befestigt wird das Ganze von oben mit vier Spanplattenschrauben 2,5x20mm.
 
-Bei stehender Montage kan der Rahmen vertikal verwendet werden. Das ist an schwer zugaenglichen Stellen von Vorteil.
+Bei stehender Montage kann der Rahmen vertikal verwendet werden. Das ist an schwer zugaenglichen Stellen von Vorteil.
