@@ -1,0 +1,57 @@
+SheetName¯Blaulicht 30
+Version¯1
+Erste RGB LED: ¯0
+Startkanal der RGB LED: ¯0
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯8
+Bits pro Wert: ¯4
+Wert Min: ¯0
+Wert Max: ¯48
+Wert ausgeschaltet: ¯0
+Mode: ¯PM_NORMAL
+Analoges Überblenden: ¯x
+Goto Mode: ¯
+Goto Aktivierung: ¯
+Grafische Anzeige: ¯1
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Blaulicht 30
+Dauer¯30
+Goto Tabelle¯
+LED_Tab¯LED1¯4¯x¯x¯4¯.¯.¯.¯.¯.¯.
+LED_Tab¯LED2¯.¯.¯4¯x¯x¯4¯.¯.¯.¯.
+LED_Tab¯LED3¯.¯.¯.¯.¯4¯x¯x¯4¯.¯.
+LED_Tab¯LED1¯.¯.¯.¯.¯.¯.¯4¯x¯x¯4
+LED_Tab¯LED2¯.¯.¯4¯x¯x¯4¯.¯.¯.¯.
+LED_Tab¯LED3¯.¯.¯.¯.¯4¯x¯x¯4¯.¯.
+LED_Tab¯LED1¯.¯.¯.¯.¯.¯.¯4¯x¯x¯4
+LED_Tab¯LED2¯x¯4¯.¯.¯.¯.¯.¯.¯4¯x
+LED_Attr¯15¯c16777215,i255,B
+LED_Attr¯15¯c16777215,i46080,B
+LED_Attr¯15¯c16777215,i16711680,B
+LED_Attr¯15¯c16777215,i255,B
+LED_Attr¯15¯c16777215,i46080,B
+LED_Attr¯15¯c16777215,i16711680,B
+LED_Attr¯15¯c16777215,i255,B
+LED_Attr¯15¯c16777215,i46080,B
+RGB_LED_CheckBox¯           0
+msoTextBox¯494;0;744;183¯Mit diesem Blatt kann die Konfiguration eines LED Musters erstellt werden.
+Die Gelb hinterlegten Felder und die Tabellen können verändert werden.
+Die Spalten der Tabelle beschreiben einen Abschnitt des Musters welches für eine bestimmte Zeit angezeigt wird. Die Dauer wird in der ersten Tabelle eingetragen.
+Die Zeiten können in Minuten ("Min") oder Sekunden ("Sec"= angegeben werden. Wird keine Einheit angegeben dann ist die Zeitangabe in Millisekunden ("ms").
+Achtung zwischen Zahl und Einheit muss ein Leerzeichen stehen und die Groß- und Kleinschreibung muss exakt stimmen. Wenn Spalten die gleiche Anzeigedauer
+haben, dann sollte die Zeit nur in den ersten Spalten angegeben werden zur Minimierung des Speicherverbrauchs. Die Folgenden Zeilen können als Formel Angegeben
+werden damit man sieht wie lange der Abschnitt dauert. Im Beispiel unten ist das bei den Spalten 4 bis 8 gemacht.
+In der zweiten Tabelle wird mit einem x markiert welche LED in dem Abschnitt leuchten soll. Wenn mehrere Helligkeiststufen benutzt werden, dann wird die Helligkeit
+als Zahl eingetragen. Die Anzahl der Abschnitte wird automatisch anhand der eingetragenen Markierungen bestimmt. Wenn am Ende leere Abschnitte verwendet
+werden sollen, dann muss in die letzte Spalte ein Punkt eingefügt werden.{Attrib}B1,75
+msoShapeOval¯506;189;20;18¯LED_M99O01L1
+msoShapeOval¯536;189;20;17¯LED_M99O01L2
+msoShapeOval¯566;189;19;19¯LED_M99O01L3
+msoShapeOval¯596;189;19;19¯LED_M99O01L4
+msoShapeOval¯626;189;19;19¯LED_M99O01L5
+msoShapeOval¯656;189;19;19¯LED_M99O01L6
+msoShapeOval¯686;189;19;19¯LED_M99O01L7
+msoShapeOval¯716;189;19;19¯LED_M99O01L8

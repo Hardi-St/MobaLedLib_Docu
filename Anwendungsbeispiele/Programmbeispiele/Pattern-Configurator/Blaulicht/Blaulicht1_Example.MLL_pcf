@@ -1,0 +1,35 @@
+SheetName¯Blaulicht1
+Version¯1
+Erste RGB LED: ¯1
+Startkanal der RGB LED: ¯0
+Schalter Nummer: ¯SI_1
+Anzahl der Ausgabe Kanäle: ¯1
+Bits pro Wert: ¯1
+Wert Min: ¯0
+Wert Max: ¯30
+Wert ausgeschaltet: ¯0
+Mode: ¯0
+Analoges Überblenden: ¯0
+Goto Mode: ¯0
+Goto Aktivierung: ¯
+Grafische Anzeige: ¯
+Spezial Mode: ¯
+RGB Modul Nummer: ¯
+Charlieplexing LED Zuordnung: ¯
+Analoge Eingänge: ¯
+Makro Name: ¯Blaulicht1
+Dauer¯48¯74¯48¯496
+Goto Tabelle¯
+LED_Tab¯Blaulicht¯x¯¯x¯.
+LED_Attr¯15¯
+RGB_LED_CheckBox¯           0
+msoTextBox¯497;0;767;142¯Mit diesem Blatt kann die Konfiguration eines LED Musters erstellt werden.
+Die Gelb hinterlegten Felder und die Tabellen können verändert werden.
+Die Spalten der Tabelle beschreiben einen Abschnitt des Musters welches für eine bestimmte Zeit angezeigt wird. Die Dauer wird in der ersten Tabelle eingetragen.
+Die Zeiten können in Minuten ("Min") oder Sekunden ("Sec"= angegeben werden. Wird keine Einheit angegeben dann ist die Zeitangabe in Millisekunden ("ms").
+Achtung zwischen Zahl und Einheit muss ein Leerzeichen stehen und die Groß- und Kleinschreibung muss exakt stimmen. Wenn Spalten die gleiche Anzeigedauer
+haben, dann sollte die Zeit nur in den ersten Spalten angegeben werden zur Minimierung des Speicherverbrauchs. Die Folgenden Zeilen können als Formel Angegeben
+werden damit man sieht wie lange der Abschnitt dauert. Im Beispiel unten ist das bei den Spalten 4 bis 8 gemacht.
+In der zweiten Tabelle wird mit einem x markiert welche LED in dem Abschnitt leuchten soll. Wenn mehrere Helligkeiststufen benutzt werden, dann wird die Helligkeit
+als Zahl eingetragen. Die Anzahl der Abschnitte wird automatisch anhand der eingetragenen Markierungen bestimmt. Wenn am Ende leere Abschnitte verwendet
+werden sollen, dann muss in die letzte Spalte ein Punkt eingefügt werden.{Attrib}B1,75
