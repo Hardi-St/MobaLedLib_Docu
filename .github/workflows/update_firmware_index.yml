@@ -13,14 +13,10 @@ jobs:
   updateFirmwareIndex:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository (Sparse)
+      - name: Checkout Repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          sparse-checkout: |
-            firmware/
-            scripts/  # Add scripts/ to checkout the update script
-          sparse-checkout-cone-mode: true
+          token: ${{ secrets.GITHUB_TOKEN }}    
 
       - name: Setup Python
         uses: actions/setup-python@v4
