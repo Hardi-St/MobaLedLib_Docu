@@ -4,6 +4,7 @@ on:
   push:
     branches: [ main ]  # Adjust the branch if needed
     paths: [ 'firmware/**' ]  # Recursive: Trigger on changes in firmware/ and all subdirectories
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   update:
