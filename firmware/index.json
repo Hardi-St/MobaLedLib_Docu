@@ -3,6 +3,48 @@
     "_comment": "*** This file is read-only and should not be edited by the user. ***"
   },
   {
+    "name": "PicoSound-Tiny",
+    "version": "0.3",
+    "license": "BSL-1.1-or-later",
+    "license-file": "PicoSound-Tiny-V0.3.LICENSE.txt",
+    "platform": "MLL512V1",
+    "DE": {
+      "short": "ATTiny kompatibles 6-fach Soundmodul",
+      "detail": "Steuert bis zu sechs Soundmodule mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
+    },
+    "EN": {
+      "short": "ATTiny-compatible 6-channel sound module",
+      "detail": "Controls up to six sound modules with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
+    },
+    "NL": {
+      "short": "ATTiny-compatibele 6-voudige geluidsmodule",
+      "detail": "Bestuurt maximaal zes geluidsmodules met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
+    },
+    "zip_path": "512v1/PicoSound-Tiny-V0.3.zip",
+    "desc_filename": "PicoSound-Tiny-V0.3.desc"
+  },
+  {
+    "name": "PicoServo-Tiny",
+    "version": "0.4",
+    "license": "BSL-1.1-or-later",
+    "license-file": "PicoServo-Tiny-V0.4.LICENSE.txt",
+    "platform": "MLL512V1",
+    "DE": {
+      "short": "ATTiny kompatibles 6-fach Servomodul",
+      "detail": "Steuert bis zu sechs Servos mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
+    },
+    "EN": {
+      "short": "ATTiny-compatible 6-channel servo module",
+      "detail": "Controls up to six servos with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
+    },
+    "NL": {
+      "short": "ATTiny-compatibele 6-kanaals servomodule",
+      "detail": "Bestuurt maximaal zes servo's met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
+    },
+    "zip_path": "512v1/PicoServo-Tiny-V0.4.zip",
+    "desc_filename": "PicoServo-Tiny-V0.4.desc"
+  },
+  {
     "name": "Pico2x3-Tiny",
     "version": "0.1",
     "license": "BSL-1.1-or-later",
