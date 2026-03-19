@@ -77,6 +77,9 @@ def update_index():
                                 data = json.load(f)
                                 desc_found = True
                                 
+                                # Remove "license-text" if present
+                                data.pop("license-text", None)
+                                
                                 # Validate ZIP contents
                                 if not validate_zip_contents(zip_path, data):
                                     skipped_zips += 1
@@ -105,6 +108,8 @@ def update_index():
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     data = json.load(f)
+                    # Remove "license-text" if present
+                    data.pop("license-text", None)
                     data["zip_path"] = None  # Mark as loose file
                     data["desc_path"] = os.path.relpath(file_path, DESCRIPTIONS_DIR)  # e.g. "subfolder/Pico2x3-Tiny.desc"
                     index.append(data)
