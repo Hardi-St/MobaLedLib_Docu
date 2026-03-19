@@ -103,11 +103,14 @@ def update_index():
         # Clean up temporary directory
         shutil.rmtree(temp_dir, ignore_errors=True)
     
+    # Add header comment as the first entry, surrounded by lines of *
+    index.insert(0, {"_comment": "*** This file is read-only and should not be edited by the user. ***"})
+    
     # Write the index as JSON array
     with open(INDEX_FILE, 'w', encoding='utf-8') as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
     
-    print(f"Index updated: {len(index)} entries in {INDEX_FILE}")
+    print(f"Index updated: {len(index) - 1} entries in {INDEX_FILE}")  # Subtract 1 for the comment
 
 if __name__ == "__main__":
     update_index()
