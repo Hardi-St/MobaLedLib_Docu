@@ -46,30 +46,40 @@ def validate_zip_contents(zip_path, desc_data):
     except Exception as e:
         print(f"::error::Error validating {zip_path}: {e}")
         return False
-        
+
 def update_index():
     index = []
     temp_dir = tempfile.mkdtemp()  # Temporary directory for extraction
+    skipped_zips = 0  # Counter for skipped ZIPs
     
     try:
         # Collect all .zip files recursively
         zip_files = glob.glob(os.path.join(DESCRIPTIONS_DIR, "**/*.zip"), recursive=True)
+        print(f"Found {len(zip_files)} ZIP files")
         
         for zip_path in zip_files:
+            print(f"Processing ZIP: {zip_path}")
+            desc_found = False
             try:
                 with zipfile.ZipFile(zip_path, 'r') as zf:
                     # Find .desc files in the ZIP
                     desc_members = [m for m in zf.namelist() if m.endswith('.desc')]
+                    if not desc_members:
+                        print(f"::warning::No .desc file found in {zip_path}")
+                        skipped_zips += 1
+                        continue
+                    
                     for member in desc_members:
                         # Extract temporarily
                         extracted_path = zf.extract(member, temp_dir)
                         try:
                             with open(extracted_path, 'r', encoding='utf-8') as f:
                                 data = json.load(f)
+                                desc_found = True
                                 
                                 # Validate ZIP contents
                                 if not validate_zip_contents(zip_path, data):
-                                    print(f"Skipping {zip_path} due to validation errors")
+                                    skipped_zips += 1
                                     continue
                                 
                                 # Add metadata (relative path to ZIP)
@@ -77,13 +87,17 @@ def update_index():
                                 data["desc_filename"] = member
                                 index.append(data)
                         except json.JSONDecodeError as e:
-                            print(f"Error parsing {member} in {zip_path}: {e}")
+                            print(f"::warning::Error parsing {member} in {zip_path}: {e}")
+                            skipped_zips += 1
                         except Exception as e:
-                            print(f"Error reading {member} in {zip_path}: {e}")
+                            print(f"::error::Error reading {member} in {zip_path}: {e}")
+                            skipped_zips += 1
             except zipfile.BadZipFile as e:
-                print(f"Error opening {zip_path}: {e}")
+                print(f"::warning::Error opening {zip_path}: {e}")
+                skipped_zips += 1
             except Exception as e:
-                print(f"Error with {zip_path}: {e}")
+                print(f"::error::Error with {zip_path}: {e}")
+                skipped_zips += 1
         
         # Collect loose .desc files recursively (no validation for loose files)
         loose_desc_files = glob.glob(os.path.join(DESCRIPTIONS_DIR, "**/*.desc"), recursive=True)
@@ -95,9 +109,9 @@ def update_index():
                     data["desc_path"] = os.path.relpath(file_path, DESCRIPTIONS_DIR)  # e.g. "subfolder/Pico2x3-Tiny.desc"
                     index.append(data)
             except json.JSONDecodeError as e:
-                print(f"Error parsing {file_path}: {e}")
+                print(f"::warning::Error parsing {file_path}: {e}")
             except Exception as e:
-                print(f"Error reading {file_path}: {e}")
+                print(f"::error::Error reading {file_path}: {e}")
     
     finally:
         # Clean up temporary directory
@@ -110,7 +124,7 @@ def update_index():
     with open(INDEX_FILE, 'w', encoding='utf-8') as f:
         json.dump(index, f, indent=2, ensure_ascii=False)
     
-    print(f"Index updated: {len(index) - 1} entries in {INDEX_FILE}")  # Subtract 1 for the comment
+    print(f"Index updated: {len(index) - 1} valid entries, {skipped_zips} skipped ZIPs in {INDEX_FILE}")
 
 if __name__ == "__main__":
     update_index()
