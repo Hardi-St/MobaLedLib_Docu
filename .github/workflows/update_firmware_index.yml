@@ -19,7 +19,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           sparse-checkout: |
             firmware/
-            scripts/
+            .github/
           sparse-checkout-cone-mode: true
       - name: Setup Python
         uses: actions/setup-python@v4
