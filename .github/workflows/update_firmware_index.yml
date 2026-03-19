@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'
 
       - name: Run Update Script
-        run: python scripts/update_firmware_index.py
+        run: python ./github/scripts/update_firmware_index.py
 
       - name: Commit and Push Changes
         run: |
@@ -30,3 +30,6 @@ jobs:
           git add firmware/index.json
           git commit -m 'Automatically: Update firmware/index.json' || echo "No changes to commit"
           git push
+          
+          
+          
