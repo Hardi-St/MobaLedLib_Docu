@@ -7,7 +7,7 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
-  update:
+  updateFirmwareIndex:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
