@@ -1,9 +1,15 @@
-We work on "beta" branch https://github.com/Hardi-St/MobaLedLib/tree/beta
-1.) Check out use already checked out branch
+These are the steps to create a new beta release for MobaLedLib
 
-2.) Code-Files
-- merge changes into Prog_Generator_MobaLedLib.xlsm. !!! never just copy a change xlsm into the git beta folder !!!
-- merge changes into Pattern_Configurator.xlsm.      !!! never just copy a change xlsm into the git beta folder !!!
+Prerequisites:
+- we have changed or new MobaLedLib library files
+
+Steps:
+
+1.) Check out or use already checked out branch https://github.com/Hardi-St/MobaLedLib/tree/beta
+
+2.) Code files
+- merge changes into Prog_Generator_MobaLedLib.xlsm. !!! never just copy a changed xlsm into the git beta folder !!!
+- merge changes into Pattern_Configurator.xlsm.      !!! never just copy a changed xlsm into the git beta folder !!!
 - merge changes of other files into the beta branch
 
 3.) Prog_Generator_MobaLedLib
@@ -33,7 +39,7 @@ We work on "beta" branch https://github.com/Hardi-St/MobaLedLib/tree/beta
 - verify the simulator: Press and hold the "Shift" key while clicking "zum Arduino schicken"
 
 7.) upload the beta to MobaLedLib Docu repository
-- Check out use already checked out master branch of https://github.com/Hardi-St/MobaLedLib_Docu
+- Check out or use already checked out master branch of https://github.com/Hardi-St/MobaLedLib_Docu
 - download the file https://github.com/Hardi-St/MobaLedLib/archive/refs/heads/beta.zip
 - use 7zip (or other tool) to view the archive (no need to extract files)
 - rename the root folder from "beta" to "master"
