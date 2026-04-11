@@ -32,7 +32,7 @@
 
 ### 6. Test the New Beta
 - Navigate to the folder containing the existing MobaLedLib installation.
-- Open `Prog_Generator_MobaLedLib`, select **Options > Update > "Installiere Korrektorversion"**.
+- Open `Prog_Generator_MobaLedLib`, select **Options > Update > "Installiere Korrekturversion"**.
 - At the dialog *"Soll die Korrektorversion installiert werden"*, **press and hold the CTRL (STRG) key** while clicking the **Ja** button.
 - The "Beta Test Installation" dialog opens. If the URL is incorrect, change it to: <https://github.com/Hardi-St/MobaLedLib/archive/refs/heads/beta.zip>
 - Wait for the update to complete.
