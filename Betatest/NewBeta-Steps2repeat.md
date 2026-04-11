@@ -33,7 +33,7 @@
 ### 6. Test the New Beta
 - Navigate to the folder containing the existing MobaLedLib installation.
 - Open `Prog_Generator_MobaLedLib`, select **Options > Update > "Installiere Korrekturversion"**.
-- At the dialog *"Soll die Korrektorversion installiert werden"*, **press and hold the CTRL (STRG) key** while clicking the **Ja** button.
+- At the dialog *"Soll die Korrekturversion installiert werden"*, **press and hold the CTRL (STRG) key** while clicking the **Ja** button.
 - The "Beta Test Installation" dialog opens. If the URL is incorrect, change it to: <https://github.com/Hardi-St/MobaLedLib/archive/refs/heads/beta.zip>
 - Wait for the update to complete.
 - When `Prog_Generator_MobaLedLib` opens, import settings from the previous version.
@@ -54,8 +54,8 @@
 
 ### 8. Final Installation Verification
 - Return to the existing MobaLedLib installation folder.
-- Open `Prog_Generator_MobaLedLib`, select **Options > Update > "Installiere Korrektorversion"**.
-- At the dialog *"Soll die Korrektorversion installiert werden"*, click **Ja** (**without** holding CTRL) to run a default beta update.
+- Open `Prog_Generator_MobaLedLib`, select **Options > Update > "Installiere Korrekturversion"**.
+- At the dialog *"Soll die Korrekturversion installiert werden"*, click **Ja** (**without** holding CTRL) to run a default beta update.
 - Wait for completion and import settings.
 - Repeat the platform installation tests (Arduino, ESP32, PICO) for both standard and PlatformIO builds.
 - Re-verify the simulator using **Shift + "zum Arduino schicken"**.
