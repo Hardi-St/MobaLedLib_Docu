@@ -24,7 +24,7 @@
 - Save and close.
 
 ### 4. Edit libraries.properties
-- Change the `version` attribute to match the version and `Test_Suffix` (e.g., `version=3.5.0-h`).
+- Change the `version` attribute to match the version and `Test_Suffix` (e.g., `version=3.5.0-H`).  Note that the Version compare is case sensitive!
 
 ### 5. Commit Changes to the Beta Branch
 - During commit, use a diff tool (e.g., BeyondCompare) to review the code changes.
