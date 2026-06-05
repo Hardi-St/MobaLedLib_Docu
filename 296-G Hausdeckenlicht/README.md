@@ -11,5 +11,7 @@ Siehe [Mobaledlib Forum](https://forum.mobaledlib.de/viewtopic.php?t=807).
 
 Die EasyEDA Pro Dateien der Platine befinden sich in der Datei Hausdeckenlicht.eprj.
 Dort findet man auch die zweite Paltine welche im Dach eines Hauses eingestetzt werden kann:
-![Bild Dachplatine](Dachplatine.png)
+
+![Bild Dachlichtplatine](Dachlichtplatine.png)
+
 Sie ist nur mit einer RGB LED und zwei warm Weißen LEDs bestückt.
