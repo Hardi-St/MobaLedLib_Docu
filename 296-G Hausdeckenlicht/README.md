@@ -1,4 +1,4 @@
-# Hausdeckenlicht
+# Hausdeckenlicht (296-G)
 Mit dieser kleinen Platine (35x40mm) kann man "jedes" Häuschen beleuchten ohne das man winzige LEDs anlöten und montieren muss:
 
 ![Bild Hausdeckenlichtplatine](Hausdeckenlichtplatine.png)
@@ -9,6 +9,7 @@ Zwei zusätzliche Ausgänge für Außenlichter oder Ähnliches
 
 Siehe [Mobaledlib Forum](https://forum.mobaledlib.de/viewtopic.php?t=807).
 
+# Dachlichtplatine (296-D)
 Die EasyEDA Pro Dateien der Platine befinden sich in der Datei Hausdeckenlicht.eprj.
 Dort findet man auch die zweite Paltine welche im Dach eines Hauses eingestetzt werden kann:
 
