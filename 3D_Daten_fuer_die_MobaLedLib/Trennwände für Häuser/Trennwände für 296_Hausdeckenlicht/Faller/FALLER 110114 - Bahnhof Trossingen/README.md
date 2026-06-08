@@ -2,4 +2,3 @@
 
 ![Bild Bahnhof Trossingen](FALLER_110114-Bahnhof_Trossingen.png)
 
-
