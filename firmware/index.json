@@ -4,7 +4,7 @@
   },
   {
     "name": "PicoServo-Tiny",
-    "version": "0.5",
+    "version": "0.8",
     "license": "BSL-1.1-or-later",
     "platform": "MLL512V1",
     "DE": {
@@ -19,8 +19,28 @@
       "short": "ATTiny-compatibele 6-kanaals servomodule",
       "detail": "Bestuurt maximaal zes servo's met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
     },
-    "zip_path": "512v1/PicoServo-Tiny-V0.5.zip",
-    "desc_filename": "PicoServo-Tiny-V0.5.desc"
+    "zip_path": "512v1/PicoServo-Tiny-V0.8.zip",
+    "desc_filename": "PicoServo-Tiny-V0.8.desc"
+  },
+  {
+    "name": "PicoSound-Tiny",
+    "version": "0.4",
+    "license": "BSL-1.1-or-later",
+    "platform": "MLL512V1",
+    "DE": {
+      "short": "ATTiny kompatibles 6-fach Soundmodul",
+      "detail": "Steuert bis zu sechs Soundmodule mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
+    },
+    "EN": {
+      "short": "ATTiny-compatible 6-channel sound module",
+      "detail": "Controls up to six sound modules with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
+    },
+    "NL": {
+      "short": "ATTiny-compatibele 6-voudige geluidsmodule",
+      "detail": "Bestuurt maximaal zes geluidsmodules met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
+    },
+    "zip_path": "512v1/PicoSound-Tiny-V0.4.zip",
+    "desc_filename": "PicoSound-Tiny-V0.4.desc"
   },
   {
     "name": "Pico2x3-Tiny",
@@ -43,84 +63,24 @@
     "desc_filename": "Pico2x3-Tiny-V0.1.desc"
   },
   {
-    "name": "PicoSound-Tiny",
-    "version": "0.3",
-    "license": "BSL-1.1-or-later",
-    "platform": "MLL512V1",
-    "DE": {
-      "short": "ATTiny kompatibles 6-fach Soundmodul",
-      "detail": "Steuert bis zu sechs Soundmodule mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
-    },
-    "EN": {
-      "short": "ATTiny-compatible 6-channel sound module",
-      "detail": "Controls up to six sound modules with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
-    },
-    "NL": {
-      "short": "ATTiny-compatibele 6-voudige geluidsmodule",
-      "detail": "Bestuurt maximaal zes geluidsmodules met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
-    },
-    "zip_path": "512v1/PicoSound-Tiny-V0.3.zip",
-    "desc_filename": "PicoSound-Tiny-V0.3.desc"
-  },
-  {
-    "name": "PicoServo-Tiny",
-    "version": "0.4",
-    "license": "BSL-1.1-or-later",
-    "platform": "MLL512V1",
-    "DE": {
-      "short": "ATTiny kompatibles 6-fach Servomodul",
-      "detail": "Steuert bis zu sechs Servos mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
-    },
-    "EN": {
-      "short": "ATTiny-compatible 6-channel servo module",
-      "detail": "Controls up to six servos with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
-    },
-    "NL": {
-      "short": "ATTiny-compatibele 6-kanaals servomodule",
-      "detail": "Bestuurt maximaal zes servo's met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
-    },
-    "zip_path": "512v1/PicoServo-Tiny-V0.4.zip",
-    "desc_filename": "PicoServo-Tiny-V0.4.desc"
-  },
-  {
-    "name": "PicoServo-Tiny",
+    "name": "Pico2x3-Tiny",
     "version": "0.7",
     "license": "BSL-1.1-or-later",
     "platform": "MLL512V1",
     "DE": {
-      "short": "ATTiny kompatibles 6-fach Servomodul",
-      "detail": "Steuert bis zu sechs Servos mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
+      "short": "ATTiny kompatibles 3-fach Sound und 3-fach Servomodul",
+      "detail": "Steuert drei Soundmodule und drei Servos mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
     },
     "EN": {
-      "short": "ATTiny-compatible 6-channel servo module",
-      "detail": "Controls up to six servos with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
+      "short": "ATTiny-compatible 3-channel sound and 3-channel servo module",
+      "detail": "Controls three sound modules and three servos using a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
     },
     "NL": {
-      "short": "ATTiny-compatibele 6-kanaals servomodule",
-      "detail": "Bestuurt maximaal zes servo's met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
+      "short": "ATTiny-compatibele module met 3 geluidsmodules en 3 servomotoren",
+      "detail": "Bestuurt drie geluidsmodules en drie servomotoren met een PicoSoundServo 512-printplaat. Het protocol is compatibel met de ATTiny-versie."
     },
-    "zip_path": "512v1/PicoServo-Tiny-V0.7.zip",
-    "desc_filename": "PicoServo-Tiny-V0.7.desc"
-  },
-  {
-    "name": "PicoServo-Tiny",
-    "version": "0.6",
-    "license": "BSL-1.1-or-later",
-    "platform": "MLL512V1",
-    "DE": {
-      "short": "ATTiny kompatibles 6-fach Servomodul",
-      "detail": "Steuert bis zu sechs Servos mit einer PicoSoundServo 512 Platine. Das Protokoll ist kompatibel zur ATTiny Version."
-    },
-    "EN": {
-      "short": "ATTiny-compatible 6-channel servo module",
-      "detail": "Controls up to six servos with a PicoSoundServo 512 board. The protocol is compatible with the ATTiny version."
-    },
-    "NL": {
-      "short": "ATTiny-compatibele 6-kanaals servomodule",
-      "detail": "Bestuurt maximaal zes servo's met een PicoSoundServo 512-kaart. Het protocol is compatibel met de ATTiny-versie."
-    },
-    "zip_path": "512v1/PicoServo-Tiny-V0.6.zip",
-    "desc_filename": "PicoServo-Tiny-V0.6.desc"
+    "zip_path": "512v1/Pico2x3-Tiny-V0.7.zip",
+    "desc_filename": "Pico2x3-Tiny-V0.7.desc"
   },
   {
     "name": "Pico2x3-Tiny",
