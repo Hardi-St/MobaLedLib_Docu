@@ -1,0 +1,48 @@
+name: Build MobaLedLibWrapper DLL
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'Tools/MobaLedLib.Win/**'
+      - '.github/workflows/build_mobaledlib_wrapper.yml'
+  pull_request:
+    paths:
+      - 'Tools/MobaLedLib.Win/**'
+  workflow_dispatch:
+
+jobs:
+  build-wrapper:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ x64, Win32 ]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Build wrapper DLL (${{ matrix.platform }})
+        shell: pwsh
+        run: |
+          $project = "Tools/MobaLedLib.Win/MobaLedLibWrapper/MobaLedLibWrapper.vcxproj"
+          $outDir = Join-Path $env:GITHUB_WORKSPACE "artifacts/${{ matrix.platform }}"
+
+          msbuild $project `
+            /p:Configuration=Release `
+            /p:Platform="${{ matrix.platform }}" `
+            /p:PlatformToolset=v143 `
+            /p:OutDir="$outDir\\" `
+            /m `
+            /verbosity:minimal
+
+      - name: Upload wrapper DLL artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: MobaLedLibWrapper-${{ matrix.platform }}
+          path: artifacts/${{ matrix.platform }}/MobaLedLibWrapper.dll
+          if-no-files-found: error
