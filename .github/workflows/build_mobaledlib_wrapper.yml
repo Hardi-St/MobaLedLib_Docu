@@ -22,28 +22,35 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
-      - name: Build wrapper DLL for x64 and x86
+      - name: Build wrapper DLL for x64 and Win32
         shell: pwsh
         run: |
           $project = "Tools/MobaLedLib.Win/MobaLedLibWrapper/MobaLedLibWrapper.vcxproj"
-          $artifactsRoot = Join-Path $env:GITHUB_WORKSPACE "artifacts"
-          New-Item -ItemType Directory -Force -Path $artifactsRoot | Out-Null
+          $artifactRoot = Join-Path $env:GITHUB_WORKSPACE "artifacts"
+          New-Item -ItemType Directory -Force -Path $artifactRoot | Out-Null
 
           foreach ($platform in @("x64", "Win32")) {
-            $outDir = Join-Path $artifactsRoot $platform
-            New-Item -ItemType Directory -Force -Path $outDir | Out-Null
-
+            $config = "Release"
             msbuild $project `
-              /p:Configuration=Release `
+              /p:Configuration=$config `
               /p:Platform=$platform `
               /p:PlatformToolset=v143 `
-              /p:OutDir="$outDir\\" `
               /m `
               /verbosity:minimal
 
-            if (-not (Test-Path (Join-Path $outDir "MobaLedLibWrapper.dll"))) {
-              throw "Build failed for platform $platform: MobaLedLibWrapper.dll not found in $outDir"
+            $builtDll = Get-ChildItem -Path "Tools/MobaLedLib.Win" -Recurse -Filter "MobaLedLibWrapper.dll" | Where-Object { $_.FullName -match "\\$platform\\|\\$config\\" } | Select-Object -First 1
+
+            if (-not $builtDll) {
+              $builtDll = Get-ChildItem -Path "Tools/MobaLedLib.Win" -Recurse -Filter "MobaLedLibWrapper.dll" | Select-Object -First 1
             }
+
+            if (-not $builtDll) {
+              throw "Build did not produce MobaLedLibWrapper.dll for platform $platform"
+            }
+
+            $targetDir = Join-Path $artifactRoot $platform
+            New-Item -ItemType Directory -Force -Path $targetDir | Out-Null
+            Copy-Item -Path $builtDll.FullName -Destination (Join-Path $targetDir "MobaLedLibWrapper.dll") -Force
           }
 
       - name: Upload wrapper DLL artifacts
